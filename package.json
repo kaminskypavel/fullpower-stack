@@ -1,14 +1,32 @@
 {
   "name": "fullpower-stack",
-  "version": "1.0.0",
+  "version": "0.0.0",
+  "private": true,
   "description": "a boiler plate for a cutting edge technologies",
+  "author": "Pavel 'PK' Kaminsky",
+  "license": "MIT",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
+  "devDependencies": {
+    "eslint-config-custom": "workspace:*",
+    "prettier": "latest",
+    "turbo": "latest"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/kaminskypavel/fullpower-stack.git"
   },
-  "author": "Pavel 'PK' Kaminsky",
-  "license": "MIT"
+  "packageManager": "pnpm@7.13.4"
 }
