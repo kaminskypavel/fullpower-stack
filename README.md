@@ -5,13 +5,13 @@
 a boiler plate for a cutting edge technologies.
 **fullpower-stack is optimized for the best performance and developer experience.**
 
-| Framework                   | FullPower Stack |
-|-----------------------------|-----------------|
-| Package Manager             | pnpm            |
+| Framework                   | FullPower Stack | Implemented |
+|-----------------------------|-----------------|--------------
+| Package Manager             | pnpm            |     ✅      |
+| Monorepo                    | Turborepo       |     ✅      |
+| Frontend (Framework)        | Nextjs 12       |     ✅      |
+| Frontend (standalone)       | React 18        |
 | Server-Client Communication | tRPC            |
-| Monorepo                    | Turborepo       |
-| Frontend (JS)               | React 18        |
-| Frontend (Framework)        | Nextjs 12       |
 | Frontend (Packager)         | Vite            |
 | Frontend (css)              | tailwind        |
 | Backend                     | express         |
