@@ -1,0 +1,11 @@
+{
+  "name": "fullpower-stack",
+  "version": "1.0.0",
+  "description": "a boiler plate for a cutting edge technologies",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
