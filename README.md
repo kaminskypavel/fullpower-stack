@@ -10,9 +10,9 @@ a boiler plate for a cutting edge technologies.
 | Package Manager             | pnpm            |     ✅      |
 | Monorepo                    | Turborepo       |     ✅      |
 | Frontend (Framework)        | Nextjs 12       |     ✅      |
-| Frontend (standalone)       | React 18        |
+| Frontend (standalone)       | React 18        |     ✅      |
+| Frontend (Packager)         | Vite            |     ✅      |
 | Server-Client Communication | tRPC            |
-| Frontend (Packager)         | Vite            |
 | Frontend (css)              | tailwind        |
 | Backend                     | express         |
 | ORM                         | prisma          |
