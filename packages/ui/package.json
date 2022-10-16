@@ -5,6 +5,8 @@
   "types": "./src/index.tsx",
   "license": "MIT",
   "scripts": {
+    "test": "vitest",
+    "storybook": "pnpm ladle serve",
     "lint": "eslint *.ts*"
   },
   "devDependencies": {
@@ -15,8 +17,5 @@
     "react": "^18.2.0",
     "tsconfig": "workspace:*",
     "typescript": "^4.5.2"
-  },
-  "dependencies": {
-    "@ladle/react": "^2.4.4"
   }
 }

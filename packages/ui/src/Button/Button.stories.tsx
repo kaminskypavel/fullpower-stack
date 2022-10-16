@@ -1,10 +1,8 @@
 // Button.stories.ts|tsx
 
-import React from 'react';
+import {ComponentMeta, ComponentStory} from '@storybook/react';
 
-import { ComponentStory, ComponentMeta } from '@storybook/react';
-
-import { Button, ButtonProps } from './Button';
+import {Button} from './Button';
 
 export default {
   /* 👇 The title prop is optional.
@@ -18,9 +16,9 @@ export default {
 //👇 We create a “template” of how args map to rendering
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
-export const Primary = Template.bind({});
+export const PrimaryButton = Template.bind({});
 
-Primary.args = {
+PrimaryButton.args = {
   primary: true,
   label: 'Button',
 };
