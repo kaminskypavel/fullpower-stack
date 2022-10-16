@@ -20,8 +20,12 @@
 | Server-Client Communication | tRPC            |
 | Backend                     | express         |
 | ORM                         | prisma          |
-| Testing (Framework)         | vitest          |
+| Testing (Framework)         | vitest          |     ✅      |  0.24.3  |
+| Testing (Components)        | Testing-Library |     ✅      |  13.4.0  |
 | Testing (Components)        | Storybook       |
-| Testing (Components)        | Testing-Library |
 | Testing (Mocking)           | MSW             |
 | CI                          | Github Actions  |
+
+### Optional Testing : Wallaby.js
+
+_Wallaby.js: Select Configuration >  Automatic Configuration \<closest project in mono-repo\>_
