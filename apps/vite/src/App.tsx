@@ -7,11 +7,12 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      <div>
+    <div className="App flex flex-col">
+      <div className='flex flex-row justify-center align-middle'>
         <a href="https://vitejs.dev" target="_blank">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
         </a>
+
         <a href="https://reactjs.org" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
@@ -26,6 +27,9 @@ function App() {
         </p>
       </div>
       <Button />
+      <h1 className="text-3xl font-bold bg-red-500">
+      This is styled with tailwind
+    </h1>
 
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
