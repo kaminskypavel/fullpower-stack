@@ -21,8 +21,9 @@
 | Backend                     | express         |
 | ORM                         | prisma          |
 | Testing (Framework)         | [vitest](https://vitest.dev/)          |     ✅      |  0.24.3  |
-| Testing (Components)        | [Testing-Library](https://testing-library.com/docs/react-testing-library/intro/) |     ✅      |  13.4.0  |
-| Testing (Components)        | [Storybook](https://storybook.js.org/docs/react/get-started/introduction/)       |
+| Testing (Components)        | [testing-library](https://testing-library.com/docs/react-testing-library/intro/) |     ✅      |  13.4.0  |
+| Testing (Components)        | ~~[Storybook]~~ [waiting on release of version 7](https://storybook.js.org/blog/first-class-vite-support-in-storybook/)       |     ⚠️      |  ~~7.0.0-alpha.38~~  |
+| Testing (Components)        | [ladle](https://ladle.dev/docs/)        |     ✅      |  2.4.4  |
 | Testing (Mocking)           | MSW             |
 | CI                          | Github Actions  |
 
