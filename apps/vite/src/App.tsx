@@ -1,15 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
-import {Button} from 'ui'
-import Login from './components/Login'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import "./App.css";
+import { Button } from "ui";
+import Login from "./components/Login";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <div className="App flex flex-col">
-      <div className='flex flex-row justify-center align-middle'>
+      <div className="flex flex-row justify-center align-middle">
         <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
         </a>
@@ -29,16 +29,16 @@ function App() {
       </div>
       <Button />
       <h1 className="text-3xl font-bold bg-red-500">
-      This is styled with tailwind
-    </h1>
+        This is styled with tailwind
+      </h1>
 
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
 
-      <Login/>
+      <Login />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
