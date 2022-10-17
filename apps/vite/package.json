@@ -7,7 +7,8 @@
     "dev": "vite",
     "test": "vitest",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "storybook": "pnpm ladle serve"
   },
   "dependencies": {
     "react": "^18.2.0",
