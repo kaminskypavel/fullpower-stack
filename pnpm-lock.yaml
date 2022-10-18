@@ -7,6 +7,7 @@ importers:
       "@storybook/react": ^6.5.12
       "@testing-library/jest-dom": ^5.16.5
       "@testing-library/react": ^13.4.0
+      "@types/node": ^17.0.12
       "@types/react": ^18.0.17
       "@types/react-dom": ^18.0.6
       "@vitejs/plugin-react": ^2.1.0
@@ -30,6 +31,7 @@ importers:
       "@storybook/react": 6.5.12_typescript@4.8.4
       "@testing-library/jest-dom": 5.16.5
       "@testing-library/react": 13.4.0
+      "@types/node": 17.0.45
       "@types/react": 18.0.21
       "@types/react-dom": 18.0.6
       "@vitejs/plugin-react": 2.1.0_vite@3.1.8
@@ -41,7 +43,7 @@ importers:
       postcss: 8.4.18
       prettier-plugin-tailwindcss: 0.1.13_prettier@2.7.1
       tailwindcss: 3.1.8_postcss@8.4.18
-      ts-node-dev: 2.0.0_typescript@4.8.4
+      ts-node-dev: 2.0.0_ksn4eycaeggbrckn3ykh37hwf4
       typescript: 4.8.4
       vite: 3.1.8
       vitest: 0.24.3_happy-dom@7.5.12
@@ -57,7 +59,6 @@ importers:
       "@types/express": ^4.17.14
       "@types/node": ^17.0.12
       cors: ^2.8.5
-      eslint: 7.32.0
       eslint-config-custom: workspace:*
       express: ^4.18.2
       tsconfig: workspace:*
@@ -71,7 +72,6 @@ importers:
       zod: 3.19.1
     devDependencies:
       "@types/node": 17.0.45
-      eslint: 7.32.0
       eslint-config-custom: link:../../../packages/eslint-config-custom
       tsconfig: link:../../../packages/tsconfig
 
@@ -157,21 +157,11 @@ importers:
 
   packages/ui:
     specifiers:
-      "@types/react": ^18.0.17
-      "@types/react-dom": ^18.0.6
-      eslint: ^7.32.0
       eslint-config-custom: workspace:*
-      react: ^18.2.0
       tsconfig: workspace:*
-      typescript: ^4.5.2
     devDependencies:
-      "@types/react": 18.0.21
-      "@types/react-dom": 18.0.6
-      eslint: 7.32.0
       eslint-config-custom: link:../eslint-config-custom
-      react: 18.2.0
       tsconfig: link:../tsconfig
-      typescript: 4.8.4
 
 packages:
   /@adobe/css-tools/4.0.1:
@@ -4142,6 +4132,7 @@ packages:
       }
     dependencies:
       "@types/react": 18.0.21
+    dev: false
 
   /@types/react/18.0.17:
     resolution:
@@ -4163,6 +4154,7 @@ packages:
       "@types/prop-types": 15.7.5
       "@types/scheduler": 0.16.2
       csstype: 3.1.1
+    dev: false
 
   /@types/scheduler/0.16.2:
     resolution:
@@ -11251,6 +11243,7 @@ packages:
     hasBin: true
     dependencies:
       js-tokens: 4.0.0
+    dev: false
 
   /loud-rejection/1.6.0:
     resolution:
@@ -13656,6 +13649,7 @@ packages:
     engines: { node: ">=0.10.0" }
     dependencies:
       loose-envify: 1.4.0
+    dev: false
 
   /read-cache/1.0.0:
     resolution:
@@ -15604,7 +15598,7 @@ packages:
     engines: { node: ">=6.10" }
     dev: false
 
-  /ts-node-dev/2.0.0_typescript@4.8.4:
+  /ts-node-dev/2.0.0_ksn4eycaeggbrckn3ykh37hwf4:
     resolution:
       {
         integrity: sha512-ywMrhCfH6M75yftYvrvNarLEY+SUXtUvU8/0Z6llrHQVBx12GiFk5sStF8UdfE/yfzk9IAq7O5EEbTQsxlBI8w==,
@@ -15626,7 +15620,7 @@ packages:
       rimraf: 2.7.1
       source-map-support: 0.5.21
       tree-kill: 1.2.2
-      ts-node: 10.9.1_typescript@4.8.4
+      ts-node: 10.9.1_ksn4eycaeggbrckn3ykh37hwf4
       tsconfig: 7.0.0
       typescript: 4.8.4
     transitivePeerDependencies:
@@ -15635,7 +15629,7 @@ packages:
       - "@types/node"
     dev: false
 
-  /ts-node/10.9.1_typescript@4.8.4:
+  /ts-node/10.9.1_ksn4eycaeggbrckn3ykh37hwf4:
     resolution:
       {
         integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==,
@@ -15657,6 +15651,7 @@ packages:
       "@tsconfig/node12": 1.0.11
       "@tsconfig/node14": 1.0.3
       "@tsconfig/node16": 1.0.3
+      "@types/node": 17.0.45
       acorn: 8.8.0
       acorn-walk: 8.2.0
       arg: 4.1.3

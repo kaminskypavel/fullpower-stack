@@ -10,6 +10,8 @@ describe("App", () => {
       name: /count is 0/i,
     });
 
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
     expect(button).toBeInTheDocument();
     // console.log(screen.logTestingPlaygroundURL());
   });
