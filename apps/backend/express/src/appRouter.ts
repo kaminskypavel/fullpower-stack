@@ -15,9 +15,9 @@ export const appRouter = t.router({
     .input(z.object({ name: z.string().min(5) }))
     .mutation(async (req) => {
       // use your ORM of choice
-      //   return await UserModel.create({
-      //     data: req.input,
-      //   });
+      // return await UserModel.create({
+      //   data: req.input,
+      // });
 
       return { id: "1", name: "Bilbo" };
     }),
