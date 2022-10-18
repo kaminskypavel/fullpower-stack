@@ -12,12 +12,18 @@
     "storybook": "pnpm ladle serve"
   },
   "dependencies": {
+    "@tanstack/react-query": "^4.12.0",
+    "@trpc/client": "10.0.0-proxy-beta.21",
+    "@trpc/next": "10.0.0-proxy-beta.21",
+    "@trpc/react-query": "10.0.0-proxy-beta.21",
+    "@trpc/server": "10.0.0-proxy-beta.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "ui": "workspace:*"
   },
   "devDependencies": {
     "eslint-config-custom": "workspace:*",
+    "express-backend": "workspace:*",
     "tsconfig": "workspace:*"
   }
 }

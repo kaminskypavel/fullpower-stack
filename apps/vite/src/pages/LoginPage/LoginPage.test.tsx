@@ -1,11 +1,11 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom";
 
-import App from "./App";
+import LoginPage from ".";
 
 describe("App", () => {
   it("renders a count button", () => {
-    render(<App />);
+    render(<LoginPage />);
     const button = screen.getByRole("button", {
       name: /count is 0/i,
     });
@@ -14,7 +14,7 @@ describe("App", () => {
     // console.log(screen.logTestingPlaygroundURL());
   });
   it("clicking increments the count", () => {
-    render(<App />);
+    render(<LoginPage />);
     const button = screen.getByRole("button", {
       name: /count is 0/i,
     });
