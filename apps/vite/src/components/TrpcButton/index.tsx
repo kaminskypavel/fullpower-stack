@@ -6,7 +6,7 @@ function TRPCButton() {
   const { title, timestamp } = data ?? {};
 
   const utils = trpc.useContext();
-  if (!title || !timestamp) return <div>Loading...</div>;
+  if (!title || !timestamp) return <div>Loading....</div>;
 
   return (
     <section>
