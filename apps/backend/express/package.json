@@ -6,7 +6,8 @@
   "types": "src/index.ts",
   "scripts": {
     "dev": "tsnd --rs src/server.ts",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "build": "tsc"
   },
   "dependencies": {
     "@trpc/server": "10.0.0-proxy-beta.21",
