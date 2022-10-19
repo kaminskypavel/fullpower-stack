@@ -158,7 +158,10 @@ importers:
   packages/ui:
     specifiers:
       eslint-config-custom: workspace:*
+      react: ^18.2.0
       tsconfig: workspace:*
+    dependencies:
+      react: 18.2.0
     devDependencies:
       eslint-config-custom: link:../eslint-config-custom
       tsconfig: link:../tsconfig

@@ -12,7 +12,8 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev --parallel --no-cache",
-    "test": "turbo run test -- --run",
+    "test": "turbo run test",
+    "test:watch": "turbo run test:watch",
     "lint": "turbo run lint -- --fix",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "prepare": "husky install"
