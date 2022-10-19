@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "lint": "eslint *.ts*",
-    "test": "vitest",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "storybook": "pnpm ladle serve"

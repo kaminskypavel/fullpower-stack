@@ -1,6 +1,6 @@
-import { useState } from "react";
+import {useState} from "react";
 import reactLogo from "./assets/react.svg";
-import { Button } from "ui";
+import {Button} from "ui";
 import Login from "../../components/Login";
 import TRPCButton from "../../components/TrpcButton";
 
