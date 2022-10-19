@@ -5,12 +5,16 @@
   "types": "./src/index.tsx",
   "license": "MIT",
   "scripts": {
-    "test": "vitest",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "storybook": "pnpm ladle serve",
     "lint": "eslint *.ts*"
   },
   "devDependencies": {
     "eslint-config-custom": "workspace:*",
     "tsconfig": "workspace:*"
+  },
+  "dependencies": {
+    "react": "^18.2.0"
   }
 }
