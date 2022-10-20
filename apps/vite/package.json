@@ -24,7 +24,6 @@
   },
   "devDependencies": {
     "eslint-config-custom": "workspace:*",
-    "express-backend": "workspace:*",
-    "tsconfig": "workspace:*"
+    "express-backend": "workspace:*"
   }
 }

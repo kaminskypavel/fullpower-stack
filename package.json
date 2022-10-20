@@ -19,35 +19,38 @@
     "prepare": "husky install"
   },
   "devDependencies": {
-    "eslint-config-custom": "workspace:*",
     "prettier": "^2.7.1",
-    "turbo": "latest"
-  },
-  "engines": {
-    "node": ">=14.0.0"
-  },
-  "dependencies": {
     "@ladle/react": "^2.4.4",
     "@storybook/react": "^6.5.12",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
+    "@tsconfig/next": "^1.0.3",
     "@tsconfig/node18": "^1.0.1",
+    "@tsconfig/vite-react": "^1.0.1",
     "@types/node": "^17.0.12",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.1.0",
     "autoprefixer": "^10.4.12",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-config-custom": "workspace:*",
+    "eslint": "7.32.0",
     "happy-dom": "^7.5.12",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "postcss": "^8.4.18",
     "prettier-plugin-tailwindcss": "^0.1.13",
-    "tailwindcss": "^3.1.8",
     "ts-node-dev": "^2.0.0",
+    "vitest": "^0.24.3",
+    "turbo": "latest"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.1.8",
     "typescript": "^4.8.4",
-    "vite": "^3.1.0",
-    "vitest": "^0.24.3"
+    "vite": "^3.1.0"
   },
   "repository": {
     "type": "git",

@@ -11,8 +11,7 @@
     "lint": "eslint *.ts*"
   },
   "devDependencies": {
-    "eslint-config-custom": "workspace:*",
-    "tsconfig": "workspace:*"
+    "eslint-config-custom": "workspace:*"
   },
   "dependencies": {
     "react": "^18.2.0"
