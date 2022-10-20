@@ -20,6 +20,10 @@ app.get("/", (req, res) => {
 
 app.use(
   "/trpc",
+  (res, req, next) => {
+    console.log("/trpc middleware called");
+    next();
+  },
   trpcExpress.createExpressMiddleware({
     router: appRouter,
     createContext,

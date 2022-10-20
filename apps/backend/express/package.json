@@ -1,6 +1,5 @@
 {
-  "name": "express-backend",
-  "version": "0.0.0",
+  "name": "@fullpower-stack/express-backend",
   "private": true,
   "main": "src/index.ts",
   "types": "src/index.ts",
@@ -23,6 +22,6 @@
   },
   "devDependencies": {
     "@types/node": "^17.0.12",
-    "eslint-config-custom": "workspace:*"
+    "@fullpower-stack/eslint-config-custom": "workspace:*"
   }
 }

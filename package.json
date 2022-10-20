@@ -33,7 +33,7 @@
     "@vitejs/plugin-react": "^2.1.0",
     "autoprefixer": "^10.4.12",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-config-custom": "workspace:*",
+    "@fullpower-stack/eslint-config-custom": "workspace:*",
     "eslint": "7.32.0",
     "happy-dom": "^7.5.12",
     "husky": "^8.0.1",

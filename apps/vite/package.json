@@ -1,7 +1,6 @@
 {
   "name": "vite",
   "private": true,
-  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -20,10 +19,10 @@
     "@trpc/server": "10.0.0-proxy-beta.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "ui": "workspace:*"
+    "@fullpower-stack/ui": "workspace:*"
   },
   "devDependencies": {
-    "eslint-config-custom": "workspace:*",
-    "express-backend": "workspace:*"
+    "@fullpower-stack/eslint-config-custom": "workspace:*",
+    "@fullpower-stack/express-backend": "workspace:*"
   }
 }

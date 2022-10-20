@@ -6,7 +6,7 @@ function TRPCButton() {
 
   const {title, timestamp} = data ?? {};
 
-  // const utils = trpc.useContext();
+  const utils = trpc.useContext();
   if (!title || !timestamp) return <div>Loading....</div>;
 
   return (
@@ -20,7 +20,7 @@ function TRPCButton() {
         <button
           className="m-5 border-4"
           onClick={() => {
-            // utils.invalidate();
+            utils.invalidate();
           }}
         >
           reload from server
