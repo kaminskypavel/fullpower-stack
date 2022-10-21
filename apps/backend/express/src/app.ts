@@ -2,7 +2,7 @@ import * as trpcExpress from "@trpc/server/adapters/express";
 import cors from "cors";
 import express from "express";
 import {appRouter} from "./appRouter";
-
+import {Express} from "express"
 const PORT = 4000;
 
 // created for each request
@@ -11,7 +11,7 @@ const createContext = ({
   res,
 }: trpcExpress.CreateExpressContextOptions) => ({}); // no context
 
-const app = express();
+const app: Express = express();
 app.use(cors());
 
 app.get("/", (req, res) => {
