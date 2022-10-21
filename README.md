@@ -1,6 +1,6 @@
 ## FullPower-Stack 💪
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+[![Build & Test 👷‍♂️](https://github.com/kaminskypavel/fullpower-stack/actions/workflows/ci.yml/badge.svg)](https://github.com/kaminskypavel/fullpower-stack/actions/workflows/ci.yml)
 
 **fullpower-stack is optimized for**
 
