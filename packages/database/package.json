@@ -4,12 +4,21 @@
   "types": "./src/index.ts",
   "license": "MIT",
   "scripts": {
-    "test": "vitest run",
-    "test:watch": "vitest",
+    "dev": "tsnd --rs --debug --poll  src/index.ts",
+    "lint": "eslint .",
+    "prisma:generate": "prisma generate",
+    "prisma:studio": "prisma studio",
     "build": "tsup src/index.ts --format cjs --dts",
-    "lint": "eslint *.ts*"
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@fakerjs/faker": "^3.0.0",
+    "@prisma/client": "^4.5.0"
   },
   "devDependencies": {
-    "@fullpower-stack/eslint-config-custom": "workspace:*"
+    "@fullpower-stack/eslint-config-custom": "workspace:*",
+    "@prisma/client": "^4.5.0",
+    "prisma": "^4.5.0"
   }
 }
