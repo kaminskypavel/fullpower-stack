@@ -1,0 +1,15 @@
+{
+  "name": "@fullpower-stack/database",
+  "main": "./src/index.tsx",
+  "types": "./src/index.tsx",
+  "license": "MIT",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "build": "tsup src/server.ts --format cjs --dts",
+    "lint": "eslint *.ts*"
+  },
+  "devDependencies": {
+    "@fullpower-stack/eslint-config-custom": "workspace:*"
+  }
+}
