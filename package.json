@@ -19,6 +19,7 @@
     "prepare": "husky install"
   },
   "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
     "@fullpower-stack/eslint-config-custom": "workspace:*",
     "@ladle/react": "^2.4.5",
     "@storybook/react": "^6.5.13",

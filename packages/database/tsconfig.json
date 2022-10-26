@@ -1,5 +1,5 @@
 {
-  "extends": "@tsconfig/vite-react",
+  "extends": "@tsconfig/node18/tsconfig.json",
   "include": ["."],
   "exclude": ["dist", "build", "node_modules"]
 }

@@ -33,4 +33,4 @@ function TRPCButton() {
   );
 }
 
-export default TRPCButton;
+export default React.memo(TRPCButton);
