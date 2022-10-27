@@ -1,6 +1,9 @@
 import {z} from "zod";
 import {protectedProcedure, publicProcedure, router} from './trpc';
 import {getCatImage} from '../controllers/cat';
+import {Database} from "@fullpower-stack/database";
+
+const db = new Database();
 
 export const appRouter = router({
   cat: publicProcedure.input(
@@ -18,8 +21,14 @@ export const appRouter = router({
       };
     }),
 
-  test: publicProcedure.query((req) => {
-    return {ok: true, isAdmin: false};
+  test: publicProcedure.query(async (req) => {
+    const user = await db.createUser();
+
+    return {ok: true, isAdmin: false, user};
+  }),
+  list: publicProcedure.query(async (req) => {
+    const users = await db.listUsers();
+    return {ok: true, isAdmin: false, users};
   }),
 
   admin: protectedProcedure.query((req) => {

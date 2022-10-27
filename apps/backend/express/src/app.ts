@@ -8,10 +8,6 @@ import {createContext} from "./trpc/context";
 const app: Express = express();
 app.use(cors());
 
-app.get("/", (req, res) => {
-  res.status(200).send("Hello World!");
-});
-
 app.use(
   "/trpc",
   (res, req, next) => {

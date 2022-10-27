@@ -1,24 +1,30 @@
 import {PrismaClient} from '@prisma/client'
 import {faker} from "@faker-js/faker";
 
-const prisma = new PrismaClient()
+export class Database {
+    #prisma: PrismaClient;
 
-async function main() {
-    const user = await prisma.user.create({
-        data: {
-            name: faker.name.fullName(),
-            email: faker.internet.email(),
-        },
-    })
-    console.log(user)
+    constructor() {
+        this.#prisma = new PrismaClient();
+    }
+
+    async $disconnect() {
+        await this.#prisma.$disconnect();
+    }
+
+    async listUsers() {
+        const users = await this.#prisma.user.findMany();
+        return users;
+    }
+
+    async createUser() {
+        const user = await this.#prisma.user.create({
+            data: {
+                email: faker.internet.email(),
+                name: faker.name.firstName(),
+            }
+        });
+        return user;
+    }
+
 }
-
-main()
-    .then(async () => {
-        await prisma.$disconnect()
-    })
-    .catch(async (e) => {
-        console.error(e)
-        await prisma.$disconnect()
-        process.exit(1)
-    })
