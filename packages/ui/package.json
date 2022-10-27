@@ -13,6 +13,8 @@
     "@fullpower-stack/eslint-config-custom": "workspace:*"
   },
   "dependencies": {
-    "react": "^18.2.0"
+    "@testing-library/jest-dom": "^5.16.5",
+    "react": "^18.2.0",
+    "react-hook-form": "^7.38.0"
   }
 }
