@@ -15,14 +15,13 @@
     "@fullpower-stack/ui": "workspace:*",
     "@tanstack/react-query": "^4.13.0",
     "@trpc/client": "^10.0.0-proxy-beta.21",
-    "@trpc/next": "^10.0.0-proxy-beta.21",
     "@trpc/react-query": "^10.0.0-proxy-beta.21",
     "@trpc/server": "^10.0.0-proxy-beta.21",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "@fullpower-stack/express-backend": "workspace:*"
   },
   "devDependencies": {
-    "@fullpower-stack/eslint-config-custom": "workspace:*",
-    "@fullpower-stack/express-backend": "workspace:*"
+    "@fullpower-stack/eslint-config-custom": "workspace:*"
   }
 }

@@ -1,9 +1,6 @@
-import {useState} from "react";
-import reactLogo from "./assets/react.svg";
-import {Button} from "@fullpower-stack/ui";
-import Login from "../../components/Login";
+import React, {useState} from "react";
 import TRPCButton from "../../components/TrpcButton";
-import React from "react";
+import reactLogo from "./assets/react.svg";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -23,7 +20,6 @@ function App() {
       <section className="flex flex-col space-y-2 py-4">
         <h1 className="text-5xl">Vite + React + tRPC Server </h1>
       </section>
-
       <section className="py-4">
         <TRPCButton />
       </section>

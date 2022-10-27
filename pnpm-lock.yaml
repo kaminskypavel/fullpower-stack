@@ -126,23 +126,21 @@ importers:
       '@fullpower-stack/ui': workspace:*
       '@tanstack/react-query': ^4.13.0
       '@trpc/client': ^10.0.0-proxy-beta.21
-      '@trpc/next': ^10.0.0-proxy-beta.21
       '@trpc/react-query': ^10.0.0-proxy-beta.21
       '@trpc/server': ^10.0.0-proxy-beta.21
       react: ^18.2.0
       react-dom: ^18.2.0
     dependencies:
+      '@fullpower-stack/express-backend': link:../backend/express
       '@fullpower-stack/ui': link:../../packages/ui
       '@tanstack/react-query': 4.13.0_biqbaboplfbrettd7655fr4n2y
       '@trpc/client': 10.0.0-proxy-beta.21_rd7vj7t4d65pc73uf3ugp2du5a
-      '@trpc/next': 10.0.0-proxy-beta.21_mbqckjznummrksoaswbu7ji4eu
       '@trpc/react-query': 10.0.0-proxy-beta.21_l4hm32oueg4vasltgnlon5dc5i
       '@trpc/server': 10.0.0-proxy-beta.21
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     devDependencies:
       '@fullpower-stack/eslint-config-custom': link:../../packages/eslint-config-custom
-      '@fullpower-stack/express-backend': link:../backend/express
 
   packages/database:
     specifiers:
@@ -3269,26 +3267,6 @@ packages:
       '@trpc/server': 10.0.0-proxy-beta.21
     dependencies:
       '@trpc/server': 10.0.0-proxy-beta.21
-    dev: false
-
-  /@trpc/next/10.0.0-proxy-beta.21_mbqckjznummrksoaswbu7ji4eu:
-    resolution: {integrity: sha512-H00lTKJ5VqgtnMWcM7sN/K2jiTONjzpvDk8KQgaPq/OgAEi+xI7TcKPX1jRW/rfxdXAGY4RQ/w5k9joWxD2QfA==}
-    peerDependencies:
-      '@tanstack/react-query': ^4.3.8
-      '@trpc/client': 10.0.0-proxy-beta.21
-      '@trpc/react-query': ^10.0.0-proxy-beta.21
-      '@trpc/server': 10.0.0-proxy-beta.21
-      next: '*'
-      react: '>=16.8.0'
-      react-dom: '>=16.8.0'
-    dependencies:
-      '@tanstack/react-query': 4.13.0_biqbaboplfbrettd7655fr4n2y
-      '@trpc/client': 10.0.0-proxy-beta.21_rd7vj7t4d65pc73uf3ugp2du5a
-      '@trpc/react-query': 10.0.0-proxy-beta.21_l4hm32oueg4vasltgnlon5dc5i
-      '@trpc/server': 10.0.0-proxy-beta.21
-      react: 18.2.0
-      react-dom: 18.2.0_react@18.2.0
-      react-ssr-prepass: 1.5.0_react@18.2.0
     dev: false
 
   /@trpc/react-query/10.0.0-proxy-beta.21_l4hm32oueg4vasltgnlon5dc5i:
@@ -10417,14 +10395,6 @@ packages:
     resolution: {integrity: sha512-wViHqhAd8OHeLS/IRMJjTSDHF3U9eWi62F/MledQGPdJGDhodXJ9PBLNGr6WWL7qlH12Mt3TyTpbS+hGXMjCzQ==}
     engines: {node: '>=0.10.0'}
     dev: true
-
-  /react-ssr-prepass/1.5.0_react@18.2.0:
-    resolution: {integrity: sha512-yFNHrlVEReVYKsLI5lF05tZoHveA5pGzjFbFJY/3pOqqjGOmMmqx83N4hIjN2n6E1AOa+eQEUxs3CgRnPmT0RQ==}
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0
-    dependencies:
-      react: 18.2.0
-    dev: false
 
   /react/18.2.0:
     resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
