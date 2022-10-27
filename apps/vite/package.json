@@ -1,5 +1,5 @@
 {
-  "name": "vite",
+  "name": "@fullpower-stack/vite",
   "private": true,
   "type": "module",
   "scripts": {
