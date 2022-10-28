@@ -1,7 +1,7 @@
-import {z} from "zod";
-import {protectedProcedure, publicProcedure, router} from './trpc';
-import {getCatImage} from '../controllers/cat';
 import {Database} from "@fullpower-stack/database";
+import {z} from "zod";
+import {getCatImage} from '../controllers/cat';
+import {protectedProcedure, publicProcedure, router} from './trpc';
 
 const db = new Database();
 
