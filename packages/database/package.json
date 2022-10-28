@@ -11,7 +11,8 @@
     "prisma:studio": "prisma studio",
     "build": "tsup src/index.ts --format cjs --dts",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@fakerjs/faker": "^3.0.0",
