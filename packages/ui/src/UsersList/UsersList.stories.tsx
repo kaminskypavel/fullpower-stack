@@ -3,6 +3,7 @@
 import {ComponentMeta, ComponentStory} from "@storybook/react";
 
 import {UsersList} from "./UsersList";
+import {faker} from '@faker-js/faker';
 
 export default {
   /* 👇 The title prop is optional.
@@ -18,13 +19,16 @@ const Template: ComponentStory<typeof UsersList> = (args) => <UsersList {...args
 
 export const PrimaryButton = Template.bind({});
 
-PrimaryButton.args = {
-  users: [
-    {
-      id: 1,
-      name: "John Doe",
-      email: "test@test.com"
-    }
-  ]
 
+// generate 10 random users
+const users = Array.from({length: 10}, (_, idx) => ({
+  id: idx,
+  name: faker.name.firstName(),
+  email: faker.internet.email(),
+  highlight: faker.datatype.boolean()
+}));
+
+
+PrimaryButton.args = {
+  users
 };

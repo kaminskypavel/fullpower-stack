@@ -5,6 +5,7 @@ type Props = {
         id?: number;
         name?: string | null;
         email?: string;
+        highlight?: boolean;
     }[]
 }
 
@@ -32,8 +33,8 @@ export const UsersList: FC<Props> = ({users}) => {
                                 </tr>
                             </thead>
                             <tbody>
-                                {users?.map(({id, email, name}) =>
-                                (<tr className="border-b" key={id}>
+                                {users?.map(({id, email, name, highlight}) =>
+                                (<tr className={`border-b ${highlight && "animate-fade"}`} key={id}>
                                     <td className="whitespace-nowrap text-sm font-medium text-gray-900">
                                         <img src={`https://ui-avatars.com/api/?name=${name}&background=random&rounded=true`} className="h-10 w-10" />
                                     </td>
