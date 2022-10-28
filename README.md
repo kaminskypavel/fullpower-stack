@@ -2,6 +2,8 @@
 
 [![Build & Test 👷‍♂️](https://github.com/kaminskypavel/fullpower-stack/actions/workflows/ci.yml/badge.svg)](https://github.com/kaminskypavel/fullpower-stack/actions/workflows/ci.yml)
 
+![logo](./docs/logo.png)
+
 **fullpower-stack is optimized for**
 
 - DX 🧑‍💻
