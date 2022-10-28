@@ -6,6 +6,7 @@ import {httpBatchLink} from "@trpc/client";
 
 import LoginPage from ".";
 import {trpc} from "../../services/trpc";
+import {describe, expect, it} from 'vitest';
 const queryClient = new QueryClient();
 const trpcClient =
   trpc.createClient({
