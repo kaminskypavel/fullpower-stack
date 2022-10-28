@@ -5,6 +5,11 @@ import {Database} from "@fullpower-stack/database";
 
 const db = new Database();
 
+export const addUserSchema = z.object({
+  name: z.string().min(5),
+  email: z.string().email(),
+})
+
 export const appRouter = router({
   cat: publicProcedure.input(
     z.object({
@@ -21,13 +26,8 @@ export const appRouter = router({
       };
     }),
 
-  test: publicProcedure.query(async (req) => {
-    const user = await db.createUser();
-
-    return {ok: true, isAdmin: false, user};
-  }),
   list: publicProcedure.query(async (req) => {
-    const users = await db.listUsers();
+    const users = await db.listUsers(true);
     return {ok: true, isAdmin: false, users};
   }),
 
@@ -36,16 +36,13 @@ export const appRouter = router({
   }),
 
   createUser: protectedProcedure
-    .input(z.object({name: z.string().min(5)}))
+    .input(addUserSchema)
     .mutation(async (req) => {
-      // use your ORM of choice
-      // return await UserModel.create({
-      //   data: req.input,
-      // });
+      const {name, email} = req.input;
+      const user = await db.createUser(name, email);
 
-      return {id: "1", name: "Bilbo"};
+      return user;
     }),
 });
 
-// export type definition of API
 export type AppRouter = typeof appRouter;

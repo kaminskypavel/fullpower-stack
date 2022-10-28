@@ -12,16 +12,18 @@ export class Database {
         await this.#prisma.$disconnect();
     }
 
-    async listUsers() {
-        const users = await this.#prisma.user.findMany();
+    async listUsers(reverse = false) {
+        const users = await this.#prisma.user.findMany({
+            orderBy: {id: reverse ? 'desc' : 'asc'}
+        });
         return users;
     }
 
-    async createUser() {
+    async createUser(name: string, email: string) {
         const user = await this.#prisma.user.create({
             data: {
-                email: faker.internet.email(),
-                name: faker.name.firstName(),
+                email,
+                name
             }
         });
         return user;

@@ -1,4 +1,46 @@
+import {zodResolver} from '@hookform/resolvers/zod';
+import {useForm, UseFormProps} from "react-hook-form";
+import {z} from 'zod';
+import {trpc} from "../../services/trpc";
+
+export const validationSchema = z.object({
+    name: z.string().min(5),
+    email: z.string().email(),
+})
+
+// https://github.com/trpc/examples-kitchen-sink/blob/723cc6a74f03838748e517f292459d597b20447a/src/feature/react-hook-form/index.tsx
+function useZodForm<TSchema extends z.ZodType>(
+    props: Omit<UseFormProps<TSchema['_input']>, 'resolver'> & {
+        schema: TSchema;
+    },
+) {
+    const form = useForm<TSchema['_input']>({
+        ...props,
+        resolver: zodResolver(props.schema, undefined),
+    });
+
+    return form;
+}
+
+
 export const AddUserForm = () => {
+    const methods = useZodForm({
+        schema: validationSchema,
+        defaultValues: {
+            name: '',
+            email: '',
+        },
+    });
+
+    const utils = trpc.useContext();
+
+    const mutation = trpc.createUser.useMutation({
+        onSuccess: async () => {
+            await utils.list.invalidate();
+        },
+    });
+
+
     return (
         <div className="flex h-full flex-col justify-center pb-10">
             <div className="flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8 ">
@@ -22,7 +64,11 @@ export const AddUserForm = () => {
                         </h2>
                     </div>
 
-                    <form className="mt-8 space-y-6" action="#" method="POST">
+                    <form className="mt-8 space-y-6" onSubmit={methods.handleSubmit(async (values) => {
+                        await mutation.mutateAsync(values);
+                        methods.reset();
+                    })}>
+
                         <input type="hidden" name="remember" defaultValue="true" />
                         <div className="space-y-5 rounded-md shadow-sm">
                             <div>
@@ -31,8 +77,8 @@ export const AddUserForm = () => {
                                 </label>
                                 <input
                                     id="name"
-                                    name="name"
                                     type="name"
+                                    {...methods.register("name")}
                                     autoComplete="current-name"
                                     required
                                     className="relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
@@ -45,8 +91,8 @@ export const AddUserForm = () => {
                                 </label>
                                 <input
                                     id="email-address"
-                                    name="email"
                                     type="email"
+                                    {...methods.register("email")}
                                     autoComplete="email"
                                     required
                                     className="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"

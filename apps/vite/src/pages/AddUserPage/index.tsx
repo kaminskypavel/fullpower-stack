@@ -1,5 +1,5 @@
-import {AddUserForm, UsersList} from '@fullpower-stack/ui';
-import {useState} from 'react';
+import {UsersList} from '@fullpower-stack/ui';
+import {AddUserForm} from '../../components/AddUserForm/AddUserForm';
 import {trpc} from '../../services/trpc';
 
 const AddUserPage = () => {
