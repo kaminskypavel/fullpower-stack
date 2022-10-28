@@ -3,10 +3,10 @@ import {httpBatchLink} from "@trpc/client";
 import {useState} from "react";
 import "./App.css";
 import AddUserPage from "./pages/AddUserPage";
+import {queryClient} from "./services/queryClient";
 import {trpc} from "./services/trpc";
 
 export default function App() {
-  const [queryClient] = useState(() => new QueryClient());
   const [trpcClient] = useState(() =>
     trpc.createClient({
       links: [
@@ -22,6 +22,7 @@ export default function App() {
       ],
     })
   );
+
   return (
     <trpc.Provider client={trpcClient} queryClient={queryClient}>
       <QueryClientProvider client={queryClient}>
