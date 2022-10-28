@@ -1,12 +1,12 @@
 import {inferAsyncReturnType} from '@trpc/server';
-import {CreateContextOptions} from 'vm';
 import {faker} from '@faker-js/faker';
 /**
  * Creates context for an incoming request
  * @link https://trpc.io/docs/context
  */
+import {CreateExpressContextOptions} from '@trpc/server/adapters/express';
 
-export async function createContext(opts: CreateContextOptions) {
+export async function createContext(opts?: CreateExpressContextOptions) {
     const session = {
         user: {
             email: faker.internet.email(),
