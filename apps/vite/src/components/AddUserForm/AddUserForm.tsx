@@ -2,7 +2,7 @@ import {zodResolver} from '@hookform/resolvers/zod';
 import {useForm, UseFormProps} from "react-hook-form";
 import {z} from 'zod';
 import {trpc} from "../../services/trpc";
-
+import toast, {Toaster} from 'react-hot-toast';
 export const validationSchema = z.object({
     name: z.string().min(5),
     email: z.string().email(),
@@ -36,8 +36,12 @@ export const AddUserForm = () => {
 
     const mutation = trpc.createUser.useMutation({
         onSuccess: async () => {
+            toast.success('User created successfully');
             await utils.list.invalidate();
         },
+        onError: (err) => {
+            toast.error(err.message);
+        }
     });
 
 

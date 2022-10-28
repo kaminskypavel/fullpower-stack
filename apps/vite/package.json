@@ -21,7 +21,8 @@
     "@trpc/server": "10.0.0-rc.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-hook-form": "^7.38.0"
+    "react-hook-form": "^7.38.0",
+    "react-hot-toast": "^2.4.0"
   },
   "devDependencies": {
     "@fullpower-stack/eslint-config-custom": "workspace:*"

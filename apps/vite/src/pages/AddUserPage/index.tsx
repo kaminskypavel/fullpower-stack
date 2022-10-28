@@ -1,7 +1,6 @@
 import {UsersList} from '@fullpower-stack/ui';
 import {AddUserForm} from '../../components/AddUserForm/AddUserForm';
 import {usePrevious} from '../../hooks/usePrevios';
-import {queryClient} from '../../services/queryClient';
 import {trpc} from '../../services/trpc';
 
 const AddUserPage = () => {
