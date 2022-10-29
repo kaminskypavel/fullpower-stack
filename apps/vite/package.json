@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@fullpower-stack/express-backend": "workspace:*",
+    "@fullpower-stack/schema": "workspace:*",
     "@fullpower-stack/ui": "workspace:*",
     "@hookform/resolvers": "^2.9.10",
     "@tanstack/react-query": "^4.13.0",
@@ -25,6 +26,7 @@
     "react-hot-toast": "^2.4.0"
   },
   "devDependencies": {
-    "@fullpower-stack/eslint-config-custom": "workspace:*"
+    "@fullpower-stack/eslint-config-custom": "workspace:*",
+    "@tanstack/react-query-devtools": "^4.13.4"
   }
 }
