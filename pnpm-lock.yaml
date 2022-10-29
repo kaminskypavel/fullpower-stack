@@ -73,6 +73,7 @@ importers:
     specifiers:
       '@fullpower-stack/database': workspace:*
       '@fullpower-stack/eslint-config-custom': workspace:*
+      '@fullpower-stack/schema': workspace:*
       '@trpc/server': 10.0.0-rc.1
       '@types/cors': ^2.8.12
       '@types/express': ^4.17.14
@@ -86,6 +87,7 @@ importers:
       zod: ^3.19.1
     dependencies:
       '@fullpower-stack/database': link:../../../packages/database
+      '@fullpower-stack/schema': link:../../../packages/schema
       '@trpc/server': 10.0.0-rc.1
       '@types/cors': 2.8.12
       '@types/express': 4.17.14
@@ -127,9 +129,11 @@ importers:
     specifiers:
       '@fullpower-stack/eslint-config-custom': workspace:*
       '@fullpower-stack/express-backend': workspace:*
+      '@fullpower-stack/schema': workspace:*
       '@fullpower-stack/ui': workspace:*
       '@hookform/resolvers': ^2.9.10
       '@tanstack/react-query': ^4.13.0
+      '@tanstack/react-query-devtools': ^4.13.4
       '@trpc/client': 10.0.0-rc.1
       '@trpc/react-query': 10.0.0-rc.1
       '@trpc/server': 10.0.0-rc.1
@@ -139,9 +143,11 @@ importers:
       react-hot-toast: ^2.4.0
     dependencies:
       '@fullpower-stack/express-backend': link:../backend/express
+      '@fullpower-stack/schema': link:../../packages/schema
       '@fullpower-stack/ui': link:../../packages/ui
       '@hookform/resolvers': 2.9.10_react-hook-form@7.38.0
       '@tanstack/react-query': 4.13.0_biqbaboplfbrettd7655fr4n2y
+      '@tanstack/react-query-devtools': 4.13.4_vwr3yfyniquaygdm2roeczqxuu
       '@trpc/client': 10.0.0-rc.1_@trpc+server@10.0.0-rc.1
       '@trpc/react-query': 10.0.0-rc.1_j3pstw3g7plkegerh6sxuce5zm
       '@trpc/server': 10.0.0-rc.1
@@ -156,10 +162,12 @@ importers:
     specifiers:
       '@fakerjs/faker': ^3.0.0
       '@fullpower-stack/eslint-config-custom': workspace:*
+      '@fullpower-stack/schema': workspace:*
       '@prisma/client': ^4.5.0
       prisma: ^4.5.0
     dependencies:
       '@fakerjs/faker': 3.0.0
+      '@fullpower-stack/schema': link:../schema
       '@prisma/client': 4.5.0_prisma@4.5.0
     devDependencies:
       '@fullpower-stack/eslint-config-custom': link:../eslint-config-custom
@@ -185,6 +193,9 @@ importers:
       eslint-plugin-react: 7.31.8_eslint@7.32.0
     devDependencies:
       typescript: 4.8.4
+
+  packages/schema:
+    specifiers: {}
 
   packages/ui:
     specifiers:
@@ -3215,8 +3226,30 @@ packages:
       tslib: 2.4.0
     dev: false
 
+  /@tanstack/match-sorter-utils/8.5.14:
+    resolution: {integrity: sha512-lVNhzTcOJ2bZ4IU+PeCPQ36vowBHvviJb2ZfdRFX5uhy7G0jM8N34zAMbmS5ZmVH8D2B7oU82OWo0e/5ZFzQrw==}
+    engines: {node: '>=12'}
+    dependencies:
+      remove-accents: 0.4.2
+    dev: false
+
   /@tanstack/query-core/4.13.0:
     resolution: {integrity: sha512-PzmLQcEgC4rl2OzkiPHYPC9O79DFcMGaKsOzDEP+U4PJ+tbkcEP+Z+FQDlfvX8mCwYC7UNH7hXrQ5EdkGlJjVg==}
+    dev: false
+
+  /@tanstack/react-query-devtools/4.13.4_vwr3yfyniquaygdm2roeczqxuu:
+    resolution: {integrity: sha512-G0ZG+ZUk8ktJoi6Mzn4U7LnSOVbVFPyBJGB3dX4+SukkcKhWmErsYv2H1plRCL+V01Cg+dOg9RDfGYqsNbJszQ==}
+    peerDependencies:
+      '@tanstack/react-query': 4.13.4
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@tanstack/match-sorter-utils': 8.5.14
+      '@tanstack/react-query': 4.13.0_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+      superjson: 1.11.0
+      use-sync-external-store: 1.2.0_react@18.2.0
     dev: false
 
   /@tanstack/react-query/4.13.0_biqbaboplfbrettd7655fr4n2y:
@@ -5422,6 +5455,13 @@ packages:
 
   /cookiejar/2.1.3:
     resolution: {integrity: sha512-JxbCBUdrfr6AQjOXrxoTvAMJO4HBTUIlBzslcJPAz+/KT8yk53fXun51u+RenNYvad/+Vc2DIz5o9UxlCDymFQ==}
+    dev: false
+
+  /copy-anything/3.0.2:
+    resolution: {integrity: sha512-CzATjGXzUQ0EvuvgOCI6A4BGOo2bcVx8B+eC2nF862iv9fopnPQwlrbACakNCHRIJbCSBj+J/9JeDf60k64MkA==}
+    engines: {node: '>=12.13'}
+    dependencies:
+      is-what: 4.1.7
     dev: false
 
   /copy-concurrently/1.0.5:
@@ -8202,6 +8242,11 @@ packages:
       call-bind: 1.0.2
       get-intrinsic: 1.1.3
 
+  /is-what/4.1.7:
+    resolution: {integrity: sha512-DBVOQNiPKnGMxRMLIYSwERAS5MVY1B7xYiGnpgctsOFvVDz9f9PFXXxMcTOHuoqYp4NK9qFYQaIC1NRRxLMpBQ==}
+    engines: {node: '>=12.13'}
+    dev: false
+
   /is-whitespace-character/1.0.4:
     resolution: {integrity: sha512-SDweEzfIZM0SJV0EUga669UTKlmL0Pq8Lno0QDQsPnvECB3IM2aP0gdx5TrU0A01MAPfViaZiI2V1QMZLaKK5w==}
     dev: true
@@ -10651,6 +10696,10 @@ packages:
       mdast-squeeze-paragraphs: 4.0.0
     dev: true
 
+  /remove-accents/0.4.2:
+    resolution: {integrity: sha1-CkPTqq4egNuRngeuJUsoXZ4ce7U=}
+    dev: false
+
   /remove-trailing-separator/1.1.0:
     resolution: {integrity: sha512-/hS+Y0u3aOfIETiaiirUFwDBDzmXPvO+jAfKTitUngIPzdKc6Z0LoFjM/CK5PL4C+eKwHohlHAb6H0VFfmmUsw==}
     dev: true
@@ -11490,6 +11539,13 @@ packages:
       semver: 7.3.8
     transitivePeerDependencies:
       - supports-color
+    dev: false
+
+  /superjson/1.11.0:
+    resolution: {integrity: sha512-6PfAg1FKhqkwWvPb2uXhH4MkMttdc17eJ91+Aoz4s1XUEDZFmLfFx/xVA3wgkPxAGy5dpozgGdK6V/n20Wj9yg==}
+    engines: {node: '>=10'}
+    dependencies:
+      copy-anything: 3.0.2
     dev: false
 
   /supertest/6.3.1:

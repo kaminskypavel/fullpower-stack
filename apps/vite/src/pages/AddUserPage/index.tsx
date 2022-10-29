@@ -9,7 +9,7 @@ const AddUserPage = () => {
     const {users = []} = data ?? {};
 
     const prevUsers = usePrevious(users);
-    console.log(1, prevUsers);
+
     if (prevUsers?.length) {
         users.forEach((user, index) => {
             // eslint-disable-next-line @typescript-eslint/ban-ts-comment

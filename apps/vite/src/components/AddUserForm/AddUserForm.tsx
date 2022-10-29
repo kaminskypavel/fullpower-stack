@@ -2,11 +2,8 @@ import {zodResolver} from '@hookform/resolvers/zod';
 import {useForm, UseFormProps} from "react-hook-form";
 import {z} from 'zod';
 import {trpc} from "../../services/trpc";
-import toast, {Toaster} from 'react-hot-toast';
-export const validationSchema = z.object({
-    name: z.string().min(5),
-    email: z.string().email(),
-})
+import toast from 'react-hot-toast';
+import {addUserSchema} from "@fullpower-stack/schema";
 
 // https://github.com/trpc/examples-kitchen-sink/blob/723cc6a74f03838748e517f292459d597b20447a/src/feature/react-hook-form/index.tsx
 function useZodForm<TSchema extends z.ZodType>(
@@ -25,7 +22,7 @@ function useZodForm<TSchema extends z.ZodType>(
 
 export const AddUserForm = () => {
     const methods = useZodForm({
-        schema: validationSchema,
+        schema: addUserSchema,
         defaultValues: {
             name: '',
             email: '',

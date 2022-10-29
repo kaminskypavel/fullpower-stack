@@ -2,13 +2,10 @@ import {Database} from "@fullpower-stack/database";
 import {z} from "zod";
 import {getCatImage} from '../controllers/cat';
 import {protectedProcedure, publicProcedure, router} from './trpc';
+import {addUserSchema} from '@fullpower-stack/schema';
 
 const db = new Database();
 
-export const addUserSchema = z.object({
-  name: z.string().min(5),
-  email: z.string().email(),
-})
 
 export const appRouter = router({
   cat: publicProcedure.input(

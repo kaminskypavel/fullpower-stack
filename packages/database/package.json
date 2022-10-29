@@ -15,6 +15,7 @@
     "postinstall": "prisma generate"
   },
   "dependencies": {
+    "@fullpower-stack/schema": "workspace:*",
     "@fakerjs/faker": "^3.0.0",
     "@prisma/client": "^4.5.0"
   },
