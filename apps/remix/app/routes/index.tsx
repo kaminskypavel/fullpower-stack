@@ -1,11 +1,12 @@
-import type {LinksFunction} from "@remix-run/node";
+import {Button} from "@fullpower-stack/ui";
 
-import stylesUrl from "~/styles/index.css";
+export default function Index() {
+  return (
+    <h1 className="text-3xl font-bold underline bg-red">
+      Hello world!
 
-export const links: LinksFunction = () => {
-  return [{rel: "stylesheet", href: stylesUrl}];
-};
+      <Button />
 
-export default function IndexRoute() {
-  return <div>Hello Index Route</div>;
+    </h1>
+  )
 }
