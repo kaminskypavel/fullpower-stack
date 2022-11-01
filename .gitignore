@@ -14,6 +14,15 @@ out/
 build
 dist
 
+#remix 
+node_modules
+
+.cache
+build
+public/build
+.env
+
+
 # misc
 .DS_Store
 *.pem

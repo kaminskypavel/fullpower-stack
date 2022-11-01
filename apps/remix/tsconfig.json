@@ -1,0 +1,7 @@
+{
+  "extends": "@tsconfig/remix/tsconfig.json",
+  "include": ["remix.env.d.ts", "**/*.ts", "**/*.tsx"],
+  "compilerOptions": {
+    "lib": ["DOM", "DOM.Iterable", "ESNext"]
+  }
+}
