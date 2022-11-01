@@ -1,19 +1,39 @@
-## FullPower-Stack 💪
 
-[![Build & Test 👷‍♂️](https://github.com/kaminskypavel/fullpower-stack/actions/workflows/ci.yml/badge.svg)](https://github.com/kaminskypavel/fullpower-stack/actions/workflows/ci.yml)
+<p align="center">
+  <a href="https://github.com/kaminskypavel/fullpower-stack">
+    <img alt="fullpower-stack" src="./docs/logo.png" width="546">
+  </a>
+</p>
 
-![logo](./docs/logo.png)
+<p align="center">
+  an opinionated stack for building full power web applications  
+</p>
 
-**fullpower-stack is optimized for**
+<p align="center">
+  <a href="https://github.com/kaminskypavel/fullpower-stack/actions/workflows/ci.yml"><img alt="GitHub CI Status" src="https://github.com/kaminskypavel/fullpower-stack/actions/workflows/ci.yml/badge.svg"></a>
+</p>
 
-- DX 🧑‍💻
-- Speed ⚡
+### Intorduction
+
+This is a monorepo containing a set of packages that can be used to build full power web applications. It is an opinionated stack that is based on the following principles:
+
+- DX (Developer Experience)
+- Speed of iteration
+
+---
 
 ## Supported Frameroks
 
+<br/>
+
 [<img src="./docs/apps/nextjs.svg" height="90">](./apps/nextjs/) [<img src="./docs/apps/vite.svg" height="90">](./apps/vite/) [<img src="./docs/apps/remix.png" height="90">](./apps/remix/)
 
-### Dev Tool Stack
+all apps are built with the same set of packages and tools (see [workspace packages](./packages.json)
+and preconfigured to pick changes from shared packages
+
+---
+
+### Dev Tool (WIP)
 
 | Framework                   | FullPower Stack                                                                                                                                                                                | Implemented | Version            |
 | --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ------------------ |
