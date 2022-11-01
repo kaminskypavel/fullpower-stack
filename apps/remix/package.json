@@ -3,17 +3,22 @@
   "private": true,
   "sideEffects": false,
   "scripts": {
-    "build": "remix build",
-    "dev": "remix dev",
+    "build": "npm run build:css && remix build",
+    "build:css": "tailwindcss -m -i ./styles/app.css -o app/styles/app.css",
+    "dev": "concurrently \"npm run dev:css\" \"remix dev\"",
+    "dev:css": "tailwindcss -w -i ./styles/app.css -o app/styles/app.css",
     "start": "remix-serve build",
     "test": "vitest run",
     "test:watch": "vitest",
     "lint": "lint"
   },
   "dependencies": {
+    "@fullpower-stack/ui": "workspace:*",
     "@remix-run/node": "^1.7.4",
     "@remix-run/react": "^1.7.4",
     "@remix-run/serve": "^1.7.4",
+    "@tsconfig/remix": "^1.0.2",
+    "concurrently": "^7.5.0",
     "isbot": "^3.5.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
