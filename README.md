@@ -9,14 +9,17 @@
 - DX 🧑‍💻
 - Speed ⚡
 
-### Stack
+## Supported Frameroks
+
+[<img src="./docs/apps/nextjs.svg" height="90">](./apps/nextjs/) [<img src="./docs/apps/vite.svg" height="90">](./apps/vite/) [<img src="./docs/apps/remix.png" height="90">](./apps/remix/)
+
+### Dev Tool Stack
 
 | Framework                   | FullPower Stack                                                                                                                                                                                | Implemented | Version            |
 | --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ------------------ |
 | Package Manager             | ![image](https://user-images.githubusercontent.com/4253088/196271039-0b998d0d-5867-47bf-a627-e36825175aeb.png) [pnpm](https://pnpm.io/)                                                        | ✅          | \*                 |
 | Monorepo                    | <img src="https://user-images.githubusercontent.com/4253088/196269627-8da367d0-5e1a-40a6-b261-d0f4e00498c1.png" height="40">[Turborepo](https://turborepo.org/docs)                            | ✅          | 1.4.0              |
 | Frontend (Framework)        | <img src="https://user-images.githubusercontent.com/4253088/196269841-32444c2d-7798-471d-8c7d-455323680297.png" width="100vw" height="40">[Nextjs](https://nextjs.org/docs/getting-started)    | ✅          | 12                 |
-| Frontend                    | <img src="https://vitejs.dev/logo.svg" width="40" height="40"><br/>[Vite + React 18](https://vitejs.dev/guide/)                                                                                | ✅          | 3.1.8              |
 | Frontend (css)              | ![image](https://user-images.githubusercontent.com/4253088/196271439-de4d436c-fb47-4a7e-84a6-fcc01d86026b.png)[Tailwindcss](https://tailwindcss.com/docs/installation)                         | ✅          | 3.1.8              |
 | Server-Client Communication | tRPC                                                                                                                                                                                           |✅ | 10.0.0
 | Backend                     | express                                                                                                                                                                                        | ✅ |4.18.2
