@@ -1,4 +1,5 @@
 {
+  "name": "@fullpower-stack/remix",
   "private": true,
   "sideEffects": false,
   "scripts": {
