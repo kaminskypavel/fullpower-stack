@@ -56,3 +56,9 @@ and preconfigured to pick changes from shared packages
 ### Optional Testing : Wallaby.js
 
 _Wallaby.js: Select Configuration > Automatic Configuration \<closest project in mono-repo\>_
+
+### Todo
+
+- consider moving to Rome tools [Link1](https://twitter.com/sebmck/status/1589987087780302848) [Link2](https://rome.tools/blog/2022/11/08/rome-10.html)
+
+- maybe add a PWA support for [Vite](https://vite-pwa-org.netlify.app/guide/)

@@ -3,6 +3,10 @@ name: Build & Test 👷‍♂️
 on:
   push:
     branches: ["master"]
+    paths-ignore:
+      - "docs/**"
+      - "**/*.md"
+
   pull_request:
     types: [opened, synchronize]
 
