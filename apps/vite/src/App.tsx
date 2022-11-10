@@ -7,7 +7,7 @@ import {queryClient} from "./services/queryClient";
 import {trpc} from "./services/trpc";
 import {ReactQueryDevtools} from '@tanstack/react-query-devtools';
 
-
+console.log(import.meta.env.VITE_API_URL, 11);
 export default function App() {
   const trpcClient = trpc.createClient({
     links: [

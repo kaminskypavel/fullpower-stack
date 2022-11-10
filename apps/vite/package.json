@@ -25,6 +25,7 @@
   },
   "devDependencies": {
     "@fullpower-stack/eslint-config-custom": "workspace:*",
-    "@tanstack/react-query-devtools": "^4.13.4"
+    "@tanstack/react-query-devtools": "^4.13.4",
+    "@vitejs/plugin-basic-ssl": "^0.1.2"
   }
 }
