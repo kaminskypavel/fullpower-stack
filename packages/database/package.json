@@ -7,7 +7,6 @@
     "dev": "tsnd --rs src/index.ts",
     "lint": "eslint .",
     "prisma:generate": "prisma generate",
-    "generate": "prisma generate",
     "prisma:studio": "prisma studio",
     "build": "tsup src/index.ts --format cjs --dts",
     "test": "vitest run",
@@ -16,12 +15,11 @@
   },
   "dependencies": {
     "@fullpower-stack/schema": "workspace:*",
-    "@fakerjs/faker": "^3.0.0",
-    "@prisma/client": "^4.5.0"
+    "prisma": "^4.6.1",
+    "@prisma/client": "^4.6.1"
   },
   "devDependencies": {
     "@fullpower-stack/eslint-config-custom": "workspace:*",
-    "@prisma/client": "^4.5.0",
-    "prisma": "^4.5.0"
+    "@fakerjs/faker": "^3.0.0"
   }
 }
