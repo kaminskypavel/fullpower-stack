@@ -26,7 +26,7 @@ This is a monorepo containing a set of packages that can be used to build full p
 
 <br/>
 
-[<img src="./docs/apps/nextjs.svg" height="90">](./apps/nextjs/) [<img src="./docs/apps/vite.svg" height="90">](./apps/vite/) [<img src="./docs/apps/remix.png" height="90">](./apps/remix/)
+[<img src="./docs/apps/nextjs.svg" height="90">](./apps/nextjs/) [<img src="./docs/apps/vite.svg" height="90">](./apps/vite/) [<img src="./docs/apps/remix.png" height="90">](./apps/remix/)[<img src="./docs/apps/astro.svg" height="70">](./apps/astro/)
 
 all apps are built with the same set of packages and tools (see [workspace packages](./packages.json)
 and preconfigured to pick changes from shared packages
