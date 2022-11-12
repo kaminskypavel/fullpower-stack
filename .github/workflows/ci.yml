@@ -39,9 +39,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      #  disabled until https://github.com/trpc/trpc/pull/2999 fixed
-      # - name: Build
-      #   run: pnpm build
+      - name: Build
+        run: pnpm build
 
       - name: Test
         run: pnpm test
