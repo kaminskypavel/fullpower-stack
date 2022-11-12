@@ -1,5 +1,8 @@
 {
   "extends": "@tsconfig/vite-react/tsconfig.json",
-  "include": ["vite.config.ts", "./src"],
+  "compilerOptions": {
+    "types": ["vitest/globals"]
+  },
+  "include": ["vite.config.ts", "./src", "./setupTests.ts"],
   "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts", "dist"]
 }

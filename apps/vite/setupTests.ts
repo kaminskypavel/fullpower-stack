@@ -1,6 +1,6 @@
 import "@testing-library/jest-dom/extend-expect";
-import matchers from "@testing-library/jest-dom/matchers";
-import { afterEach, beforeAll, expect, afterAll, vi } from "vitest";
+import { cleanup } from "@testing-library/react";
+import { afterAll, afterEach, beforeAll } from "vitest";
 
 import { server } from "./src/mocks/server";
 
@@ -10,7 +10,7 @@ beforeAll(() => server.listen());
 // so they don't affect other tests.
 afterEach(() => server.resetHandlers());
 // Clean up after the tests are finished.
-afterAll(() => server.close());
-
-
-expect.extend(matchers);
+afterAll(() => {
+  server.close();
+  cleanup();
+});
