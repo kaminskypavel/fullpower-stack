@@ -22,7 +22,7 @@ This is a monorepo containing a set of packages that can be used to build full p
 
 ---
 
-## Supported Frameroks
+## Supported Frameworks
 
 <br/>
 
@@ -48,7 +48,7 @@ and preconfigured to pick changes from shared packages
 | Testing (Components)        | ![image](https://user-images.githubusercontent.com/4253088/196271647-0265eca3-61e4-44c2-8641-fabdb07e875f.png)[testing-library](https://testing-library.com/docs/react-testing-library/intro/) | ✅          | 13.4.0             |
 | Testing (Components)        | ~~[Storybook]~~ [waiting on release of version 7](https://storybook.js.org/blog/first-class-vite-support-in-storybook/)                                                                        | ⚠️          | ~~7.0.0-alpha.38~~ |
 | Testing (Components)        | ![image](https://user-images.githubusercontent.com/4253088/196270689-6216be78-82a5-4800-b3ee-81fe47792360.png)[ladle](https://ladle.dev/docs/)                                                 | ✅          | 2.4.4              |
-| Testing (Mocking)           | MSW                                                                                                                                                                                            |
+| Testing (Mocking)           | MSW                              | ✅                                                          |    0.48.1                                                                                                |
 | Lint                        | eslint+ prettier                                                                                                                                                                               | ✅
 | Git                         | lint-staged + husky                                                                                                                                                                            | ✅
 | CI                          | Github Actions                                                                                                                                                                                 | ✅
