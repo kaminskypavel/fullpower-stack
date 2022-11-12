@@ -4,5 +4,5 @@
     "types": ["vitest/globals"]
   },
   "include": ["vite.config.ts", "./src", "./setupTests.ts"],
-  "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts", "dist"]
+  "exclude": ["node_modules", "**/*.spec.tsx", "**/*.test.tsx", "dist"]
 }
