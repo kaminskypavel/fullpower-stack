@@ -25,7 +25,6 @@ export const appRouter = router({
     }),
 
   list: publicProcedure.query(async (req) => {
-    console.log(db);
     const users = await db.listUsers(true);
     return { ok: true, isAdmin: false, users };
   }),
