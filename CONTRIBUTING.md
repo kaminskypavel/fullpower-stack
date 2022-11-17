@@ -9,3 +9,7 @@
 ### run tests
 
 `pnpm run test`
+
+### run dev environment
+
+`pnpm run dev`
