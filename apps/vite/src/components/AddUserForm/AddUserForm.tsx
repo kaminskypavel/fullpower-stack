@@ -1,9 +1,9 @@
 import {zodResolver} from '@hookform/resolvers/zod';
-import {useForm, UseFormProps} from "react-hook-form";
+import {useForm, UseFormProps} from 'react-hook-form';
 import {z} from 'zod';
-import {trpc} from "../../services/trpc";
+import {trpc} from '../../services/trpc';
 import toast from 'react-hot-toast';
-import {addUserSchema} from "@fullpower-stack/schema";
+import {addUserSchema} from '@fullpower-stack/schema';
 import {countAtom} from '../../store/index';
 import {useAtom} from 'jotai';
 
@@ -21,6 +21,18 @@ function useZodForm<TSchema extends z.ZodType>(
     return form;
 }
 
+const IncrementButton = () => {
+    // Using reducer functions should be kept to small components as they are rerendered on every change
+    const [, setCount] = useAtom(countAtom);
+    return (
+      <button
+        className='group relative flex w-full justify-center rounded-md border border-transparent bg-green-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
+        onClick={() => setCount((count) => count + 1)}
+      >
+        Increment
+      </button>
+    );
+  };
 
 export const AddUserForm = () => {
 
@@ -43,8 +55,6 @@ export const AddUserForm = () => {
             toast.error(err.message);
         }
     });
-
-    const [, setCount] = useAtom(countAtom);
 
     return (
         <div className="flex h-full flex-col justify-center pb-10">
@@ -129,9 +139,7 @@ export const AddUserForm = () => {
                             </button>
                         </div>
                     </form>
-
-                    <button className="group relative flex w-full justify-center rounded-md border border-transparent bg-green-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-                        onClick={() => setCount((count) => count + 1)}>Increment</button>
+                    <IncrementButton/>
                 </div>
             </div>
         </div>

@@ -1,5 +1,5 @@
-import {FC} from 'react';
-
+import {FC, memo} from 'react';
+import equals from 'fast-deep-equal/react';
 type Props = {
     users?: {
         id?: number;
@@ -9,7 +9,7 @@ type Props = {
     }[]
 }
 
-export const UsersList: FC<Props> = ({users}) => {
+export const UsersList: FC<Props> = memo(({users}) => {
     return (
         <div className="flex flex-col">
             <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -55,4 +55,4 @@ export const UsersList: FC<Props> = ({users}) => {
             </div>
         </div>
     )
-}
+}, equals)

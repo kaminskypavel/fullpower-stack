@@ -5,11 +5,15 @@ import {usePrevious} from '../../hooks/usePrevious';
 import {trpc} from '../../services/trpc';
 import {countAtom} from '../../store';
 
-const AddUserPage = () => {
+const Counter = () => {
+    const [count] = useAtom(countAtom);
+    return <h1 className='text-xl font-bold'> Count is {count}</h1>;
+};
 
+const AddUserPage = () => {
+    
     const {data} = trpc.list.useQuery();
     const {users = []} = data ?? {};
-    const [count] = useAtom(countAtom);
 
     const prevUsers = usePrevious(users);
 
@@ -23,7 +27,7 @@ const AddUserPage = () => {
 
     return (
         <div>
-            <h1 className='text-xl font-bold'> Count is {count}</h1>
+            <Counter/>
             <AddUserForm />
             <UsersList users={users} />
         </div>
