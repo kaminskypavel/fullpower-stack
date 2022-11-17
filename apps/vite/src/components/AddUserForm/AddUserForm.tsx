@@ -4,6 +4,8 @@ import {z} from 'zod';
 import {trpc} from "../../services/trpc";
 import toast from 'react-hot-toast';
 import {addUserSchema} from "@fullpower-stack/schema";
+import {countAtom} from '../../store/index';
+import {useAtom} from 'jotai';
 
 // https://github.com/trpc/examples-kitchen-sink/blob/723cc6a74f03838748e517f292459d597b20447a/src/feature/react-hook-form/index.tsx
 function useZodForm<TSchema extends z.ZodType>(
@@ -21,6 +23,7 @@ function useZodForm<TSchema extends z.ZodType>(
 
 
 export const AddUserForm = () => {
+
     const methods = useZodForm({
         schema: addUserSchema,
         defaultValues: {
@@ -41,6 +44,7 @@ export const AddUserForm = () => {
         }
     });
 
+    const [, setCount] = useAtom(countAtom);
 
     return (
         <div className="flex h-full flex-col justify-center pb-10">
@@ -125,6 +129,9 @@ export const AddUserForm = () => {
                             </button>
                         </div>
                     </form>
+
+                    <button className="group relative flex w-full justify-center rounded-md border border-transparent bg-green-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                        onClick={() => setCount((count) => count + 1)}>Increment</button>
                 </div>
             </div>
         </div>

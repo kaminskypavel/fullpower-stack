@@ -175,6 +175,7 @@ importers:
       '@trpc/react-query': 10.0.0-rc.1
       '@trpc/server': 10.0.0-rc.1
       '@vitejs/plugin-basic-ssl': ^0.1.2
+      jotai: ^1.10.0
       msw: ^0.48.1
       react: ^18.2.0
       react-dom: ^18.2.0
@@ -189,6 +190,7 @@ importers:
       '@trpc/client': 10.0.0-rc.1_@trpc+server@10.0.0-rc.1
       '@trpc/react-query': 10.0.0-rc.1_j3pstw3g7plkegerh6sxuce5zm
       '@trpc/server': 10.0.0-rc.1
+      jotai: 1.10.0_react@18.2.0
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       react-hook-form: 7.38.0_react@18.2.0
@@ -10463,6 +10465,46 @@ packages:
       merge-stream: 2.0.0
       supports-color: 8.1.1
     dev: true
+
+  /jotai/1.10.0_react@18.2.0:
+    resolution: {integrity: sha512-3Q8kQU3Ktds+80Ku4dVcvnwSXEcK0Fg0b6mC1+4wz3rmF64lOGNUySKXQ4njvYCWodR8bw2HygOKYSYkHxQQmA==}
+    engines: {node: '>=12.7.0'}
+    peerDependencies:
+      '@babel/core': '*'
+      '@babel/template': '*'
+      jotai-immer: '*'
+      jotai-optics: '*'
+      jotai-redux: '*'
+      jotai-tanstack-query: '*'
+      jotai-urql: '*'
+      jotai-valtio: '*'
+      jotai-xstate: '*'
+      jotai-zustand: '*'
+      react: '>=16.8'
+    peerDependenciesMeta:
+      '@babel/core':
+        optional: true
+      '@babel/template':
+        optional: true
+      jotai-immer:
+        optional: true
+      jotai-optics:
+        optional: true
+      jotai-redux:
+        optional: true
+      jotai-tanstack-query:
+        optional: true
+      jotai-urql:
+        optional: true
+      jotai-valtio:
+        optional: true
+      jotai-xstate:
+        optional: true
+      jotai-zustand:
+        optional: true
+    dependencies:
+      react: 18.2.0
+    dev: false
 
   /joycon/3.1.1:
     resolution: {integrity: sha512-34wB/Y7MW7bzjKRjUKTa46I2Z7eV62Rkhva+KkopW7Qvv/OSWBqvkSY7vusOPrNuZcUG3tApvdVgNB8POj3SPw==}

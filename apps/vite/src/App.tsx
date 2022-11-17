@@ -6,7 +6,7 @@ import AddUserPage from "./pages/AddUserPage";
 import {queryClient} from "./services/queryClient";
 import {trpc} from "./services/trpc";
 import {ReactQueryDevtools} from '@tanstack/react-query-devtools';
-
+import {Provider as JotaiProvider} from 'jotai';
 export default function App() {
   const trpcClient = trpc.createClient({
     links: [
@@ -23,6 +23,7 @@ export default function App() {
   })
 
   return (
+    <JotaiProvider>
     <trpc.Provider client={trpcClient} queryClient={queryClient}>
       <QueryClientProvider client={queryClient}>
         {import.meta.env.NODE_ENV !== 'production' && (
@@ -35,5 +36,6 @@ export default function App() {
         <Toaster />
       </QueryClientProvider>
     </trpc.Provider>
+    </JotaiProvider>
   );
 }
