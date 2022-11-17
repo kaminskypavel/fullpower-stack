@@ -6,6 +6,10 @@
 
 `pnpm i`
 
+### to generate Prisma Client
+
+`npm --prefix packages\database run prisma:generate`
+
 ### run tests
 
 `pnpm run test`
