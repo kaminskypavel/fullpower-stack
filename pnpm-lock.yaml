@@ -67,7 +67,7 @@ importers:
       prettier-plugin-tailwindcss: 0.1.13_prettier@2.7.1
       ts-node-dev: 2.0.0_ksn4eycaeggbrckn3ykh37hwf4
       turbo: 1.6.3
-      vitest: 0.25.1_happy-dom@7.6.4
+      vitest: 0.25.2_happy-dom@7.6.4
 
   apps/astro:
     specifiers:
@@ -175,6 +175,7 @@ importers:
       '@trpc/react-query': 10.0.0-rc.1
       '@trpc/server': 10.0.0-rc.1
       '@vitejs/plugin-basic-ssl': ^0.1.2
+      fast-deep-equal: ^3.1.3
       jotai: ^1.10.0
       msw: ^0.48.1
       react: ^18.2.0
@@ -190,6 +191,7 @@ importers:
       '@trpc/client': 10.0.0-rc.1_@trpc+server@10.0.0-rc.1
       '@trpc/react-query': 10.0.0-rc.1_j3pstw3g7plkegerh6sxuce5zm
       '@trpc/server': 10.0.0-rc.1
+      fast-deep-equal: 3.1.3
       jotai: 1.10.0_react@18.2.0
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
@@ -244,10 +246,14 @@ importers:
     specifiers:
       '@fullpower-stack/eslint-config-custom': workspace:*
       '@testing-library/jest-dom': ^5.16.5
+      '@types/react': 18.0.17
+      fast-deep-equal: ^3.1.3
       react: ^18.2.0
       react-hook-form: ^7.38.0
     dependencies:
       '@testing-library/jest-dom': 5.16.5
+      '@types/react': 18.0.17
+      fast-deep-equal: 3.1.3
       react: 18.2.0
       react-hook-form: 7.38.0_react@18.2.0
     devDependencies:
@@ -4183,7 +4189,6 @@ packages:
 
   /@types/prop-types/15.7.5:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
-    dev: true
 
   /@types/qs/6.9.7:
     resolution: {integrity: sha512-FGa1F62FT09qcrueBA6qYTrJPVDzah9a+493+o2PCXsesWHIn27G98TsSMs3WPNbZIEj4+VJf6saSFpvD+3Zsw==}
@@ -4204,7 +4209,6 @@ packages:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.2
       csstype: 3.1.1
-    dev: true
 
   /@types/react/18.0.22:
     resolution: {integrity: sha512-4yWc5PyCkZN8ke8K9rQHkTXxHIWHxLzzW6RI1kXVoepkD3vULpKzC2sDtAMKn78h92BRYuzf+7b/ms7ajE6hFw==}
@@ -4226,7 +4230,6 @@ packages:
 
   /@types/scheduler/0.16.2:
     resolution: {integrity: sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==}
-    dev: true
 
   /@types/semver/7.3.12:
     resolution: {integrity: sha512-WwA1MW0++RfXmCr12xeYOOC5baSC9mSb0ZqCquFzKhcoF4TvHu5MKOuXsncgZcpVFhB1pXd5hZmM0ryAoCp12A==}
@@ -6705,7 +6708,6 @@ packages:
 
   /csstype/3.1.1:
     resolution: {integrity: sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw==}
-    dev: true
 
   /currently-unhandled/0.4.1:
     resolution: {integrity: sha512-/fITjgjGU50vjQ4FH6eUoYu+iUoUKIXws2hL15JJpIR+BbTxaXQsMuuyjtNh2WqsSBS5nsaZHFsFecyw5CCAng==}
@@ -16241,8 +16243,8 @@ packages:
       vite: 3.2.3
     dev: false
 
-  /vitest/0.25.1_happy-dom@7.6.4:
-    resolution: {integrity: sha512-eH74h6MkuEgsqR4mAQZeMK9O0PROiKY+i+1GMz/fBi5A3L2ml5U7JQs7LfPU7+uWUziZyLHagl+rkyfR8SLhlA==}
+  /vitest/0.25.2_happy-dom@7.6.4:
+    resolution: {integrity: sha512-qqkzfzglEFbQY7IGkgSJkdOhoqHjwAao/OrphnHboeYHC5JzsVFoLCaB2lnAy8krhj7sbrFTVRApzpkTOeuDWQ==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
     peerDependencies:
