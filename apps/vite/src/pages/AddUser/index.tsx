@@ -1,17 +1,21 @@
 import {UsersList} from '@fullpower-stack/ui';
+import {Link} from '@tanstack/react-router';
 import {useAtom} from 'jotai';
 import {AddUserForm} from '../../components/AddUserForm/AddUserForm';
 import {usePrevious} from '../../hooks/usePrevious';
 import {trpc} from '../../services/trpc';
 import {countAtom} from '../../store';
+import {router} from '../../router/index';
+import {ROUTES} from '../../router/routes';
+import Navbar from '../../components/Navbar';
 
 const Counter = () => {
     const [count] = useAtom(countAtom);
     return <h1 className='text-xl font-bold'> Count is {count}</h1>;
 };
 
-const AddUserPage = () => {
-    
+const AddUser = () => {
+
     const {data} = trpc.list.useQuery();
     const {users = []} = data ?? {};
 
@@ -27,11 +31,11 @@ const AddUserPage = () => {
 
     return (
         <div>
-            <Counter/>
+            <Counter />
             <AddUserForm />
             <UsersList users={users} />
         </div>
     )
 }
 
-export default AddUserPage
+export {AddUser}

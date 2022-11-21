@@ -14,8 +14,11 @@
     "@fullpower-stack/express-backend": "workspace:*",
     "@fullpower-stack/schema": "workspace:*",
     "@fullpower-stack/ui": "workspace:*",
+    "@headlessui/react": "^1.7.4",
+    "@heroicons/react": "^2.0.13",
     "@hookform/resolvers": "^2.9.10",
     "@tanstack/react-query": "^4.13.0",
+    "@tanstack/react-router": "0.0.1-beta.25",
     "@trpc/client": "10.0.0",
     "@trpc/react-query": "10.0.0",
     "@trpc/server": "10.0.0",
@@ -29,6 +32,7 @@
   "devDependencies": {
     "@fullpower-stack/eslint-config-custom": "workspace:*",
     "@tanstack/react-query-devtools": "^4.13.4",
+    "@tanstack/react-router-devtools": "0.0.1-beta.19",
     "@vitejs/plugin-basic-ssl": "^0.1.2",
     "msw": "^0.48.1"
   },
