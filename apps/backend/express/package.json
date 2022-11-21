@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "tsnd --rs --deps --transpile-only src/server.ts",
     "lint": "eslint .",
-    "build": "tsup src/*.ts --format cjs --dts",
+    "build": "tsc",
     "test": "vitest run",
     "test:watch": "vitest"
   },
