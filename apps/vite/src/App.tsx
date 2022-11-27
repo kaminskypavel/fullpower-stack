@@ -33,26 +33,28 @@ const trpcClient = trpc.createClient({
 export default function App() {
 
   return (
-    <trpc.Provider client={trpcClient} queryClient={queryClient}>
-      <QueryClientProvider client={queryClient}>
-        <RouterProvider router={router}>
+    <RouterProvider router={router}>
+
+      <trpc.Provider client={trpcClient} queryClient={queryClient}>
+        <QueryClientProvider client={queryClient}>
           <JotaiProvider>
 
+            {import.meta.env.NODE_ENV !== 'production' && (
+              <div className="hidden md:block">
+                <ReactQueryDevtools initialIsOpen={false} />
+              </div>
+            )}
             <Navbar />
             <Outlet />
 
             <Toaster />
 
+            <TanStackRouterDevtools position="bottom-right" />
           </JotaiProvider>
-          <TanStackRouterDevtools position="bottom-right" />
-        </RouterProvider>
-        {import.meta.env.NODE_ENV !== 'production' && (
-          <div className="hidden md:block">
-            <ReactQueryDevtools initialIsOpen={false} />
-          </div>
-        )}
-      </QueryClientProvider>
-    </trpc.Provider>
-     
+
+        </QueryClientProvider>
+      </trpc.Provider>
+    </RouterProvider>
+
   );
 }
