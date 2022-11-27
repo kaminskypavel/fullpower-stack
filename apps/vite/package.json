@@ -7,8 +7,7 @@
     "lint": "eslint *.ts*",
     "test": "vitest run",
     "build": "tsc && vite build",
-    "preview": "vite preview",
-    "storybook": "pnpm ladle serve"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@fullpower-stack/express-backend": "workspace:*",
