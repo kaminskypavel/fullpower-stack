@@ -11,15 +11,7 @@
     "build-storybook": "storybook build"
   },
   "devDependencies": {
-    "@fullpower-stack/eslint-config-custom": "workspace:*",
-    "@storybook/addon-essentials": "7.0.0-alpha.54",
-    "@storybook/addon-interactions": "7.0.0-alpha.54",
-    "@storybook/addon-links": "7.0.0-alpha.54",
-    "@storybook/addon-postcss": "^2.0.0",
-    "@storybook/react": "7.0.0-alpha.54",
-    "@storybook/react-vite": "7.0.0-alpha.54",
-    "@storybook/testing-library": "0.0.13",
-    "storybook": "7.0.0-alpha.54"
+    "@fullpower-stack/eslint-config-custom": "workspace:*"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
