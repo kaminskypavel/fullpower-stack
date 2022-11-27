@@ -3,7 +3,7 @@ import {useForm, UseFormProps} from 'react-hook-form';
 import {z} from 'zod';
 import {trpc} from '../../services/trpc';
 import toast from 'react-hot-toast';
-import {addUserSchema} from '@fullpower-stack/schema';
+import {addUserSchemaInput} from '@fullpower-stack/schema';
 import {countAtom} from '../../store/index';
 import {useAtom} from 'jotai';
 
@@ -37,7 +37,7 @@ const IncrementButton = () => {
 export const AddUserForm = () => {
 
     const methods = useZodForm({
-        schema: addUserSchema,
+        schema: addUserSchemaInput,
         defaultValues: {
             name: '',
             email: '',

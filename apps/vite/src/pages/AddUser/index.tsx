@@ -1,13 +1,9 @@
 import {UsersList} from '@fullpower-stack/ui';
-import {Link} from '@tanstack/react-router';
 import {useAtom} from 'jotai';
 import {AddUserForm} from '../../components/AddUserForm/AddUserForm';
 import {usePrevious} from '../../hooks/usePrevious';
 import {trpc} from '../../services/trpc';
 import {countAtom} from '../../store';
-import {router} from '../../router/index';
-import {ROUTES} from '../../router/routes';
-import Navbar from '../../components/Navbar';
 
 const Counter = () => {
     const [count] = useAtom(countAtom);
@@ -38,4 +34,5 @@ const AddUser = () => {
     )
 }
 
-export {AddUser}
+export {AddUser};
+
