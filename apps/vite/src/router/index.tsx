@@ -1,7 +1,7 @@
 import {createReactRouter, createRouteConfig} from "@tanstack/react-router";
 import React from "react";
-import {About, AddUser} from "../pages";
-import Cats from "../pages/Cats";
+import {About, AddUser} from "#pages";
+import Cats from "#pages/Cats";
 import {ROUTES} from "./routes";
 console.log(ROUTES);
 

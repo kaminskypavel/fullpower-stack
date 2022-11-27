@@ -1,6 +1,6 @@
 import {Button} from '@fullpower-stack/ui'
 import React from 'react'
-import {trpc} from '../../services/trpc';
+import {trpc} from '#services/trpc';
 
 function CatImage() {
     const {data} = trpc.cat.useQuery({text: 'hello'});

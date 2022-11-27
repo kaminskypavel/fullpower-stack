@@ -1,9 +1,9 @@
 import {UsersList} from '@fullpower-stack/ui';
 import {useAtom} from 'jotai';
-import {AddUserForm} from '../../components/AddUserForm/AddUserForm';
-import {usePrevious} from '../../hooks/usePrevious';
-import {trpc} from '../../services/trpc';
-import {countAtom} from '../../store';
+import {AddUserForm} from '#components/AddUserForm/AddUserForm';
+import {usePrevious} from '#hooks/usePrevious';
+import {trpc} from '#services/trpc';
+import {countAtom} from '#store';
 
 const Counter = () => {
     const [count] = useAtom(countAtom);
