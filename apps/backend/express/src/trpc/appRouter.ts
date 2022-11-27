@@ -2,26 +2,20 @@ import { Database } from "@fullpower-stack/database";
 import { z } from "zod";
 import { getCatImage } from "../controllers/cat";
 import { protectedProcedure, publicProcedure, router } from "./trpc";
-import { addUserSchema } from "@fullpower-stack/schema";
+import {
+  addUserSchemaInput,
+  getCatImageInputSchema,
+  getCatImageOutputSchema,
+} from "@fullpower-stack/schema";
 
 const db = new Database();
 
 export const appRouter = router({
   cat: publicProcedure
-    .input(
-      z
-        .object({
-          text: z.string(),
-        })
-        .optional()
-    )
+    .input(getCatImageInputSchema)
     .query(async ({ ctx, input }) => {
-      const image = await getCatImage(input?.text);
-      return {
-        image,
-        timestamp: Date.now(),
-        file: JSON.stringify(ctx?.session),
-      };
+      const apiResult = await getCatImage(input?.text);
+      return apiResult as z.infer<typeof getCatImageOutputSchema>;
     }),
 
   list: publicProcedure.query(async (req) => {
@@ -33,12 +27,14 @@ export const appRouter = router({
     return { ok: true, isAdmin: true };
   }),
 
-  createUser: protectedProcedure.input(addUserSchema).mutation(async (req) => {
-    const { name, email } = req.input;
-    const user = await db.createUser(name, email);
+  createUser: protectedProcedure
+    .input(addUserSchemaInput)
+    .mutation(async (req) => {
+      const { name, email } = req.input;
+      const user = await db.createUser(name, email);
 
-    return user;
-  }),
+      return user;
+    }),
 });
 
 export type AppRouter = typeof appRouter;

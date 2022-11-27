@@ -1,10 +1,10 @@
 import {zodResolver} from '@hookform/resolvers/zod';
 import {useForm, UseFormProps} from 'react-hook-form';
 import {z} from 'zod';
-import {trpc} from '../../services/trpc';
+import {trpc} from '#services/trpc';
 import toast from 'react-hot-toast';
-import {addUserSchema} from '@fullpower-stack/schema';
-import {countAtom} from '../../store/index';
+import {addUserSchemaInput} from '@fullpower-stack/schema';
+import {countAtom} from '#store/index';
 import {useAtom} from 'jotai';
 
 // https://github.com/trpc/examples-kitchen-sink/blob/723cc6a74f03838748e517f292459d597b20447a/src/feature/react-hook-form/index.tsx
@@ -37,7 +37,7 @@ const IncrementButton = () => {
 export const AddUserForm = () => {
 
     const methods = useZodForm({
-        schema: addUserSchema,
+        schema: addUserSchemaInput,
         defaultValues: {
             name: '',
             email: '',
