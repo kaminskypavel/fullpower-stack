@@ -17,7 +17,7 @@ export default {
 //👇 We create a “template” of how args map to rendering
 const Template: ComponentStory<typeof UsersList> = (args) => <UsersList {...args} />;
 
-export const PrimaryButton = Template.bind({});
+export const PrimaryUserList = Template.bind({});
 
 
 // generate 10 random users
@@ -29,6 +29,6 @@ const users = Array.from({length: 10}, (_, idx) => ({
 }));
 
 
-PrimaryButton.args = {
+PrimaryUserList.args = {
   users
 };

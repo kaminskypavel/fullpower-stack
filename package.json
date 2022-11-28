@@ -22,8 +22,6 @@
   "devDependencies": {
     "@faker-js/faker": "^7.6.0",
     "@fullpower-stack/eslint-config-custom": "workspace:*",
-    "@ladle/react": "^2.4.5",
-    "@storybook/react": "^6.5.13",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@tsconfig/next": "^1.0.3",
@@ -44,7 +42,15 @@
     "prettier-plugin-tailwindcss": "^0.1.13",
     "ts-node-dev": "latest",
     "turbo": "latest",
-    "vitest": "latest"
+    "vitest": "latest",
+    "@storybook/addon-essentials": "7.0.0-alpha.54",
+    "@storybook/addon-interactions": "7.0.0-alpha.54",
+    "@storybook/addon-links": "7.0.0-alpha.54",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/react": "7.0.0-alpha.54",
+    "@storybook/react-vite": "7.0.0-alpha.54",
+    "@storybook/testing-library": "0.0.13",
+    "storybook": "7.0.0-alpha.54"
   },
   "engines": {
     "node": ">=16.0.0"
