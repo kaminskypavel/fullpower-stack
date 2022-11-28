@@ -44,4 +44,5 @@ yarn-error.log*
 
 
 packages/database/prisma/dev.db
-.eslintcache
+
+**/.eslintcache
