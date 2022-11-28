@@ -7,4 +7,8 @@ module.exports = {
       rootDir: ['apps/*/'],
     },
   },
+  rules: {
+    '@typescript-eslint/no-unused-vars': 'off',
+    'no-console': 'off',
+  },
 }

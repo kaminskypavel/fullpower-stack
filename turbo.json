@@ -15,7 +15,8 @@
       "outputs": []
     },
     "lint": {
-      "outputs": []
+      "outputs": [],
+      "cache": true
     },
     "dev": {
       "dependsOn": [
