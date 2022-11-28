@@ -10,9 +10,6 @@
     "lint": "eslint *.ts*",
     "build-storybook": "storybook build"
   },
-  "devDependencies": {
-    "@fullpower-stack/eslint-config-custom": "workspace:*"
-  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@types/react": "18.0.17",
