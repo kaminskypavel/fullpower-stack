@@ -15,8 +15,8 @@
     "dev:vite": "turbo run dev --parallel --no-cache --filter=@fullpower-stack/vite --filter=@fullpower-stack/express-backend",
     "test": "turbo run test",
     "test:watch": "turbo run test:watch",
-    "lint": "turbo run lint -- --fix",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "lint": "turbo run lint -- --fix --cache",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\" --cache",
     "prepare": "husky install"
   },
   "devDependencies": {
