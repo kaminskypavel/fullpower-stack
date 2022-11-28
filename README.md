@@ -33,6 +33,16 @@ and preconfigured to pick changes from shared packages
 
 ---
 
+### Getting Started
+
+clone this repository
+
+`pnpx degit https://github.com/kaminskypavel/fullpower-stack my-app`
+
+install dependeciens (we use pnpm)
+
+`pnpm install`
+
 ### Dev Tool (WIP)
 
 | Framework                   | FullPower Stack                                                                                                                                                                                | Implemented | Version            |
@@ -52,10 +62,6 @@ and preconfigured to pick changes from shared packages
 | Lint                        | eslint+ prettier                                                                                                                                                                               | ✅
 | Git                         | lint-staged + husky                                                                                                                                                                            | ✅
 | CI                          | Github Actions                                                                                                                                                                                 | ✅
-
-### Optional Testing : Wallaby.js
-
-_Wallaby.js: Select Configuration > Automatic Configuration \<closest project in mono-repo\>_
 
 ### Todo
 
