@@ -13,7 +13,7 @@
   <a href="https://github.com/kaminskypavel/fullpower-stack/actions/workflows/ci.yml"><img alt="GitHub CI Status" src="https://github.com/kaminskypavel/fullpower-stack/actions/workflows/ci.yml/badge.svg"></a>
 </p>
 
-### Intorduction
+### Introduction
 
 This is a monorepo containing a set of packages that can be used to build full power web applications. It is an opinionated stack that is based on the following principles:
 
