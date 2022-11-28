@@ -1,4 +1,3 @@
-
 <p align="center">
   <a href="https://github.com/kaminskypavel/fullpower-stack">
     <img alt="fullpower-stack" src="./docs/logo.png" width="546">
@@ -49,22 +48,22 @@ pnpm install
 
 ### Dev Tool (WIP)
 
-| Framework                   | FullPower Stack                                                                                                                                                                                | Implemented | Version            |
-| --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ------------------ |
-| Package Manager             | ![image](https://user-images.githubusercontent.com/4253088/196271039-0b998d0d-5867-47bf-a627-e36825175aeb.png) [pnpm](https://pnpm.io/)                                                        | ✅          | \*                 |
-| Monorepo                    | <img src="https://user-images.githubusercontent.com/4253088/196269627-8da367d0-5e1a-40a6-b261-d0f4e00498c1.png" height="40">[Turborepo](https://turborepo.org/docs)                            | ✅          | 1.4.0              |
-| Frontend (Framework)        | <img src="https://user-images.githubusercontent.com/4253088/196269841-32444c2d-7798-471d-8c7d-455323680297.png" width="100vw" height="40">[Nextjs](https://nextjs.org/docs/getting-started)    | ✅          | 12                 |
-| Frontend (css)              | ![image](https://user-images.githubusercontent.com/4253088/196271439-de4d436c-fb47-4a7e-84a6-fcc01d86026b.png)[Tailwindcss](https://tailwindcss.com/docs/installation)                         | ✅          | 3.1.8              |
-| Server-Client Communication | tRPC                                                                                                                                                                                           |✅ | 10.0.0
-| Backend                     | express                                                                                                                                                                                        | ✅ |4.18.2
+| Framework                   | FullPower Stack                                                                                                                                                                                | Implemented | Version        |
+| --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | -------------- |
+| Package Manager             | ![image](https://user-images.githubusercontent.com/4253088/196271039-0b998d0d-5867-47bf-a627-e36825175aeb.png) [pnpm](https://pnpm.io/)                                                        | ✅          | \*             |
+| Monorepo                    | <img src="https://user-images.githubusercontent.com/4253088/196269627-8da367d0-5e1a-40a6-b261-d0f4e00498c1.png" height="40">[Turborepo](https://turborepo.org/docs)                            | ✅          | 1.4.0          |
+| Frontend (Framework)        | <img src="https://user-images.githubusercontent.com/4253088/196269841-32444c2d-7798-471d-8c7d-455323680297.png" width="100vw" height="40">[Nextjs](https://nextjs.org/docs/getting-started)    | ✅          | 12             |
+| Frontend (css)              | ![image](https://user-images.githubusercontent.com/4253088/196271439-de4d436c-fb47-4a7e-84a6-fcc01d86026b.png)[Tailwindcss](https://tailwindcss.com/docs/installation)                         | ✅          | 3.1.8          |
+| Server-Client Communication | tRPC                                                                                                                                                                                           | ✅          | 10.0.0         |
+| Backend                     | express                                                                                                                                                                                        | ✅          | 4.18.2         |
 | ORM                         | prisma                                                                                                                                                                                         |
-| Testing (Framework)         | ![image](https://user-images.githubusercontent.com/4253088/196270525-cea1d088-d329-4dba-879d-5e48ef779544.png)[vitest](https://vitest.dev/)                                                    | ✅          | 0.24.3             |
-| Testing (Components)        | ![image](https://user-images.githubusercontent.com/4253088/196271647-0265eca3-61e4-44c2-8641-fabdb07e875f.png)[testing-library](https://testing-library.com/docs/react-testing-library/intro/) | ✅          | 13.4.0             |
+| Testing (Framework)         | ![image](https://user-images.githubusercontent.com/4253088/196270525-cea1d088-d329-4dba-879d-5e48ef779544.png)[vitest](https://vitest.dev/)                                                    | ✅          | 0.24.3         |
+| Testing (Components)        | ![image](https://user-images.githubusercontent.com/4253088/196271647-0265eca3-61e4-44c2-8641-fabdb07e875f.png)[testing-library](https://testing-library.com/docs/react-testing-library/intro/) | ✅          | 13.4.0         |
 | Testing (Components)        | <img src="./docs/apps/storybook.png" >[Storybook](https://storybook.js.org/blog/first-class-vite-support-in-storybook/)                                                                        | ✅          | 7.0.0-alpha.54 |
-| Testing (Mocking)           | MSW                              | ✅                                                          |    0.48.1                                                                                                |
-| Lint                        | eslint+ prettier                                                                                                                                                                               | ✅
-| Git                         | lint-staged + husky                                                                                                                                                                            | ✅
-| CI                          | Github Actions                                                                                                                                                                                 | ✅
+| Testing (Mocking)           | MSW                                                                                                                                                                                            | ✅          | 0.48.1         |
+| Lint                        | eslint+ prettier                                                                                                                                                                               | ✅          |
+| Git                         | lint-staged + husky                                                                                                                                                                            | ✅          |
+| CI                          | Github Actions                                                                                                                                                                                 | ✅          |
 
 ### Todo
 

@@ -8,5 +8,4 @@ const PORT = process.env.PORT || 4000;
 app.listen(PORT);
 console.log(`Express started on port ${PORT} 🚀`);
 
-
-export * from './trpc/appRouter';
+export * from "./trpc/appRouter";
