@@ -13,7 +13,7 @@
   <a href="https://github.com/kaminskypavel/fullpower-stack/actions/workflows/ci.yml"><img alt="GitHub CI Status" src="https://github.com/kaminskypavel/fullpower-stack/actions/workflows/ci.yml/badge.svg"></a>
 </p>
 
-### Intorduction
+### Introduction
 
 This is a monorepo containing a set of packages that can be used to build full power web applications. It is an opinionated stack that is based on the following principles:
 
@@ -71,3 +71,24 @@ pnpm install
 - consider moving to Rome tools [Link1](https://twitter.com/sebmck/status/1589987087780302848) [Link2](https://rome.tools/blog/2022/11/08/rome-10.html)
 
 - maybe add a PWA support for [Vite](https://vite-pwa-org.netlify.app/guide/)
+
+### Contributors
+
+<table>
+<tr>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a href=https://github.com/kaminskypavel>
+            <img src=https://avatars.githubusercontent.com/u/4253088?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Pavel 'PK' Kaminsky/>
+            <br />
+            <sub style="font-size:14px"><b>Pavel 'PK' Kaminsky</b></sub>
+        </a>
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a href=https://github.com/vithano>
+            <img src=https://avatars.githubusercontent.com/u/11342649?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=vithano/>
+            <br />
+            <sub style="font-size:14px"><b>vithano</b></sub>
+        </a>
+    </td>
+</tr>
+</table>
