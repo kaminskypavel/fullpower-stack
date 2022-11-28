@@ -1,10 +1,10 @@
-import { inferAsyncReturnType } from "@trpc/server";
-import { faker } from "@faker-js/faker";
+import type { inferAsyncReturnType } from '@trpc/server'
+import { faker } from '@faker-js/faker'
 /**
  * Creates context for an incoming request
  * @link https://trpc.io/docs/context
  */
-import { CreateExpressContextOptions } from "@trpc/server/adapters/express";
+import type { CreateExpressContextOptions } from '@trpc/server/adapters/express'
 
 export async function createContext(opts?: CreateExpressContextOptions) {
   const session = {
@@ -13,11 +13,11 @@ export async function createContext(opts?: CreateExpressContextOptions) {
       name: faker.name.firstName(),
       id: faker.random.alphaNumeric(10),
     },
-  };
+  }
 
   return {
     session,
-  };
+  }
 }
 
-export type Context = inferAsyncReturnType<typeof createContext>;
+export type Context = inferAsyncReturnType<typeof createContext>

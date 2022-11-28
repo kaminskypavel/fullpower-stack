@@ -1,9 +1,9 @@
 // test index.ts
 
-import { expect, it, describe } from "vitest";
+import { describe, expect, it } from 'vitest'
 
-describe("index.ts", () => {
-  it("should be true", () => {
-    expect(true).toBe(true);
-  });
-});
+describe('index.ts', () => {
+  it('should be true', () => {
+    expect(true).toBe(true)
+  })
+})

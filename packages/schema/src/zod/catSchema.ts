@@ -1,8 +1,8 @@
-import { z } from "zod";
+import { z } from 'zod'
 
 export const getCatImageInputSchema = z.object({
   text: z.string().optional(),
-});
+})
 
 export const getCatImageOutputSchema = z.object({
   tags: z.array(z.string()),
@@ -15,4 +15,4 @@ export const getCatImageOutputSchema = z.object({
   size: z.number(),
   _id: z.string(),
   url: z.string(),
-});
+})

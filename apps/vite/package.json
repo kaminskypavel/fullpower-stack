@@ -29,7 +29,6 @@
     "react-hot-toast": "^2.4.0"
   },
   "devDependencies": {
-    "@fullpower-stack/eslint-config-custom": "workspace:*",
     "@tanstack/react-query-devtools": "^4.13.4",
     "@tanstack/react-router-devtools": "0.0.1-beta.19",
     "@vitejs/plugin-basic-ssl": "^0.1.2",

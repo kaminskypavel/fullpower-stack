@@ -25,7 +25,6 @@
     "zod": "^3.19.1"
   },
   "devDependencies": {
-    "@fullpower-stack/eslint-config-custom": "workspace:*",
     "@types/node": "^17.0.45"
   }
 }

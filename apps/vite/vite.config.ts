@@ -1,5 +1,5 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 // import basicSsl from "@vitejs/plugin-basic-ssl";
 
 // https://vitejs.dev/config/
@@ -9,19 +9,19 @@ export default defineConfig({
     react(),
   ],
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // @ts-ignore
+  // @ts-expect-error
   test: {
     globals: true,
-    environment: "happy-dom",
-    setupFiles: "./setupTests.ts",
+    environment: 'happy-dom',
+    setupFiles: './setupTests.ts',
   },
   server: {
     proxy: {
-      "/api": {
-        target: "http://localhost:4000",
+      '/api': {
+        target: 'http://localhost:4000',
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ""),
+        rewrite: path => path.replace(/^\/api/, ''),
       },
     },
   },
-});
+})
