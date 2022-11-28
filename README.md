@@ -33,15 +33,19 @@ and preconfigured to pick changes from shared packages
 
 ---
 
-### Getting Started
+## Getting Started
 
 clone this repository
 
-`pnpx degit https://github.com/kaminskypavel/fullpower-stack my-app`
+```
+pnpx degit https://github.com/kaminskypavel/fullpower-stack my-app
+```
 
 install dependeciens (we use pnpm)
 
-`pnpm install`
+```
+pnpm install
+```
 
 ### Dev Tool (WIP)
 
