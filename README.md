@@ -35,6 +35,168 @@ and preconfigured to pick changes from shared packages
 
 ### Dev stack
 
+<table>
+<tr>
+    <th>Type</th>
+    <th>Package</th>
+    <th>Version</th>
+
+</tr>
+<tr>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        Monorepo manager
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a aria-label="turbo" href="https://turborepo.org/docs">
+            <img style="width:fit-content; height:50px;" src="https://user-images.githubusercontent.com/4253088/196269627-8da367d0-5e1a-40a6-b261-d0f4e00498c1.png"  alt="turbo"/>
+        </a>
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a aria-label="NPM Version" href="https://www.npmjs.com/package/turbo">
+            <img src="https://img.shields.io/badge/1.6.3-brightgreen"  alt="turbo"/>
+        </a>
+    </td>
+
+    
+</tr>
+<tr>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        CSS Framework
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a aria-label="tailwindcss" href="https://tailwindcss.com/docs/installation">
+            <img style="width:fit-content; height:50px;" src="https://user-images.githubusercontent.com/4253088/196271439-de4d436c-fb47-4a7e-84a6-fcc01d86026b.png"  alt="tailwindcss"/>
+        </a>
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a aria-label="NPM Version" href="https://www.npmjs.com/package/tailwindcss">
+            <img src="https://img.shields.io/badge/3.2.1-brightgreen"  alt="tailwindcss"/>
+        </a>
+    </td>
+
+    
+</tr>
+<tr>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        Test runner
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a aria-label="vitest" href="https://vitest.dev/">
+            <img style="width:fit-content; height:50px;" src="https://user-images.githubusercontent.com/4253088/196270525-cea1d088-d329-4dba-879d-5e48ef779544.png"  alt="vitest"/>
+        </a>
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a aria-label="NPM Version" href="https://www.npmjs.com/package/vitest">
+            <img src="https://img.shields.io/badge/0.25.3-brightgreen"  alt="vitest"/>
+        </a>
+    </td>
+
+    
+</tr>
+<tr>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        Testing components
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a aria-label="@testing-library/react" href="https://testing-library.com/docs/react-testing-library/intro/">
+            <img style="width:fit-content; height:50px;" src="https://user-images.githubusercontent.com/4253088/196271647-0265eca3-61e4-44c2-8641-fabdb07e875f.png"  alt="@testing-library/react"/>
+        </a>
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a aria-label="NPM Version" href="https://www.npmjs.com/package/@testing-library/react">
+            <img src="https://img.shields.io/badge/13.4.0-brightgreen"  alt="@testing-library/react"/>
+        </a>
+    </td>
+
+    
+</tr>
+<tr>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        Component library
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a aria-label="@storybook/react" href="https://storybook.js.org/docs/react/get-started/introduction">
+            <img style="width:fit-content; height:50px;" src="https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png"  alt="@storybook/react"/>
+        </a>
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a aria-label="NPM Version" href="https://www.npmjs.com/package/@storybook/react">
+            <img src="https://img.shields.io/badge/6.5.13-brightgreen"  alt="@storybook/react"/>
+        </a>
+    </td>
+
+    
+</tr>
+<tr>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        Lint
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a aria-label="eslint" href="https://eslint.org/docs/user-guide/getting-started">
+            Eslint
+        </a>
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a aria-label="NPM Version" href="https://www.npmjs.com/package/eslint">
+            <img src="https://img.shields.io/badge/7.32.0-brightgreen"  alt="eslint"/>
+        </a>
+    </td>
+
+    
+</tr>
+<tr>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        Lint
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a aria-label="husky" >
+            Husky
+        </a>
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a aria-label="NPM Version" href="https://www.npmjs.com/package/husky">
+            <img src="https://img.shields.io/badge/8.0.1-brightgreen"  alt="husky"/>
+        </a>
+    </td>
+
+    
+</tr>
+<tr>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        Lint
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a aria-label="lint-staged" >
+            Lint-staged
+        </a>
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a aria-label="NPM Version" href="https://www.npmjs.com/package/lint-staged">
+            <img src="https://img.shields.io/badge/13.0.3-brightgreen"  alt="lint-staged"/>
+        </a>
+    </td>
+
+    
+</tr>
+<tr>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        Lint
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a aria-label="prettier" >
+            Prettier
+        </a>
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a aria-label="NPM Version" href="https://www.npmjs.com/package/prettier">
+            <img src="https://img.shields.io/badge/2.7.1-brightgreen"  alt="prettier"/>
+        </a>
+    </td>
+
+    
+</tr>
+</table>
+
 ### Optional Testing : Wallaby.js
 
 _Wallaby.js: Select Configuration > Automatic Configuration \<closest project in mono-repo\>_
