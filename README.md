@@ -120,7 +120,24 @@ and preconfigured to pick changes from shared packages
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/@storybook/react">
-            <img src="https://img.shields.io/badge/6.5.13-brightgreen"  alt="@storybook/react"/>
+            <img src="https://img.shields.io/badge/7.0.0alpha.54-brightgreen"  alt="@storybook/react"/>
+        </a>
+    </td>
+
+    
+</tr>
+<tr>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        Component library
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a aria-label="storybook" href="https://storybook.js.org/docs/react/get-started/introduction">
+            <img style="width:fit-content; height:50px;" src="https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png"  alt="storybook"/>
+        </a>
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a aria-label="NPM Version" href="https://www.npmjs.com/package/storybook">
+            <img src="https://img.shields.io/badge/7.0.0alpha.54-brightgreen"  alt="storybook"/>
         </a>
     </td>
 
@@ -249,5 +266,3 @@ pnpm install
             <sub style="font-size:14px"><b>vithano</b></sub>
         </a>
     </td>
-</tr>
-</table>
