@@ -10,7 +10,7 @@
     "start": "remix-serve build",
     "test": "vitest run",
     "test:watch": "vitest",
-    "lint": "lint"
+    "lint": "eslint *.ts*"
   },
   "dependencies": {
     "@fullpower-stack/ui": "workspace:*",

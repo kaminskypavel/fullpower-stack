@@ -6,8 +6,9 @@
   "scripts": {
     "test": "vitest run",
     "test:watch": "vitest",
-    "storybook": "pnpm ladle serve",
-    "lint": "eslint *.ts*"
+    "storybook": "storybook dev -p 6006",
+    "lint": "eslint *.ts*",
+    "build-storybook": "storybook build"
   },
   "devDependencies": {
     "@fullpower-stack/eslint-config-custom": "workspace:*"

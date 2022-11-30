@@ -1,12 +1,12 @@
 import { Database } from "@fullpower-stack/database";
-import { z } from "zod";
-import { getCatImage } from "../controllers/cat";
-import { protectedProcedure, publicProcedure, router } from "./trpc";
 import {
   addUserSchemaInput,
   getCatImageInputSchema,
   getCatImageOutputSchema,
 } from "@fullpower-stack/schema";
+import { z } from "zod";
+import { getCatImage } from "../controllers/cat";
+import { protectedProcedure, publicProcedure, router } from "./trpc";
 
 const db = new Database();
 
