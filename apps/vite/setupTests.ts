@@ -2,7 +2,7 @@ import "@testing-library/jest-dom/extend-expect";
 import { cleanup } from "@testing-library/react";
 import { afterAll, afterEach, beforeAll } from "vitest";
 
-import { server } from "#mocks/server";
+import { server } from "./src/mocks/server";
 
 // Establish API mocking before all tests.
 beforeAll(() => server.listen());
