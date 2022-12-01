@@ -43,6 +43,23 @@ and preconfigured to pick changes from shared packages
 </tr>
 <tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        Package manager
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a aria-label="pnpm" href="https://pnpm.io">
+            <img style="width:fit-content; height:50px;" src="https://user-images.githubusercontent.com/4253088/196271039-0b998d0d-5867-47bf-a627-e36825175aeb.png"  alt="pnpm"/>
+        </a>
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a aria-label="NPM Version" href="https://www.npmjs.com/package/pnpm">
+            <img src="https://img.shields.io/badge/7.14.2-brightgreen"  alt="pnpm"/>
+        </a>
+    </td>
+
+    
+</tr>
+<tr>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         Monorepo manager
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
@@ -114,23 +131,6 @@ and preconfigured to pick changes from shared packages
         Component library
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a aria-label="@storybook/react" href="https://storybook.js.org/docs/react/get-started/introduction">
-            <img style="width:fit-content; height:50px;" src="https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png"  alt="@storybook/react"/>
-        </a>
-    </td>
-    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a aria-label="NPM Version" href="https://www.npmjs.com/package/@storybook/react">
-            <img src="https://img.shields.io/badge/7.0.0alpha.54-brightgreen"  alt="@storybook/react"/>
-        </a>
-    </td>
-
-    
-</tr>
-<tr>
-    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        Component library
-    </td>
-    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="storybook" href="https://storybook.js.org/docs/react/get-started/introduction">
             <img style="width:fit-content; height:50px;" src="https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png"  alt="storybook"/>
         </a>
@@ -154,7 +154,7 @@ and preconfigured to pick changes from shared packages
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/eslint">
-            <img src="https://img.shields.io/badge/7.32.0-brightgreen"  alt="eslint"/>
+            <img src="https://img.shields.io/badge/7.32.0-yellow"  alt="eslint"/>
         </a>
     </td>
 
