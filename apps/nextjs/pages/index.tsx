@@ -3,7 +3,7 @@ import { Button } from "@fullpower-stack/ui";
 export default function Web() {
   return (
     <div>
-      <h1>Web</h1>
+      <h1>Welcome to Fullpower Stack</h1>
       <Button />
     </div>
   );
