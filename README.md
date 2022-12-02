@@ -37,7 +37,7 @@ and preconfigured to pick changes from shared packages
 
 ---
 
-### [Demo](https://codesandbox.io/p/github/kaminskypavel/fullpower-stack/master?file=%2FREADME.md)
+# [Demo](https://codesandbox.io/p/github/kaminskypavel/fullpower-stack/master?file=%2FREADME.md)
 
 watch the demo app in action on [CodeSandBox](https://codesandbox.io/p/github/kaminskypavel/fullpower-stack/master?file=%2FREADME.md)
 
