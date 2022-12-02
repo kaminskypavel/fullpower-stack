@@ -37,6 +37,10 @@ and preconfigured to pick changes from shared packages
 
 ---
 
+### [Demo](https://codesandbox.io/p/github/kaminskypavel/fullpower-stack/master?file=%2FREADME.md)
+
+watch the demo app in action on [CodeSandBox](https://codesandbox.io/p/github/kaminskypavel/fullpower-stack/master?file=%2FREADME.md)
+
 ### Dev stack
 
 <table>
@@ -227,13 +231,6 @@ install dependeciens (we use pnpm)
 ```
 pnpm install
 ```
-
-
-### Todo
-
-- consider moving to Rome tools [Link1](https://twitter.com/sebmck/status/1589987087780302848) [Link2](https://rome.tools/blog/2022/11/08/rome-10.html)
-
-- maybe add a PWA support for [Vite](https://vite-pwa-org.netlify.app/guide/)
 
 ### Contributors
 
