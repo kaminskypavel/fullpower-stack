@@ -45,23 +45,24 @@ watch the demo app in action on [CodeSandBox](https://codesandbox.io/p/github/ka
 
 <table>
 <tr>
-    <th style="text-align:center;">Type</th>
-    <th style="text-align:center;">Package</th>
-    <th style="text-align:center;">Version</th>
+    <th align="center" style="text-align:center;">Type</th>
+    <th align="center" style="text-align:center;">Package</th>
+    <th align="center" style="text-align:center;">Version</th>
 
 </tr>
 <tr style="padding-top:10px;">
-    <td style="text-align:center;white-space: nowrap; width: 150.0px; height: 150.0px">
+    <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
         Package manager
     </td>
-    <td style="text-align:center;white-space: nowrap; width: 150.0px; height: 150.0px">
+    <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
         <a style="display: inline-flex;align-items: center;padding-top:10px;
-    flex-direction: column; font-size:14px" aria-label="pnpm" href="https://pnpm.io">
-            <img style="border-radius:6px;width:100px;height:100px; " src="https://avatars.githubusercontent.com/u/21320719?s=200&v=4" alt="pnpm"/>
+    flex-direction: column; font-size:18px" aria-label="pnpm" href="https://pnpm.io">
+            <img style="border-radius:6px;width:50px;height:50px; " src="https://avatars.githubusercontent.com/u/21320719?s=200&v=4" alt="pnpm"/>
+
                 pnpm
         </a>
     </td>
-    <td style="text-align:center;white-space: nowrap; width: 150.0px; height: 150.0px">
+    <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/pnpm">
             <img src="https://img.shields.io/badge/7.14.2-brightgreen" alt="pnpm"/>
         </a>
@@ -70,17 +71,18 @@ watch the demo app in action on [CodeSandBox](https://codesandbox.io/p/github/ka
     
 </tr>
 <tr style="padding-top:10px;">
-    <td style="text-align:center;white-space: nowrap; width: 150.0px; height: 150.0px">
+    <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
         Monorepo manager
     </td>
-    <td style="text-align:center;white-space: nowrap; width: 150.0px; height: 150.0px">
+    <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
         <a style="display: inline-flex;align-items: center;padding-top:10px;
-    flex-direction: column; font-size:14px" aria-label="turbo" href="https://turborepo.org/docs">
-            <img style="border-radius:6px;width:100px;height:100px; " src="https://user-images.githubusercontent.com/4060187/196936104-5797972c-ab10-4834-bd61-0d1e5f442c9c.png" alt="turbo"/>
+    flex-direction: column; font-size:18px" aria-label="turbo" href="https://turborepo.org/docs">
+            <img style="border-radius:6px;width:50px;height:50px; " src="https://user-images.githubusercontent.com/4060187/196936104-5797972c-ab10-4834-bd61-0d1e5f442c9c.png" alt="turbo"/>
+
                 turbo
         </a>
     </td>
-    <td style="text-align:center;white-space: nowrap; width: 150.0px; height: 150.0px">
+    <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/turbo">
             <img src="https://img.shields.io/badge/1.6.3-brightgreen" alt="turbo"/>
         </a>
@@ -89,17 +91,18 @@ watch the demo app in action on [CodeSandBox](https://codesandbox.io/p/github/ka
     
 </tr>
 <tr style="padding-top:10px;">
-    <td style="text-align:center;white-space: nowrap; width: 150.0px; height: 150.0px">
+    <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
         CSS Framework
     </td>
-    <td style="text-align:center;white-space: nowrap; width: 150.0px; height: 150.0px">
+    <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
         <a style="display: inline-flex;align-items: center;padding-top:10px;
-    flex-direction: column; font-size:14px" aria-label="tailwindcss" href="https://tailwindcss.com/docs/installation">
-            <img style="border-radius:6px;width:100px;height:100px; " src="https://avatars.githubusercontent.com/u/67109815?s=200&v=4" alt="tailwindcss"/>
+    flex-direction: column; font-size:18px" aria-label="tailwindcss" href="https://tailwindcss.com/docs/installation">
+            <img style="border-radius:6px;width:50px;height:50px; " src="https://avatars.githubusercontent.com/u/67109815?s=200&v=4" alt="tailwindcss"/>
+
                 tailwindcss
         </a>
     </td>
-    <td style="text-align:center;white-space: nowrap; width: 150.0px; height: 150.0px">
+    <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/tailwindcss">
             <img src="https://img.shields.io/badge/3.2.1-brightgreen" alt="tailwindcss"/>
         </a>
@@ -108,17 +111,18 @@ watch the demo app in action on [CodeSandBox](https://codesandbox.io/p/github/ka
     
 </tr>
 <tr style="padding-top:10px;">
-    <td style="text-align:center;white-space: nowrap; width: 150.0px; height: 150.0px">
+    <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
         Test runner
     </td>
-    <td style="text-align:center;white-space: nowrap; width: 150.0px; height: 150.0px">
+    <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
         <a style="display: inline-flex;align-items: center;padding-top:10px;
-    flex-direction: column; font-size:14px" aria-label="vitest" href="https://vitest.dev/">
-            <img style="border-radius:6px;width:100px;height:100px; " src="https://avatars.githubusercontent.com/u/95747107?s=200&v=4" alt="vitest"/>
+    flex-direction: column; font-size:18px" aria-label="vitest" href="https://vitest.dev/">
+            <img style="border-radius:6px;width:50px;height:50px; " src="https://avatars.githubusercontent.com/u/95747107?s=200&v=4" alt="vitest"/>
+
                 vitest
         </a>
     </td>
-    <td style="text-align:center;white-space: nowrap; width: 150.0px; height: 150.0px">
+    <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/vitest">
             <img src="https://img.shields.io/badge/0.25.5-brightgreen" alt="vitest"/>
         </a>
@@ -127,17 +131,18 @@ watch the demo app in action on [CodeSandBox](https://codesandbox.io/p/github/ka
     
 </tr>
 <tr style="padding-top:10px;">
-    <td style="text-align:center;white-space: nowrap; width: 150.0px; height: 150.0px">
+    <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
         Testing components
     </td>
-    <td style="text-align:center;white-space: nowrap; width: 150.0px; height: 150.0px">
+    <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
         <a style="display: inline-flex;align-items: center;padding-top:10px;
-    flex-direction: column; font-size:14px" aria-label="@testing-library/react" href="https://testing-library.com/docs/react-testing-library/intro/">
-            <img style="border-radius:6px;width:100px;height:100px; " src="https://avatars.githubusercontent.com/u/49996085?s=200&v=4" alt="@testing-library/react"/>
+    flex-direction: column; font-size:18px" aria-label="@testing-library/react" href="https://testing-library.com/docs/react-testing-library/intro/">
+            <img style="border-radius:6px;width:50px;height:50px; " src="https://avatars.githubusercontent.com/u/49996085?s=200&v=4" alt="@testing-library/react"/>
+
                 @testing-library/react
         </a>
     </td>
-    <td style="text-align:center;white-space: nowrap; width: 150.0px; height: 150.0px">
+    <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/@testing-library/react">
             <img src="https://img.shields.io/badge/13.4.0-brightgreen" alt="@testing-library/react"/>
         </a>
@@ -146,17 +151,18 @@ watch the demo app in action on [CodeSandBox](https://codesandbox.io/p/github/ka
     
 </tr>
 <tr style="padding-top:10px;">
-    <td style="text-align:center;white-space: nowrap; width: 150.0px; height: 150.0px">
+    <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
         Component library
     </td>
-    <td style="text-align:center;white-space: nowrap; width: 150.0px; height: 150.0px">
+    <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
         <a style="display: inline-flex;align-items: center;padding-top:10px;
-    flex-direction: column; font-size:14px" aria-label="storybook" href="https://storybook.js.org/docs/react/get-started/introduction">
-            <img style="border-radius:6px;width:100px;height:100px; " src="https://avatars.githubusercontent.com/u/22632046?s=200&v=4" alt="storybook"/>
+    flex-direction: column; font-size:18px" aria-label="storybook" href="https://storybook.js.org/docs/react/get-started/introduction">
+            <img style="border-radius:6px;width:50px;height:50px; " src="https://avatars.githubusercontent.com/u/22632046?s=200&v=4" alt="storybook"/>
+
                 storybook
         </a>
     </td>
-    <td style="text-align:center;white-space: nowrap; width: 150.0px; height: 150.0px">
+    <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/storybook">
             <img src="https://img.shields.io/badge/7.0.0alpha.54-brightgreen" alt="storybook"/>
         </a>
@@ -165,17 +171,18 @@ watch the demo app in action on [CodeSandBox](https://codesandbox.io/p/github/ka
     
 </tr>
 <tr style="padding-top:10px;">
-    <td style="text-align:center;white-space: nowrap; width: 150.0px; height: 150.0px">
+    <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
         Lint
     </td>
-    <td style="text-align:center;white-space: nowrap; width: 150.0px; height: 150.0px">
+    <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
         <a style="display: inline-flex;align-items: center;padding-top:10px;
-    flex-direction: column; font-size:14px" aria-label="eslint" href="https://eslint.org/docs/user-guide/getting-started">
-            <img style="border-radius:6px;width:100px;height:100px; " src="https://avatars.githubusercontent.com/u/6019716?s=200&v=4" alt="eslint"/>
+    flex-direction: column; font-size:18px" aria-label="eslint" href="https://eslint.org/docs/user-guide/getting-started">
+            <img style="border-radius:6px;width:50px;height:50px; " src="https://avatars.githubusercontent.com/u/6019716?s=200&v=4" alt="eslint"/>
+
                 eslint
         </a>
     </td>
-    <td style="text-align:center;white-space: nowrap; width: 150.0px; height: 150.0px">
+    <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/eslint">
             <img src="https://img.shields.io/badge/7.32.0-yellow" alt="eslint"/>
         </a>
@@ -184,17 +191,18 @@ watch the demo app in action on [CodeSandBox](https://codesandbox.io/p/github/ka
     
 </tr>
 <tr style="padding-top:10px;">
-    <td style="text-align:center;white-space: nowrap; width: 150.0px; height: 150.0px">
+    <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
         Lint
     </td>
-    <td style="text-align:center;white-space: nowrap; width: 150.0px; height: 150.0px">
+    <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
         <a style="display: inline-flex;align-items: center;padding-top:10px;
-    flex-direction: column; font-size:14px" aria-label="husky" href="https://typicode.github.io/husky/">
-            <img style="border-radius:6px;width:100px;height:100px; " src="https://res.cloudinary.com/practicaldev/image/fetch/s--3HkALzIp--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/v67mrvpgrqg19k3ifgll.png" alt="husky"/>
+    flex-direction: column; font-size:18px" aria-label="husky" href="https://typicode.github.io/husky/">
+            <img style="border-radius:6px;width:50px;height:50px; " src="https://res.cloudinary.com/practicaldev/image/fetch/s--3HkALzIp--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/v67mrvpgrqg19k3ifgll.png" alt="husky"/>
+
                 husky
         </a>
     </td>
-    <td style="text-align:center;white-space: nowrap; width: 150.0px; height: 150.0px">
+    <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/husky">
             <img src="https://img.shields.io/badge/8.0.1-brightgreen" alt="husky"/>
         </a>
@@ -203,16 +211,16 @@ watch the demo app in action on [CodeSandBox](https://codesandbox.io/p/github/ka
     
 </tr>
 <tr style="padding-top:10px;">
-    <td style="text-align:center;white-space: nowrap; width: 150.0px; height: 150.0px">
+    <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
         Lint
     </td>
-    <td style="text-align:center;white-space: nowrap; width: 150.0px; height: 150.0px">
+    <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
         <a style="display: inline-flex;align-items: center;padding-top:10px;
-    flex-direction: column; font-size:14px" aria-label="lint-staged" href="https://github.com/okonet/lint-staged">
+    flex-direction: column; font-size:18px" aria-label="lint-staged" href="https://github.com/okonet/lint-staged">
             Lint-staged
         </a>
     </td>
-    <td style="text-align:center;white-space: nowrap; width: 150.0px; height: 150.0px">
+    <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/lint-staged">
             <img src="https://img.shields.io/badge/13.0.3-brightgreen" alt="lint-staged"/>
         </a>
@@ -221,17 +229,18 @@ watch the demo app in action on [CodeSandBox](https://codesandbox.io/p/github/ka
     
 </tr>
 <tr style="padding-top:10px;">
-    <td style="text-align:center;white-space: nowrap; width: 150.0px; height: 150.0px">
+    <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
         Lint
     </td>
-    <td style="text-align:center;white-space: nowrap; width: 150.0px; height: 150.0px">
+    <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
         <a style="display: inline-flex;align-items: center;padding-top:10px;
-    flex-direction: column; font-size:14px" aria-label="prettier" href="https://prettier.io/docs/en/index.html">
-            <img style="border-radius:6px;width:100px;height:100px; " src="https://avatars.githubusercontent.com/u/25822731?s=200&v=4" alt="prettier"/>
+    flex-direction: column; font-size:18px" aria-label="prettier" href="https://prettier.io/docs/en/index.html">
+            <img style="border-radius:6px;width:50px;height:50px; " src="https://avatars.githubusercontent.com/u/25822731?s=200&v=4" alt="prettier"/>
+
                 prettier
         </a>
     </td>
-    <td style="text-align:center;white-space: nowrap; width: 150.0px; height: 150.0px">
+    <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/prettier">
             <img src="https://img.shields.io/badge/2.7.1-brightgreen" alt="prettier"/>
         </a>
