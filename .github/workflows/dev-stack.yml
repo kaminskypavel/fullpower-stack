@@ -1,17 +1,18 @@
 name: Add dev stack
 on:
-  schedule:
-    - cron:  '25 20 * * *'
+  
   workflow_dispatch:
   push:
     branches: 
       - master
+    paths:
+    - "package.json"
 
 jobs:
   add-dev-stack:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - uses: vithano/add-dev-stack@master
       with:
         DEV_STACK: '### Dev stack'
