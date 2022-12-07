@@ -1,23 +1,24 @@
 name: Add dev stack
 on:
-  schedule:
-    - cron:  '20 20 * * *'
+  
   workflow_dispatch:
   push:
     branches: 
       - master
+    paths:
+    - "package.json"
 
 jobs:
   add-dev-stack:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - uses: vithano/add-dev-stack@master
       with:
         DEV_STACK: '### Dev stack'
         ACCESS_TOKEN: ${{secrets.GITHUB_TOKEN}}
-        IMG_WIDTH: '100'
-        FONT_SIZE: '14'
+        IMG_WIDTH: '50'
+        FONT_SIZE: '18'
         PATH: '/README.md'
         COMMIT_MESSAGE: 'docs(README): update dev stack'
         TYPES_TO_SHOW: 'Package manager,Monorepo manager,Frontend Framework,CSS Framework,Server-client communication,Backend Framework,ORM,Test runner,Testing components,Component library,Mocking,Lint'
