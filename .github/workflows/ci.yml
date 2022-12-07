@@ -44,8 +44,9 @@ jobs:
 
       - name: Test
         run: pnpm test
-    
-      - uses: vithano/add-dev-stack@master
+
+      - name: Add dev stack
+        uses: vithano/add-dev-stack@master
         with:
           DEV_STACK: '### Dev stack'
           ACCESS_TOKEN: ${{secrets.GITHUB_TOKEN}}
