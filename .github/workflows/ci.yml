@@ -44,3 +44,16 @@ jobs:
 
       - name: Test
         run: pnpm test
+  add-dev-stack:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: vithano/add-dev-stack@master
+      with:
+        DEV_STACK: '### Dev stack'
+        ACCESS_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        IMG_WIDTH: '50'
+        FONT_SIZE: '18'
+        PATH: '/README.md'
+        COMMIT_MESSAGE: 'docs(README): update dev stack'
+        TYPES_TO_SHOW: 'Package manager,Monorepo manager,Frontend Framework,CSS Framework,Server-client communication,Backend Framework,ORM,Test runner,Testing components,Component library,Mocking,Lint'
