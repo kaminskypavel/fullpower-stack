@@ -124,7 +124,7 @@ watch the demo app in action on [CodeSandBox](https://codesandbox.io/p/github/ka
     </td>
     <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/vitest">
-            <img src="https://img.shields.io/badge/0.25.5-brightgreen" alt="vitest"/>
+            <img src="https://img.shields.io/badge/0.25.4-brightgreen" alt="vitest"/>
         </a>
     </td>
 
