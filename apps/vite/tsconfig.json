@@ -1,24 +1,7 @@
 {
   "extends": "@tsconfig/vite-react/tsconfig.json",
   "compilerOptions": {
-    "types": ["vitest/globals"],
-    "baseUrl": "src",
-    "paths": {
-      "#pages": ["pages"],
-      "#pages/*": ["pages/*"],
-      "#mocks": ["mocks"],
-      "#mocks/*": ["mocks/*"],
-      "#hooks": ["hooks"],
-      "#hooks/*": ["hooks/*"],
-      "#components": ["components"],
-      "#components/*": ["components/*"],
-      "#store": ["store"],
-      "#store/*": ["store/*"],
-      "#services": ["services"],
-      "#services/*": ["services/*"],
-      "#router": ["router"],
-      "#router/*": ["router/*"]
-    }
+    "types": ["vitest/globals"]
   },
   "include": ["vite.config.ts", "./src", "./setupTests.ts"],
   "exclude": ["node_modules", "**/*.spec.tsx", "**/*.test.tsx", "dist"]
