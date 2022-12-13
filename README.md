@@ -115,7 +115,7 @@ and preconfigured to pick changes from shared packages
     </td>
     <td align="center" style="text-align:center;white-space: nowrap; width: 150.0px; height: 150.0px">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/vitest">
-            <img src="https://img.shields.io/badge/0.25.7-brightgreen" alt="vitest"/>
+            <img src="https://img.shields.io/badge/0.25.8-brightgreen" alt="vitest"/>
         </a>
     </td>
 
