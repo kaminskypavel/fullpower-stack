@@ -22,6 +22,7 @@
   "devDependencies": {
     "@faker-js/faker": "^7.6.0",
     "@fullpower-stack/eslint-config-custom": "workspace:*",
+    "@playwright/test": "^1.29.1",
     "@storybook/addon-essentials": "7.0.0-alpha.54",
     "@storybook/addon-interactions": "7.0.0-alpha.54",
     "@storybook/addon-links": "7.0.0-alpha.54",
@@ -44,6 +45,7 @@
     "happy-dom": "^7.6.4",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
+    "playwright": "^1.29.1",
     "postcss": "^8.4.18",
     "prettier": "^2.7.1",
     "prettier-plugin-tailwindcss": "^0.1.13",

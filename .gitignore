@@ -45,3 +45,9 @@ yarn-error.log*
 
 packages/database/prisma/dev.db
 .eslintcache
+
+**/playwright-report/**/*
+**/test-results/**/*
+**/test-report/**/*
+**/playwright-report/**/*
+**/playwright/.cache/**/*
