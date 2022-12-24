@@ -1,6 +1,5 @@
 {
   "name": "fullpower-stack",
-  "version": "0.0.2",
   "private": true,
   "description": "a boiler plate for a cutting edge technologies",
   "author": "Pavel 'PK' Kaminsky",
@@ -14,6 +13,7 @@
     "dev": "turbo run dev --parallel --no-cache",
     "dev:vite": "turbo run dev --parallel --no-cache --filter=@fullpower-stack/vite --filter=@fullpower-stack/express-backend",
     "test": "turbo run test",
+    "test:ci": "turbo run test:ci",
     "test:watch": "turbo run test:watch",
     "lint": "turbo run lint -- --fix --cache",
     "format": "prettier --write \"**/*.{ts,tsx,md}\" --cache",
@@ -47,6 +47,7 @@
     "postcss": "^8.4.18",
     "prettier": "^2.7.1",
     "prettier-plugin-tailwindcss": "^0.1.13",
+    "start-server-and-test": "^1.15.2",
     "storybook": "7.0.0-alpha.54",
     "ts-node-dev": "latest",
     "turbo": "latest",

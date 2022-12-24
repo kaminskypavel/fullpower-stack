@@ -3,7 +3,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "test": "vitest run && test:e2e",
+    "test": "vitest run",
+    "test:ci": "start-server-and-test 'next start' http://127.0.0.1:3000 test:e2e",
     "test:e2e": "playwright test",
     "test:watch": "vitest",
     "test:e2e:recorder": "playwright codegen",
