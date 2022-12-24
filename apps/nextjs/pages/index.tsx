@@ -4,7 +4,9 @@ import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
 import { Button } from "@fullpower-stack/ui";
 
-const inter = Inter({ subsets: ["latin"] });
+// this causes vitest to crash
+// const inter = Inter({subsets: ["latin"]});
+const inter = { className: "" };
 
 export default function Home() {
   return (
@@ -17,7 +19,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.description}>
-          <p>
+          <p data-testid="get-started">
             Get started by editing&nbsp;
             <code className={styles.code}>pages/index.tsx</code>
           </p>
