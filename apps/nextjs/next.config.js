@@ -1,6 +1,6 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const withTM = require("next-transpile-modules")(["@fullpower-stack/ui"]);
+// migrated from next-transpile-modules
+// https://github.com/martpie/next-transpile-modules/releases/tag/the-end
 
-module.exports = withTM({
-  reactStrictMode: true,
-});
+module.exports = {
+  transpilePackages: ["@fullpower-stack/ui"],
+};
