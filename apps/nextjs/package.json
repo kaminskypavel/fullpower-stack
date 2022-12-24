@@ -3,9 +3,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "test": "vitest run",
-    "test:watch": "vitest",
+    "test": "vitest run && test:e2e",
     "test:e2e": "playwright test",
+    "test:watch": "vitest",
     "test:e2e:recorder": "playwright codegen",
     "test:e2e:report": "playwright show-report",
     "build": "next build",

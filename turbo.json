@@ -5,7 +5,9 @@
   ],
   "globalEnv": [
     "NODE_ENV",
-    "CI"
+    "CI",
+    "PLAYWRIGHT_TEST_BASE_URL",
+    "PLAYWRIGHT_HEADLESS"
   ],
   "pipeline": {
     "build": {
