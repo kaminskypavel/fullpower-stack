@@ -1,6 +1,6 @@
 import { fireEvent, render, screen, within } from "@testing-library/react";
 import { describe, expect, it, vi } from "vitest";
-import Home from "./index";
+import Home from "../pages/index";
 
 global.window.alert = vi.fn();
 

@@ -4,6 +4,6 @@
     "types": ["vitest/globals"]
   },
 
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "./setupTests.ts"],
-  "exclude": ["node_modules", "**/*.spec.tsx", "**/*.test.tsx", "dist"]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules", "/**/*.spec.tsx", "/**/*.test.tsx", "dist"]
 }
