@@ -194,6 +194,8 @@ importers:
       '@trpc/client': ^10.4.0
       '@trpc/react-query': ^10.4.0
       '@trpc/server': ^10.4.0
+      '@types/react': ^18.0.26
+      '@types/react-dom': ^18.0.10
       '@vitejs/plugin-basic-ssl': ^0.1.2
       fast-deep-equal: ^3.1.3
       jotai: ^1.10.0
@@ -224,6 +226,8 @@ importers:
       '@fullpower-stack/eslint-config-custom': link:../../packages/eslint-config-custom
       '@tanstack/react-query-devtools': 4.13.4_vwr3yfyniquaygdm2roeczqxuu
       '@tanstack/react-router-devtools': 0.0.1-beta.19_iyyk323wyibcwzjjutf74gawu4
+      '@types/react': 18.0.26
+      '@types/react-dom': 18.0.10
       '@vitejs/plugin-basic-ssl': 0.1.2
       msw: 0.48.1
 
@@ -5726,8 +5730,7 @@ packages:
   /@types/react-dom/18.0.10:
     resolution: {integrity: sha512-E42GW/JA4Qv15wQdqJq8DL4JhNpB3prJgjgapN3qJT9K2zO5IIAQh4VXvCEDupoqAwnz0cY4RlXeC/ajX5SFHg==}
     dependencies:
-      '@types/react': 18.0.17
-    dev: false
+      '@types/react': 18.0.26
 
   /@types/react-dom/18.0.7:
     resolution: {integrity: sha512-HaXc+BbqAZE1RdsK3tC8SbkFy6UL2xF76lT9rQs5JkPrJg3rWA3Ou/Lhw3YJQzEDkBpmJ79nBsfnd05WrBd2QQ==}
@@ -5741,6 +5744,7 @@ packages:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.2
       csstype: 3.1.1
+    dev: true
 
   /@types/react/18.0.22:
     resolution: {integrity: sha512-4yWc5PyCkZN8ke8K9rQHkTXxHIWHxLzzW6RI1kXVoepkD3vULpKzC2sDtAMKn78h92BRYuzf+7b/ms7ajE6hFw==}
@@ -5749,6 +5753,13 @@ packages:
       '@types/scheduler': 0.16.2
       csstype: 3.1.1
     dev: true
+
+  /@types/react/18.0.26:
+    resolution: {integrity: sha512-hCR3PJQsAIXyxhTNSiDFY//LhnMZWpNNr5etoCqx/iUfGc5gXWtQR2Phl908jVR6uPXacojQWTg4qRpkxTuGug==}
+    dependencies:
+      '@types/prop-types': 15.7.5
+      '@types/scheduler': 0.16.2
+      csstype: 3.1.1
 
   /@types/resolve/1.20.2:
     resolution: {integrity: sha512-60BCwRFOZCQhDncwQdxxeOEEkbc5dIMccYLwbxsS4TUNeVECQ/pBJ0j09mrHOl/JJvpRPGwO9SvE4nR2Nb/a4Q==}
