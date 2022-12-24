@@ -1,11 +1,5 @@
-import { expect, vi, describe, it } from "vitest";
-import {
-  render,
-  screen,
-  within,
-  waitFor,
-  fireEvent,
-} from "@testing-library/react";
+import { fireEvent, render, screen, within } from "@testing-library/react";
+import { describe, expect, it, vi } from "vitest";
 import Home from "./index";
 
 global.window.alert = vi.fn();
@@ -18,7 +12,7 @@ describe("Index Page", () => {
   describe("#Home", async () => {
     it("render", () => {
       render(<Home />);
-      screen.logTestingPlaygroundURL(); // .?
+
       const main = within(screen.getByRole("main"));
       expect(main.getByTestId("get-started")).toBeDefined();
     });

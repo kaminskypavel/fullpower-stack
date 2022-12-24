@@ -1,5 +1,12 @@
 {
   "$schema": "https://turborepo.org/schema.json",
+  "globalDependencies": [
+    ".env"
+  ],
+  "globalEnv": [
+    "NODE_ENV",
+    "CI"
+  ],
   "pipeline": {
     "build": {
       "dependsOn": [
