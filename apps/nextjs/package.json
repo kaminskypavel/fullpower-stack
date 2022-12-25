@@ -4,22 +4,35 @@
   "scripts": {
     "dev": "next dev",
     "test": "vitest run",
+    "test:ci": "start-server-and-test 'next start' http://127.0.0.1:3000 test:e2e",
+    "test:e2e": "playwright test",
     "test:watch": "vitest",
+    "test:e2e:recorder": "playwright codegen",
+    "test:e2e:report": "playwright show-report",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "12.3.1",
+    "@fullpower-stack/ui": "workspace:*",
+    "@fullpower-stack/express-backend": "workspace:*",
+    "@next/font": "13.1.0",
+    "@tanstack/react-query": "^4.13.0",
+    "@trpc/client": "^10.4.0",
+    "@trpc/next": "^10.7.0",
+    "@trpc/react-query": "^10.4.0",
+    "@trpc/server": "^10.4.0",
+    "@types/react-dom": "^18.0.10",
+    "next": "13.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "@fullpower-stack/ui": "workspace:*"
+    "zod": "^3.19.1"
   },
   "devDependencies": {
     "@babel/core": "^7.19.6",
+    "@fullpower-stack/eslint-config-custom": "workspace:*",
     "@types/node": "^17.0.45",
     "@types/react": "18.0.17",
-    "@fullpower-stack/eslint-config-custom": "workspace:*",
     "next-transpile-modules": "9.0.0"
   }
 }

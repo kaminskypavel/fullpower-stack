@@ -1,5 +1,8 @@
 {
-  "extends": "@tsconfig/vite-react",
-  "include": ["src"],
-  "exclude": ["dist", "build", "node_modules"]
+  "extends": "@tsconfig/vite-react/tsconfig.json",
+  "compilerOptions": {
+    "types": ["vitest/globals", "@testing-library/jest-dom"]
+  },
+  "include": ["vite.config.ts", "vitest.config.ts", "./src", "./setupTests.ts"],
+  "exclude": ["node_modules", "dist", "build"]
 }

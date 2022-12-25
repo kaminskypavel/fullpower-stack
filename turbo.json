@@ -1,5 +1,14 @@
 {
   "$schema": "https://turborepo.org/schema.json",
+  "globalDependencies": [
+    ".env"
+  ],
+  "globalEnv": [
+    "NODE_ENV",
+    "CI",
+    "PLAYWRIGHT_TEST_BASE_URL",
+    "PLAYWRIGHT_HEADLESS"
+  ],
   "pipeline": {
     "build": {
       "dependsOn": [
@@ -12,6 +21,9 @@
       ]
     },
     "test": {
+      "outputs": []
+    },
+    "test:ci": {
       "outputs": []
     },
     "lint": {

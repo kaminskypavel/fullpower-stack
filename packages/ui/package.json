@@ -10,14 +10,16 @@
     "lint": "eslint *.ts*",
     "build-storybook": "storybook build"
   },
-  "devDependencies": {
-    "@fullpower-stack/eslint-config-custom": "workspace:*"
-  },
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@types/react": "18.0.17",
     "fast-deep-equal": "^3.1.3",
     "react": "^18.2.0",
     "react-hook-form": "^7.38.0"
+  },
+  "devDependencies": {
+    "@fullpower-stack/eslint-config-custom": "workspace:*",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@types/testing-library__jest-dom": "^5.14.5",
+    "@types/react": "18.0.17",
+    "@vitejs/plugin-react": "^3.0.0"
   }
 }

@@ -1,5 +1,5 @@
 import { QueryClientProvider } from "@tanstack/react-query";
-import { httpBatchLink } from "@trpc/client";
+import {httpBatchLink, httpLink} from "@trpc/client";
 import { Toaster } from "react-hot-toast";
 import "./App.css";
 
@@ -14,7 +14,7 @@ import { trpc } from "./services/trpc";
 
 const trpcClient = trpc.createClient({
   links: [
-    httpBatchLink({
+    httpLink({
       url: import.meta.env.VITE_API_URL,
       // optional
       headers() {
