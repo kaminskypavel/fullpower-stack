@@ -8,8 +8,9 @@
   an opinionated stack for building full power web applications  
 </p>
 
-<p align="center">
   <a href="https://github.com/kaminskypavel/fullpower-stack/actions/workflows/ci.yml"><img alt="GitHub CI Status" src="https://github.com/kaminskypavel/fullpower-stack/actions/workflows/ci.yml/badge.svg"></a>
+  <a href="https://codesandbox.io/p/github/kaminskypavel/fullpower-stack/"><img alt="GitHub CI Status" src="https://img.shields.io/badge/Open%20in-CodeSandbox-blue?style=flat-square&logo=codesandbox"></a>
+
 </p>
 
 ### Introduction
@@ -68,7 +69,6 @@ watch the demo app in action on [CodeSandBox](https://codesandbox.io/p/github/ka
         </a>
     </td>
 
-    
 </tr>
 <tr style="padding-top:10px;">
     <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
@@ -88,7 +88,6 @@ watch the demo app in action on [CodeSandBox](https://codesandbox.io/p/github/ka
         </a>
     </td>
 
-    
 </tr>
 <tr style="padding-top:10px;">
     <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
@@ -108,7 +107,6 @@ watch the demo app in action on [CodeSandBox](https://codesandbox.io/p/github/ka
         </a>
     </td>
 
-    
 </tr>
 <tr style="padding-top:10px;">
     <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
@@ -128,7 +126,6 @@ watch the demo app in action on [CodeSandBox](https://codesandbox.io/p/github/ka
         </a>
     </td>
 
-    
 </tr>
 <tr style="padding-top:10px;">
     <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
@@ -148,7 +145,6 @@ watch the demo app in action on [CodeSandBox](https://codesandbox.io/p/github/ka
         </a>
     </td>
 
-    
 </tr>
 <tr style="padding-top:10px;">
     <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
@@ -168,7 +164,6 @@ watch the demo app in action on [CodeSandBox](https://codesandbox.io/p/github/ka
         </a>
     </td>
 
-    
 </tr>
 <tr style="padding-top:10px;">
     <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
@@ -188,7 +183,6 @@ watch the demo app in action on [CodeSandBox](https://codesandbox.io/p/github/ka
         </a>
     </td>
 
-    
 </tr>
 <tr style="padding-top:10px;">
     <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
@@ -208,7 +202,6 @@ watch the demo app in action on [CodeSandBox](https://codesandbox.io/p/github/ka
         </a>
     </td>
 
-    
 </tr>
 <tr style="padding-top:10px;">
     <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
@@ -226,7 +219,6 @@ watch the demo app in action on [CodeSandBox](https://codesandbox.io/p/github/ka
         </a>
     </td>
 
-    
 </tr>
 <tr style="padding-top:10px;">
     <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
@@ -246,7 +238,6 @@ watch the demo app in action on [CodeSandBox](https://codesandbox.io/p/github/ka
         </a>
     </td>
 
-    
 </tr>
 </table>
 
