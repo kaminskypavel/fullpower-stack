@@ -1,25 +1,25 @@
 import { PrismaClient } from "@prisma/client";
 
 export class Database {
-  #prisma: PrismaClient;
+  private prisma: PrismaClient;
 
   constructor() {
-    this.#prisma = new PrismaClient();
+    this.prisma = new PrismaClient();
   }
 
   async $disconnect() {
-    await this.#prisma.$disconnect();
+    await this.prisma.$disconnect();
   }
 
   async listUsers(reverse = false) {
-    const users = await this.#prisma.user.findMany({
+    const users = await this.prisma.user.findMany({
       orderBy: { id: reverse ? "desc" : "asc" },
     });
     return users;
   }
 
   async createUser(name: string, email: string) {
-    const user = await this.#prisma.user.create({
+    const user = await this.prisma.user.create({
       data: {
         email,
         name,
