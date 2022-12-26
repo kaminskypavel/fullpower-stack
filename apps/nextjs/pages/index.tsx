@@ -2,7 +2,7 @@ import { Button } from "@fullpower-stack/ui";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import { trpc } from "./services/trpc";
+import { trpc } from "../services/trpc";
 
 // this causes vitest to crash
 // const inter = Inter({subsets: ["latin"]});

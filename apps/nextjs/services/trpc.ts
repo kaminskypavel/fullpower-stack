@@ -1,7 +1,7 @@
 // https://trpc.io/docs/v10/react
 import { httpLink } from "@trpc/client";
 import { createTRPCNext } from "@trpc/next";
-import { AppRouter } from "@fullpower-stack/express-backend";
+import type { AppRouter } from "@fullpower-stack/express-backend";
 
 export const trpc = createTRPCNext<AppRouter>({
   config({ ctx }) {
