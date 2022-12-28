@@ -5,5 +5,12 @@
   },
 
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules", "/**/*.spec.tsx", "/**/*.test.tsx", "dist"]
+  "exclude": [
+    "node_modules",
+    "/**/*.spec.tsx",
+    "/**/*.test.tsx",
+    "dist",
+    ".next",
+    "next.config.js"
+  ]
 }
