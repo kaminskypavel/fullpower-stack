@@ -1,5 +1,5 @@
 import { QueryClientProvider } from "@tanstack/react-query";
-import {httpBatchLink, httpLink} from "@trpc/client";
+import { httpBatchLink, httpLink } from "@trpc/client";
 import { Toaster } from "react-hot-toast";
 import "./App.css";
 
@@ -12,10 +12,31 @@ import { router } from "./router";
 import { queryClient } from "./services/queryClient";
 import { trpc } from "./services/trpc";
 
+const getApiUrl = () => {
+  let apiUrl;
+
+  switch (process.env.NODE_ENV) {
+    case "test":
+      apiUrl = "http://localhost:4000/trpc";
+      break;
+
+    case "production":
+      apiUrl = "TO BE ADDED";
+      break;
+
+    case "development":
+    default:
+      apiUrl = "/api/trpc";
+      break;
+  }
+
+  return apiUrl;
+};
+
 const trpcClient = trpc.createClient({
   links: [
     httpLink({
-      url: import.meta.env.VITE_API_URL,
+      url: getApiUrl(),
       // optional
       headers() {
         return {
