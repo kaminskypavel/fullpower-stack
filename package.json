@@ -18,7 +18,8 @@
     "test:watch": "turbo run test:watch",
     "lint": "turbo run lint -- --fix --cache",
     "format": "prettier --write \"**/*.{ts,tsx,md}\" --cache",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "docker:up": "docker-compose up -d"
   },
   "devDependencies": {
     "@faker-js/faker": "^7.6.0",

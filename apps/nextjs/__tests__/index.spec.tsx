@@ -4,6 +4,16 @@ import Home from "../pages/index";
 
 global.window.alert = vi.fn();
 
+vi.mock("../services/trpc", () => ({
+  trpc: {
+    cat: {
+      useQuery: () => ({
+        data: { url: "cat" },
+      }),
+    },
+  },
+}));
+
 describe("Index Page", () => {
   it("toBe true", () => {
     expect(true).toBe(true);
