@@ -13,10 +13,14 @@ RUN npm install --global pnpm \
 WORKDIR /app
 RUN pnpm install -g turbo
 COPY . .
-RUN turbo prune --scope=@fullpower-stack/express-backend --docker
+RUN turbo prune --scope=@fullpower-stack/vite --docker
 
 # Add lockfile and package.json's of isolated subworkspace
 FROM node:18.6.0-slim AS installer
+
+# we need this so vite can inject the correct backend api
+ENV NODE_ENV test
+
 WORKDIR /app
 
 # Install pnpm
@@ -35,13 +39,12 @@ COPY --from=builder /app/out/pnpm-lock.yaml ./pnpm-lock.yaml
 # https://playwright.dev/docs/browsers
 ENV PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD 1
 
-
 # Build the project
 COPY --from=builder /app/out/full/ .
 COPY turbo.json turbo.json
 
 RUN pnpm install
-# RUN pnpm turbo run build --filter=@fullpower-stack/express-backend
+RUN pnpm turbo run build --scope=@fullpower-stack/vite
 
 # Run the app
 FROM node:18.6.0-slim AS runner
@@ -58,16 +61,17 @@ RUN npm install --global pnpm \
 
 WORKDIR /app
 
-# Don't run production as root
-RUN addgroup --system --gid 1001 express
-RUN adduser --system --uid 1001 express
-RUN mkdir generated
-RUN chown express:express generated
+# maybe we dont need this if we use vite dev server
+RUN npm i -g http-server
 
+RUN addgroup --system --gid 1001 nodejs
+RUN adduser --system --uid 1001 vite
+USER vite
 
-COPY --from=installer /app .
-RUN chown -R express:express node_modules
+# COPY --from=installer --chown=vite:nodejs /app ./
+# EXPOSE 5173
+# CMD pnpm dev:vite
 
-USER express
-
-CMD pnpm turbo run dev --filter=@fullpower-stack/express-backend
+COPY --from=installer --chown=vite:nodejs /app/apps/vite/dist ./
+EXPOSE 5173
+CMD http-server -p 5173

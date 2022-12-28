@@ -19,7 +19,9 @@
     "lint": "turbo run lint -- --fix --cache",
     "format": "prettier --write \"**/*.{ts,tsx,md}\" --cache",
     "prepare": "husky install",
-    "docker:up": "docker-compose up -d"
+    "docker:build": "cross-env COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 docker-compose -f docker-compose.yml build --parallel",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down"
   },
   "devDependencies": {
     "@faker-js/faker": "^7.6.0",
@@ -40,6 +42,7 @@
     "@types/node": "^17.0.45",
     "@vitejs/plugin-react": "^3.0.0",
     "autoprefixer": "^10.4.12",
+    "cross-env": "^7.0.3",
     "eslint": "7.32.0",
     "eslint-config-prettier": "^8.5.0",
     "happy-dom": "^7.6.4",
