@@ -65,8 +65,7 @@ RUN mkdir generated
 RUN chown express:express generated
 
 
-COPY --from=installer /app .
-RUN chown -R express:express node_modules
+COPY --from=installer --chown=express:express /app .
 
 USER express
 
