@@ -22,16 +22,16 @@ services:
     networks:
       - app_network
 
-  # nextjs:
-  #   container_name: fullpower-stack-nextjs
-  #   build:
-  #     context: .
-  #     dockerfile: ./apps/nextjs/Dockerfile
-  #   restart: always
-  #   ports:
-  #     - 3000:3000
-  #   networks:
-  #     - app_network
+  nextjs:
+    container_name: fullpower-stack-nextjs
+    build:
+      context: .
+      dockerfile: ./apps/nextjs/Dockerfile
+    restart: always
+    ports:
+      - 3000:3000
+    networks:
+      - app_network
 
 # Define a network, which allows containers to communicate
 # with each other, by using their container name as a hostname
