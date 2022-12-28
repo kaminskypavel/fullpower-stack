@@ -4,10 +4,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  transpilePackages: [
-    "@fullpower-stack/ui",
-    "@fullpower-stack/express-backend",
-  ],
+  transpilePackages: ["@fullpower-stack/ui"],
   // we will be doing the same thing as trpc.ts in createTRPCNext
   // async rewrites() {
   //   return [

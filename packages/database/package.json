@@ -16,11 +16,11 @@
   },
   "dependencies": {
     "@fullpower-stack/schema": "workspace:*",
-    "@prisma/client": "^4.6.1"
+    "@prisma/client": "^4.8.0"
   },
   "devDependencies": {
-    "@fullpower-stack/eslint-config-custom": "workspace:*",
     "@fakerjs/faker": "^3.0.0",
-    "prisma": "^4.6.1"
+    "@fullpower-stack/eslint-config-custom": "workspace:*",
+    "prisma": "^4.8.0"
   }
 }

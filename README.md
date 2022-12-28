@@ -8,8 +8,17 @@
   an opinionated stack for building full power web applications  
 </p>
 
-<p align="center">
-  <a href="https://github.com/kaminskypavel/fullpower-stack/actions/workflows/ci.yml"><img alt="GitHub CI Status" src="https://github.com/kaminskypavel/fullpower-stack/actions/workflows/ci.yml/badge.svg"></a>
+<a href="https://github.com/kaminskypavel/fullpower-stack/actions/workflows/ci.yml"><img alt="GitHub CI Status" src="https://github.com/kaminskypavel/fullpower-stack/actions/workflows/ci.yml/badge.svg"></a>
+<br/>
+<br/>
+<a href="https://codesandbox.io/p/github/kaminskypavel/fullpower-stack/"><img alt="GitHub CI Status" src="https://img.shields.io/badge/Open%20in-CodeSandbox-blue?style=flat-square&logo=codesandbox"></a>
+<a href="https://stackblitz.com/github/kaminskypavel/fullpower-stack">
+<img
+    alt="Open in StackBlitz"
+    src="https://developer.stackblitz.com/img/open_in_stackblitz_small.svg"
+  />
+</a>
+
 </p>
 
 ### Introduction
@@ -268,5 +277,3 @@ pnpm install
             <sub style="font-size:14px"><b>vithano</b></sub>
         </a>
     </td>
-</table>
-</tr>
