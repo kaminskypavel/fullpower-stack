@@ -37,13 +37,16 @@ jobs:
           cache: "pnpm"
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install && pnpm install:playwright
 
       - name: Build
         run: pnpm build
 
       - name: Unit Tests
         run: pnpm test
+
+      - name: Migrate database
+        run: turbo prisma:push --preview-feature
 
       - name: E2E Tests
         run: pnpm test:ci

@@ -76,8 +76,8 @@
 
 #       # 9. We need to make sure our database tables are properly set up
 #       - name: Migrate database
-#         run: pnpm turbo prisma:push --preview-feature
+#         run: pnpm prisma:push --preview-feature
 
 #       # 10. Finally, we run our tests ;D
 #       - name: Run your tests
-#         run: pnpx playwright test
+#         run: pnpm playwright test
