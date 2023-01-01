@@ -1,1 +1,433 @@
-[{"D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\apps\\backend\\express\\src\\app.spec.ts":"1","D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\apps\\backend\\express\\src\\app.ts":"2","D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\apps\\backend\\express\\src\\controllers\\cat.ts":"3","D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\apps\\backend\\express\\src\\trpc\\appRouter.ts":"4","D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\apps\\backend\\express\\src\\trpc\\context.ts":"5","D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\apps\\backend\\express\\src\\trpc\\isAuthedMiddleware.ts":"6","D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\apps\\backend\\express\\src\\trpc\\loggerMiddleware.ts":"7","D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\apps\\backend\\express\\src\\trpc\\post.ts":"8","D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\apps\\backend\\express\\src\\trpc\\trpc.ts":"9","D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\apps\\backend\\express\\vitest.config.js":"10"},{"size":344,"mtime":1670965163192,"results":"11","hashOfConfig":"12"},{"size":891,"mtime":1672594338033,"results":"13","hashOfConfig":"12"},{"size":218,"mtime":1672580296423,"results":"14","hashOfConfig":"12"},{"size":1156,"mtime":1672594338035,"results":"15","hashOfConfig":"12"},{"size":1410,"mtime":1672594338037,"results":"16","hashOfConfig":"12"},{"size":380,"mtime":1672594338038,"results":"17","hashOfConfig":"12"},{"size":404,"mtime":1672594338040,"results":"18","hashOfConfig":"12"},{"size":1327,"mtime":1672594174879,"results":"19","hashOfConfig":"12"},{"size":777,"mtime":1672594338042,"results":"20","hashOfConfig":"12"},{"size":145,"mtime":1668250013637,"results":"21","hashOfConfig":"12"},{"filePath":"22","messages":"23","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},"xejrqq",{"filePath":"24","messages":"25","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},{"filePath":"26","messages":"27","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},{"filePath":"28","messages":"29","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},{"filePath":"30","messages":"31","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},{"filePath":"32","messages":"33","errorCount":0,"fatalErrorCount":0,"warningCount":2,"fixableErrorCount":0,"fixableWarningCount":0,"source":null},{"filePath":"34","messages":"35","errorCount":0,"fatalErrorCount":0,"warningCount":4,"fixableErrorCount":0,"fixableWarningCount":0,"source":null},{"filePath":"36","messages":"37","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},{"filePath":"38","messages":"39","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},{"filePath":"40","messages":"41","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},"D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\apps\\backend\\express\\src\\app.spec.ts",[],"D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\apps\\backend\\express\\src\\app.ts",[],"D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\apps\\backend\\express\\src\\controllers\\cat.ts",[],"D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\apps\\backend\\express\\src\\trpc\\appRouter.ts",[],"D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\apps\\backend\\express\\src\\trpc\\context.ts",[],"D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\apps\\backend\\express\\src\\trpc\\isAuthedMiddleware.ts",["42","43"],"D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\apps\\backend\\express\\src\\trpc\\loggerMiddleware.ts",["44","45","46","47"],"D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\apps\\backend\\express\\src\\trpc\\post.ts",[],"D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\apps\\backend\\express\\src\\trpc\\trpc.ts",[],"D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\apps\\backend\\express\\vitest.config.js",[],{"ruleId":"48","severity":1,"message":"49","line":3,"column":59,"nodeType":"50","messageId":"51","endLine":3,"endColumn":62,"suggestions":"52"},{"ruleId":"48","severity":1,"message":"49","line":3,"column":69,"nodeType":"50","messageId":"51","endLine":3,"endColumn":72,"suggestions":"53"},{"ruleId":"48","severity":1,"message":"49","line":14,"column":9,"nodeType":"50","messageId":"51","endLine":14,"endColumn":12,"suggestions":"54"},{"ruleId":"48","severity":1,"message":"49","line":15,"column":9,"nodeType":"50","messageId":"51","endLine":15,"endColumn":12,"suggestions":"55"},{"ruleId":"48","severity":1,"message":"49","line":16,"column":10,"nodeType":"50","messageId":"51","endLine":16,"endColumn":13,"suggestions":"56"},{"ruleId":"48","severity":1,"message":"49","line":17,"column":9,"nodeType":"50","messageId":"51","endLine":17,"endColumn":12,"suggestions":"57"},"@typescript-eslint/no-explicit-any","Unexpected any. Specify a different type.","TSAnyKeyword","unexpectedAny",["58","59"],["60","61"],["62","63"],["64","65"],["66","67"],["68","69"],{"messageId":"70","fix":"71","desc":"72"},{"messageId":"73","fix":"74","desc":"75"},{"messageId":"70","fix":"76","desc":"72"},{"messageId":"73","fix":"77","desc":"75"},{"messageId":"70","fix":"78","desc":"72"},{"messageId":"73","fix":"79","desc":"75"},{"messageId":"70","fix":"80","desc":"72"},{"messageId":"73","fix":"81","desc":"75"},{"messageId":"70","fix":"82","desc":"72"},{"messageId":"73","fix":"83","desc":"75"},{"messageId":"70","fix":"84","desc":"72"},{"messageId":"73","fix":"85","desc":"75"},"suggestUnknown",{"range":"86","text":"87"},"Use `unknown` instead, this will force you to explicitly, and safely assert the type is correct.","suggestNever",{"range":"86","text":"88"},"Use `never` instead, this is useful when instantiating generic type parameters that you don't need to know the type of.",{"range":"89","text":"87"},{"range":"89","text":"88"},{"range":"90","text":"87"},{"range":"90","text":"88"},{"range":"91","text":"87"},{"range":"91","text":"88"},{"range":"92","text":"87"},{"range":"92","text":"88"},{"range":"93","text":"87"},{"range":"93","text":"88"},[101,104],"unknown","never",[111,114],[189,192],[202,205],[216,219],[229,232]]
+[
+  {
+    "D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\apps\\backend\\express\\src\\app.spec.ts": "1",
+    "D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\apps\\backend\\express\\src\\app.ts": "2",
+    "D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\apps\\backend\\express\\src\\controllers\\cat.ts": "3",
+    "D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\apps\\backend\\express\\src\\trpc\\appRouter.ts": "4",
+    "D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\apps\\backend\\express\\src\\trpc\\context.ts": "5",
+    "D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\apps\\backend\\express\\src\\trpc\\isAuthedMiddleware.ts": "6",
+    "D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\apps\\backend\\express\\src\\trpc\\loggerMiddleware.ts": "7",
+    "D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\apps\\backend\\express\\src\\trpc\\post.ts": "8",
+    "D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\apps\\backend\\express\\src\\trpc\\trpc.ts": "9",
+    "D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\apps\\backend\\express\\vitest.config.js": "10"
+  },
+  {
+    "size": 344,
+    "mtime": 1670965163192,
+    "results": "11",
+    "hashOfConfig": "12"
+  },
+  {
+    "size": 891,
+    "mtime": 1672594338033,
+    "results": "13",
+    "hashOfConfig": "12"
+  },
+  {
+    "size": 218,
+    "mtime": 1672580296423,
+    "results": "14",
+    "hashOfConfig": "12"
+  },
+  {
+    "size": 1156,
+    "mtime": 1672594338035,
+    "results": "15",
+    "hashOfConfig": "12"
+  },
+  {
+    "size": 1410,
+    "mtime": 1672594338037,
+    "results": "16",
+    "hashOfConfig": "12"
+  },
+  {
+    "size": 380,
+    "mtime": 1672594338038,
+    "results": "17",
+    "hashOfConfig": "12"
+  },
+  {
+    "size": 404,
+    "mtime": 1672594338040,
+    "results": "18",
+    "hashOfConfig": "12"
+  },
+  {
+    "size": 1327,
+    "mtime": 1672594174879,
+    "results": "19",
+    "hashOfConfig": "12"
+  },
+  {
+    "size": 777,
+    "mtime": 1672594338042,
+    "results": "20",
+    "hashOfConfig": "12"
+  },
+  {
+    "size": 145,
+    "mtime": 1668250013637,
+    "results": "21",
+    "hashOfConfig": "12"
+  },
+  {
+    "filePath": "22",
+    "messages": "23",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  "xejrqq",
+  {
+    "filePath": "24",
+    "messages": "25",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "26",
+    "messages": "27",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "28",
+    "messages": "29",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "30",
+    "messages": "31",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "32",
+    "messages": "33",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 2,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": null
+  },
+  {
+    "filePath": "34",
+    "messages": "35",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 4,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": null
+  },
+  {
+    "filePath": "36",
+    "messages": "37",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "38",
+    "messages": "39",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "40",
+    "messages": "41",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  "D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\apps\\backend\\express\\src\\app.spec.ts",
+  [],
+  "D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\apps\\backend\\express\\src\\app.ts",
+  [],
+  "D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\apps\\backend\\express\\src\\controllers\\cat.ts",
+  [],
+  "D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\apps\\backend\\express\\src\\trpc\\appRouter.ts",
+  [],
+  "D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\apps\\backend\\express\\src\\trpc\\context.ts",
+  [],
+  "D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\apps\\backend\\express\\src\\trpc\\isAuthedMiddleware.ts",
+  [
+    "42",
+    "43"
+  ],
+  "D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\apps\\backend\\express\\src\\trpc\\loggerMiddleware.ts",
+  [
+    "44",
+    "45",
+    "46",
+    "47"
+  ],
+  "D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\apps\\backend\\express\\src\\trpc\\post.ts",
+  [],
+  "D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\apps\\backend\\express\\src\\trpc\\trpc.ts",
+  [],
+  "D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\apps\\backend\\express\\vitest.config.js",
+  [],
+  {
+    "ruleId": "48",
+    "severity": 1,
+    "message": "49",
+    "line": 3,
+    "column": 59,
+    "nodeType": "50",
+    "messageId": "51",
+    "endLine": 3,
+    "endColumn": 62,
+    "suggestions": "52"
+  },
+  {
+    "ruleId": "48",
+    "severity": 1,
+    "message": "49",
+    "line": 3,
+    "column": 69,
+    "nodeType": "50",
+    "messageId": "51",
+    "endLine": 3,
+    "endColumn": 72,
+    "suggestions": "53"
+  },
+  {
+    "ruleId": "48",
+    "severity": 1,
+    "message": "49",
+    "line": 14,
+    "column": 9,
+    "nodeType": "50",
+    "messageId": "51",
+    "endLine": 14,
+    "endColumn": 12,
+    "suggestions": "54"
+  },
+  {
+    "ruleId": "48",
+    "severity": 1,
+    "message": "49",
+    "line": 15,
+    "column": 9,
+    "nodeType": "50",
+    "messageId": "51",
+    "endLine": 15,
+    "endColumn": 12,
+    "suggestions": "55"
+  },
+  {
+    "ruleId": "48",
+    "severity": 1,
+    "message": "49",
+    "line": 16,
+    "column": 10,
+    "nodeType": "50",
+    "messageId": "51",
+    "endLine": 16,
+    "endColumn": 13,
+    "suggestions": "56"
+  },
+  {
+    "ruleId": "48",
+    "severity": 1,
+    "message": "49",
+    "line": 17,
+    "column": 9,
+    "nodeType": "50",
+    "messageId": "51",
+    "endLine": 17,
+    "endColumn": 12,
+    "suggestions": "57"
+  },
+  "@typescript-eslint/no-explicit-any",
+  "Unexpected any. Specify a different type.",
+  "TSAnyKeyword",
+  "unexpectedAny",
+  [
+    "58",
+    "59"
+  ],
+  [
+    "60",
+    "61"
+  ],
+  [
+    "62",
+    "63"
+  ],
+  [
+    "64",
+    "65"
+  ],
+  [
+    "66",
+    "67"
+  ],
+  [
+    "68",
+    "69"
+  ],
+  {
+    "messageId": "70",
+    "fix": "71",
+    "desc": "72"
+  },
+  {
+    "messageId": "73",
+    "fix": "74",
+    "desc": "75"
+  },
+  {
+    "messageId": "70",
+    "fix": "76",
+    "desc": "72"
+  },
+  {
+    "messageId": "73",
+    "fix": "77",
+    "desc": "75"
+  },
+  {
+    "messageId": "70",
+    "fix": "78",
+    "desc": "72"
+  },
+  {
+    "messageId": "73",
+    "fix": "79",
+    "desc": "75"
+  },
+  {
+    "messageId": "70",
+    "fix": "80",
+    "desc": "72"
+  },
+  {
+    "messageId": "73",
+    "fix": "81",
+    "desc": "75"
+  },
+  {
+    "messageId": "70",
+    "fix": "82",
+    "desc": "72"
+  },
+  {
+    "messageId": "73",
+    "fix": "83",
+    "desc": "75"
+  },
+  {
+    "messageId": "70",
+    "fix": "84",
+    "desc": "72"
+  },
+  {
+    "messageId": "73",
+    "fix": "85",
+    "desc": "75"
+  },
+  "suggestUnknown",
+  {
+    "range": "86",
+    "text": "87"
+  },
+  "Use `unknown` instead, this will force you to explicitly, and safely assert the type is correct.",
+  "suggestNever",
+  {
+    "range": "86",
+    "text": "88"
+  },
+  "Use `never` instead, this is useful when instantiating generic type parameters that you don't need to know the type of.",
+  {
+    "range": "89",
+    "text": "87"
+  },
+  {
+    "range": "89",
+    "text": "88"
+  },
+  {
+    "range": "90",
+    "text": "87"
+  },
+  {
+    "range": "90",
+    "text": "88"
+  },
+  {
+    "range": "91",
+    "text": "87"
+  },
+  {
+    "range": "91",
+    "text": "88"
+  },
+  {
+    "range": "92",
+    "text": "87"
+  },
+  {
+    "range": "92",
+    "text": "88"
+  },
+  {
+    "range": "93",
+    "text": "87"
+  },
+  {
+    "range": "93",
+    "text": "88"
+  },
+  [
+    101,
+    104
+  ],
+  "unknown",
+  "never",
+  [
+    111,
+    114
+  ],
+  [
+    189,
+    192
+  ],
+  [
+    202,
+    205
+  ],
+  [
+    216,
+    219
+  ],
+  [
+    229,
+    232
+  ]
+]

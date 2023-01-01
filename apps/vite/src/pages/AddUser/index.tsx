@@ -11,7 +11,7 @@ const Counter = () => {
 };
 
 const AddUser = () => {
-  const { data } = trpc.list.useQuery();
+  const { data } = trpc.list.useQuery({} as any);
   const { users = [] } = data ?? {};
 
   const prevUsers = usePrevious(users);

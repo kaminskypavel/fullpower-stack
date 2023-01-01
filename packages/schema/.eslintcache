@@ -1,1 +1,77 @@
-[{"D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\packages\\schema\\src\\index.ts":"1","D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\packages\\schema\\src\\zod\\catSchema.ts":"2","D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\packages\\schema\\src\\zod\\postSchema.ts":"3","D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\packages\\schema\\src\\zod\\userSchema.ts":"4"},{"size":101,"mtime":1672594338097,"results":"5","hashOfConfig":"6"},{"size":391,"mtime":1669577448856,"results":"7","hashOfConfig":"6"},{"size":645,"mtime":1672594175919,"results":"8","hashOfConfig":"6"},{"size":131,"mtime":1669577448858,"results":"9","hashOfConfig":"6"},{"filePath":"10","messages":"11","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},"2qmwsx",{"filePath":"12","messages":"13","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},{"filePath":"14","messages":"15","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},{"filePath":"16","messages":"17","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},"D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\packages\\schema\\src\\index.ts",[],"D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\packages\\schema\\src\\zod\\catSchema.ts",[],"D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\packages\\schema\\src\\zod\\postSchema.ts",[],"D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\packages\\schema\\src\\zod\\userSchema.ts",[]]
+[
+  {
+    "D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\packages\\schema\\src\\index.ts": "1",
+    "D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\packages\\schema\\src\\zod\\catSchema.ts": "2",
+    "D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\packages\\schema\\src\\zod\\postSchema.ts": "3",
+    "D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\packages\\schema\\src\\zod\\userSchema.ts": "4"
+  },
+  {
+    "size": 101,
+    "mtime": 1672594338097,
+    "results": "5",
+    "hashOfConfig": "6"
+  },
+  {
+    "size": 391,
+    "mtime": 1669577448856,
+    "results": "7",
+    "hashOfConfig": "6"
+  },
+  {
+    "size": 645,
+    "mtime": 1672594175919,
+    "results": "8",
+    "hashOfConfig": "6"
+  },
+  {
+    "size": 131,
+    "mtime": 1669577448858,
+    "results": "9",
+    "hashOfConfig": "6"
+  },
+  {
+    "filePath": "10",
+    "messages": "11",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  "2qmwsx",
+  {
+    "filePath": "12",
+    "messages": "13",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "14",
+    "messages": "15",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "16",
+    "messages": "17",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  "D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\packages\\schema\\src\\index.ts",
+  [],
+  "D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\packages\\schema\\src\\zod\\catSchema.ts",
+  [],
+  "D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\packages\\schema\\src\\zod\\postSchema.ts",
+  [],
+  "D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\packages\\schema\\src\\zod\\userSchema.ts",
+  []
+]
