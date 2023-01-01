@@ -1,0 +1,44 @@
+version: "3"
+
+services:
+  express-backend:
+    container_name: fullpower-stack-backend
+    build:
+      context: .
+      dockerfile: ./apps/backend/express/Dockerfile
+    restart: always
+    ports:
+      - 4000:4000
+    networks:
+      - app_network
+  vite:
+    container_name: fullpower-stack-vite
+    build:
+      context: .
+      dockerfile: ./apps/vite/prod.Dockerfile
+    restart: always
+    ports:
+      - 5173:5173
+    networks:
+      - app_network
+    depends_on:
+      - express-backend
+
+  nextjs:
+    container_name: fullpower-stack-nextjs
+    build:
+      context: .
+      dockerfile: ./apps/nextjs/prod.Dockerfile
+    restart: always
+    ports:
+      - 3000:3000
+    networks:
+      - app_network
+    depends_on:
+      - express-backend
+
+# Define a network, which allows containers to communicate
+# with each other, by using their container name as a hostname
+networks:
+  app_network:
+    # external: true

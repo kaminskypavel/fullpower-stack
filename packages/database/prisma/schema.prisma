@@ -7,21 +7,22 @@ generator client {
 
 datasource db {
   provider = "sqlite"
-  url      = env("DATABASE_URL")
+  url      = "file:./dev.db"
 }
 
 model User {
   id    Int     @id @default(autoincrement())
   email String  @unique
   name  String?
-  posts Post[]
+  // posts Post[]
 }
 
 model Post {
   id        Int     @id @default(autoincrement())
-  title     String
+  title     String? @default("Untitled")
   content   String?
   published Boolean @default(false)
-  author    User    @relation(fields: [authorId], references: [id])
-  authorId  Int
+  // author    User    @relation(fields: [authorId], references: [id])
+  // authorId  Int
+  createdAt DateTime @default(now())
 }

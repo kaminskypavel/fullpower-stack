@@ -1,24 +1,17 @@
 {
   "$schema": "https://turborepo.org/schema.json",
-  "globalDependencies": [
-    ".env"
-  ],
+  "globalDependencies": [".env"],
   "globalEnv": [
     "NODE_ENV",
+    "VITE_IS_DOCKER",
     "CI",
     "PLAYWRIGHT_TEST_BASE_URL",
     "PLAYWRIGHT_HEADLESS"
   ],
   "pipeline": {
     "build": {
-      "dependsOn": [
-        "^build",
-        "prisma:generate"
-      ],
-      "outputs": [
-        "dist/**",
-        ".next/**"
-      ]
+      "dependsOn": ["^build", "prisma:generate-sqlite"],
+      "outputs": ["dist/**", ".next/**"]
     },
     "test": {
       "outputs": []
@@ -30,9 +23,10 @@
       "outputs": []
     },
     "dev": {
-      "dependsOn": [
-        "^prisma:generate"
-      ],
+      "dependsOn": ["^prisma:generate-sqlite"],
+      "cache": false
+    },
+    "prisma:generate-sqlite": {
       "cache": false
     },
     "prisma:generate": {

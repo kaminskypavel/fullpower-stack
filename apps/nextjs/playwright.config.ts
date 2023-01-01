@@ -18,7 +18,7 @@ const baseUrl = process.env.PLAYWRIGHT_TEST_BASE_URL || "http://localhost:3000";
  * See https://playwright.dev/docs/test-configuration.
  */
 const config: PlaywrightTestConfig = {
-  testDir: "./__tests__/e2e",
+  testDir: "./e2e",
   /* Maximum time one test can run for. */
   timeout: 30 * 1000,
   expect: {
@@ -105,7 +105,7 @@ const config: PlaywrightTestConfig = {
   ],
 
   /* Folder for test artifacts such as screenshots, videos, traces, etc. */
-  // outputDir: 'test-results/',
+  outputDir: "./__tests__/test-results",
 
   /* Run your local dev server before starting the tests */
   // webServer: {

@@ -4,15 +4,23 @@
   "types": "./src/index.ts",
   "license": "MIT",
   "scripts": {
-    "dev": "tsnd --rs src/index.ts",
+    "dev": "run-s prisma:migrate-sqlite prisma:generate-sqlite db-seed && tsnd --rs src/index.ts",
     "lint": "eslint .",
     "prisma:generate": "prisma generate",
-    "prisma:push": "prisma db push --skip-generate",
+    "prisma:push": "prisma db push --skip-generate --preview-feature",
     "prisma:studio": "prisma studio",
-    "build": "tsup src/index.ts --format cjs --dts",
+    "prisma:migrate-sqlite": "prisma migrate dev --name init --schema=./prisma/_sqlite/schema.prisma",
+    "prisma:migrate-prod": "prisma migrate deploy",
+    "prisma:generate-sqlite": "prisma generate --schema=./prisma/_sqlite/schema.prisma",
+    "prisma:generate-prod": "prisma generate",
+    "db-seed": "prisma db seed",
+    "build": "run-s prisma:migrate-sqlite prisma:generate-sqlite && tsup src/index.ts --format cjs --dts",
     "test": "vitest run",
     "test:watch": "vitest",
-    "postinstall": "prisma generate"
+    "postinstall": "prisma generate --schema=./prisma/_sqlite/schema.prisma"
+  },
+  "prisma": {
+    "seed": "tsnd prisma/seed.ts"
   },
   "dependencies": {
     "@fullpower-stack/schema": "workspace:*",
@@ -21,6 +29,7 @@
   "devDependencies": {
     "@fakerjs/faker": "^3.0.0",
     "@fullpower-stack/eslint-config-custom": "workspace:*",
+    "npm-run-all": "^4.1.5",
     "prisma": "^4.8.0"
   }
 }

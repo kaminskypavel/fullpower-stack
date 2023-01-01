@@ -1,9 +1,6 @@
-import { initTRPC, TRPCError } from "@trpc/server";
-import { Context } from "./context";
+import { TRPCError } from "@trpc/server";
 
-export const t = initTRPC.context<Context>().create();
-
-export const isAuthedMiddleware = t.middleware(({ next, ctx }) => {
+export const isAuthedMiddleware = ({ next, ctx }: { next: any; ctx: any }) => {
   if (!ctx.session?.user?.email) {
     throw new TRPCError({
       code: "UNAUTHORIZED",
@@ -17,4 +14,4 @@ export const isAuthedMiddleware = t.middleware(({ next, ctx }) => {
       session: ctx.session,
     },
   });
-});
+};

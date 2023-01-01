@@ -37,10 +37,17 @@ jobs:
           cache: "pnpm"
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install && pnpm install:playwright
 
       - name: Unit Tests
         run: pnpm test
 
-      - name: Build
-        run: pnpm build
+      - name: Migrate database
+        run: pnpm prisma:push
+
+      - name: Express backend
+        run: |
+          pnpm dev:express &
+          sleep 10 &&
+          curl http://localhost:4000 -I &&
+          pnpm test:ci

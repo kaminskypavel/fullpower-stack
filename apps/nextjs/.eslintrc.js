@@ -8,4 +8,5 @@ module.exports = {
     amd: true,
     node: true,
   },
+  ignorePatterns: ["node_modules/", ".next/", "next.config.js"],
 };

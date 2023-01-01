@@ -11,13 +11,13 @@ const Counter = () => {
 };
 
 const AddUser = () => {
-  const { data } = trpc.list.useQuery();
+  const { data } = trpc.list.useQuery({} as any);
   const { users = [] } = data ?? {};
 
   const prevUsers = usePrevious(users);
 
   if (prevUsers?.length) {
-    users.forEach((user, index) => {
+    users.forEach((user) => {
       // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-ignore
       user["highlight"] = !prevUsers.find(

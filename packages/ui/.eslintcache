@@ -1,1 +1,92 @@
-[{"C:\\Users\\kamin\\Desktop\\fullpower-stack\\packages\\ui\\setupTests.ts":"1","C:\\Users\\kamin\\Desktop\\fullpower-stack\\packages\\ui\\vitest.config.ts":"2"},{"size":118,"mtime":1669634557158,"results":"3","hashOfConfig":"4"},{"size":274,"mtime":1669634557372,"results":"5","hashOfConfig":"4"},{"filePath":"6","messages":"7","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},"1dehwf7",{"filePath":"8","messages":"9","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},"C:\\Users\\kamin\\Desktop\\fullpower-stack\\packages\\ui\\setupTests.ts",[],"C:\\Users\\kamin\\Desktop\\fullpower-stack\\packages\\ui\\vitest.config.ts",[]]
+[
+  {
+    "D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\packages\\ui\\setupTests.ts": "1",
+    "D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\packages\\ui\\vitest.config.ts": "2"
+  },
+  {
+    "size": 168,
+    "mtime": 1671994445929,
+    "results": "3",
+    "hashOfConfig": "4"
+  },
+  {
+    "size": 273,
+    "mtime": 1672551247006,
+    "results": "5",
+    "hashOfConfig": "4"
+  },
+  {
+    "filePath": "6",
+    "messages": "7",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  "mfhrb7",
+  {
+    "filePath": "8",
+    "messages": "9",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 1,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": null
+  },
+  "D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\packages\\ui\\setupTests.ts",
+  [],
+  "D:\\Vitali\\Documents\\GitHub\\fullpower-stack\\packages\\ui\\vitest.config.ts",
+  [
+    "10"
+  ],
+  {
+    "ruleId": "11",
+    "severity": 1,
+    "message": "12",
+    "line": 5,
+    "column": 24,
+    "nodeType": "13",
+    "messageId": "14",
+    "endLine": 5,
+    "endColumn": 27,
+    "suggestions": "15"
+  },
+  "@typescript-eslint/no-explicit-any",
+  "Unexpected any. Specify a different type.",
+  "TSAnyKeyword",
+  "unexpectedAny",
+  [
+    "16",
+    "17"
+  ],
+  {
+    "messageId": "18",
+    "fix": "19",
+    "desc": "20"
+  },
+  {
+    "messageId": "21",
+    "fix": "22",
+    "desc": "23"
+  },
+  "suggestUnknown",
+  {
+    "range": "24",
+    "text": "25"
+  },
+  "Use `unknown` instead, this will force you to explicitly, and safely assert the type is correct.",
+  "suggestNever",
+  {
+    "range": "24",
+    "text": "26"
+  },
+  "Use `never` instead, this is useful when instantiating generic type parameters that you don't need to know the type of.",
+  [
+    142,
+    145
+  ],
+  "unknown",
+  "never"
+]

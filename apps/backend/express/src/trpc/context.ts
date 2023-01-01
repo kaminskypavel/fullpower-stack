@@ -1,7 +1,7 @@
 import { faker } from "@faker-js/faker";
 import * as trpc from "@trpc/server";
 import { CreateExpressContextOptions } from "@trpc/server/adapters/express";
-
+import superjson from "superjson";
 //eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface CreateContextOptions {
   // session: Session | null
@@ -42,7 +42,15 @@ export async function createContext(
 ): Promise<Context> {
   // for API-response caching see https://trpc.io/docs/caching
 
-  return await createContextInner(opts);
+  return createContextInner(opts);
 }
-
+export const defaultCreateContextOptions = {
+  /**
+   * @see https://trpc.io/docs/v10/data-transformers
+   */
+  transformer: superjson,
+  /**
+   * @see https://trpc.io/docs/v10/error-formatting
+   */
+};
 export type Context = trpc.inferAsyncReturnType<typeof createContextInner>;

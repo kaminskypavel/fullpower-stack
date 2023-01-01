@@ -6,6 +6,7 @@ import {
 } from "@fullpower-stack/schema";
 import { z } from "zod";
 import { getCatImage } from "../controllers/cat";
+import { postRouter } from "./post";
 import { protectedProcedure, publicProcedure, router } from "./trpc";
 
 const db = new Database();
@@ -13,17 +14,17 @@ const db = new Database();
 export const appRouter = router({
   cat: publicProcedure
     .input(getCatImageInputSchema)
-    .query(async ({ ctx, input }) => {
+    .query(async ({ input }) => {
       const apiResult = await getCatImage(input?.text);
       return apiResult as z.infer<typeof getCatImageOutputSchema>;
     }),
-
-  list: publicProcedure.query(async (req) => {
+  post: postRouter,
+  list: publicProcedure.query(async () => {
     const users = await db.listUsers(true);
     return { ok: true, isAdmin: false, users };
   }),
 
-  admin: protectedProcedure.query((req) => {
+  admin: protectedProcedure.query(() => {
     return { ok: true, isAdmin: true };
   }),
 

@@ -1,5 +1,5 @@
-import { QueryClientProvider } from "@tanstack/react-query";
-import { httpBatchLink, httpLink } from "@trpc/client";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { getFetch, httpLink, loggerLink } from "@trpc/client";
 import { Toaster } from "react-hot-toast";
 import "./App.css";
 
@@ -9,12 +9,12 @@ import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
 import { Provider as JotaiProvider } from "jotai";
 import Navbar from "./components/Navbar";
 import { router } from "./router";
-import { queryClient } from "./services/queryClient";
 import { trpc } from "./services/trpc";
+import superjson from "superjson";
+import { useState } from "react";
 
 const getApiUrl = () => {
   let apiUrl;
-
   switch (process.env.NODE_ENV) {
     case "test":
       apiUrl = "http://localhost:4000/trpc";
@@ -25,6 +25,8 @@ const getApiUrl = () => {
       break;
 
     case "development":
+      apiUrl = "http://localhost:4000/trpc";
+      break;
     default:
       apiUrl = "/api/trpc";
       break;
@@ -32,22 +34,37 @@ const getApiUrl = () => {
 
   return apiUrl;
 };
+function App() {
+  const [queryClient] = useState(
+    () =>
+      new QueryClient({
+        defaultOptions: {
+          queries: {
+            refetchOnWindowFocus: false,
+          },
+        },
+      })
+  );
+  const [trpcClient] = useState(() =>
+    trpc.createClient({
+      links: [
+        loggerLink(),
+        httpLink({
+          url: getApiUrl(),
+          fetch: async (input, init?) => {
+            const fetch = getFetch();
+            return fetch(input, {
+              ...init,
+              credentials:
+                process.env.NODE_ENV === "production" ? "include" : "omit",
+            });
+          },
+        }),
+      ],
+      transformer: superjson,
+    })
+  );
 
-const trpcClient = trpc.createClient({
-  links: [
-    httpLink({
-      url: getApiUrl(),
-      // optional
-      headers() {
-        return {
-          authorization: "fake-cookie",
-        };
-      },
-    }),
-  ],
-});
-
-export default function App() {
   return (
     <RouterProvider router={router}>
       <trpc.Provider client={trpcClient} queryClient={queryClient}>
@@ -70,3 +87,5 @@ export default function App() {
     </RouterProvider>
   );
 }
+
+export default App;
