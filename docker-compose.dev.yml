@@ -1,0 +1,105 @@
+version: "3"
+
+services:
+  express-backend:
+    container_name: fullpower-stack-backend
+    build:
+      context: .
+      dockerfile: ./apps/backend/express/Dockerfile
+    volumes:
+      - ./apps/backend/express/src:/app/apps/backend/express/src
+      - ./packages/database/schema/src:/app/packages/database/schema/src
+      - ./packages/database/schema/prisma:/app/packages/database/schema/prisma
+      - ./packages/database/prisma:/app/packages/database/prisma
+    restart: always
+    environment:
+      NODE_ENV: development
+      IS_DOCKER: true
+    ports:
+      - 4000:4000
+    networks:
+      - app_network
+  vite:
+    container_name: fullpower-stack-vite
+    build:
+      context: .
+      dockerfile: ./apps/vite/dev.Dockerfile
+      args:
+        VITE_IS_DOCKER: true
+    volumes:
+      - ./apps/vite/src:/app/apps/vite/src
+      - ./apps/vite/vite.config.ts:/app/apps/vite/vite.config.ts
+      - ./packages/ui/src:/app/packages/ui/src
+      - ./packages/database/schema/src:/app/packages/database/schema/src
+      - ./packages/database/schema/prisma:/app/packages/database/schema/prisma
+      - ./packages/database/prisma:/app/packages/database/prisma
+    restart: always
+    ports:
+      - 5173:5173
+    networks:
+      - app_network
+
+  nextjs:
+    container_name: fullpower-stack-nextjs
+    depends_on:
+      - express-backend
+    build:
+      context: .
+      dockerfile: ./apps/nextjs/dev.Dockerfile
+    environment:
+      NODE_ENV: development
+      NEXT_PUBLIC_ENV_VARIABLE: development
+    volumes:
+      - ./apps/nextjs/src:/app/apps/nextjs/src
+      - ./apps/nextjs/next.config.js:/app/apps/nextjs/next.config.js
+      - ./apps/nextjs/public:/app/apps/nextjs/public
+      - ./packages/ui/src:/app/packages/ui/src
+      - ./packages/database/schema/src:/app/packages/database/schema/src
+      - ./packages/database/schema/prisma:/app/packages/database/schema/prisma
+      - ./packages/database/prisma:/app/packages/database/prisma
+    restart: always
+    ports:
+      - 3000:3000
+    networks:
+      - app_network
+  # postgres:
+  #   container_name: fullpower-stack-postgres
+  #   image: postgres:12.2
+  #   restart: always
+  #   ports:
+  #     - 5432:5432
+  #   environment:
+  #     POSTGRES_USER: postgres
+  #     POSTGRES_PASSWORD: postgres
+  #     POSTGRES_DB: postgres
+  #   networks:
+  #     - app_network
+  # prisma:
+  #   container_name: fullpower-stack-prisma
+  #   build:
+  #     context: .
+  #     dockerfile: ./packages/database/dev.Dockerfile
+  #   restart: always
+  #   ports:
+  #     - 4466:4466
+  #   depends_on:
+  #     - postgres
+  #   environment:
+  #     PRISMA_CONFIG: |
+  #       port: 4466
+  #       databases:
+  #         default:
+  #           connector: postgres
+  #           host: postgres
+  #           port: 5432
+  #           user: postgres
+  #           password: postgres
+  #           migrations: true
+  #   networks:
+  #     - app_network
+
+# Define a network, which allows containers to communicate
+# with each other, by using their container name as a hostname
+networks:
+  app_network:
+    # external: true

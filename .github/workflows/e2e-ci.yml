@@ -1,0 +1,83 @@
+# https://github.com/kuroski/github-issue-viewer/blob/main/.github/workflows/ci.yml
+
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+
+# 1. First, we add the required environment variables to our file (don't forget to include everything you need from your .env file)
+# You can also provide them within your repo actions secret page
+env:
+  DATABASE_URL: postgresql://postgres:postgres@localhost:5432/app_db?schema=public
+  GITHUB_ID: "123"
+  GITHUB_SECRET: "123"
+  PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1 # Skip downloading during yarn install
+  PLAYWRIGHT_BROWSERS_PATH: 0 # Places binaries to node_modules/@playwright/test
+
+jobs:
+  playwright:
+    name: "Playwright Tests"
+    runs-on: ubuntu-latest
+    services:
+      # 2. Include a postgres service, this will spin up a database for you in your CI environment
+      postgres:
+        image: postgres
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+        ports:
+          - 5432:5432
+    steps:
+      # 3. Checkout our repo code
+      - uses: actions/checkout@v3
+
+      # 4. Setup node with the latest lts version
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "lts/*"
+
+      # 5. I'm using pnpm, so here I'm making sure it's properly installed
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2.2.2
+        id: pnpm-install
+        with:
+          version: 7.7.0
+          run_install: false
+
+      # 6. Setup the CI cache directory for pnpm
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        run: |
+          echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
+
+      # 7. Setup the cache itself
+      - name: Setup pnpm cache
+        uses: actions/cache@v3
+        with:
+          path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      # 8. Install our dependencies and build the project
+      # As an important note, because of caching we need to make sure we are properly installing Playwright
+      # The `pnpm install:playwright` script is just an alias for `playwright install --with-deps`
+      - name: Install dependencies
+        run: pnpm install && pnpm install:playwright && pnpm install:turbo
+      - name: Build application
+        run: pnpm build
+
+      # 9. We need to make sure our database tables are properly set up
+      - name: Migrate database
+        run: pnpm turbo prisma:push --preview-feature
+
+      # 10. Finally, we run our tests ;D
+      - name: Run your tests
+        run: pnpx playwright test
