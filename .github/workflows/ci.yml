@@ -39,11 +39,11 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Build
-        run: pnpm build
-
       - name: Unit Tests
         run: pnpm test
 
       - name: E2E Tests
         run: pnpm test:ci
+
+      - name: Build
+        run: pnpm build
