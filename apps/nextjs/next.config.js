@@ -1,4 +1,5 @@
-import { join } from "path";
+/* eslint-disable */
+const { join } = require("path");
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -17,4 +18,4 @@ const nextConfig = {
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
