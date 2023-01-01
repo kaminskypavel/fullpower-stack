@@ -39,9 +39,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install && pnpm install:playwright
 
-      - name: Build
-        run: pnpm build
-
       - name: Unit Tests
         run: pnpm test
 
