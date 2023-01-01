@@ -7,7 +7,6 @@ import superjson from "superjson";
 import getConfig from "next/config";
 const { serverRuntimeConfig, publicRuntimeConfig } = getConfig();
 const API_URI = serverRuntimeConfig.URI || publicRuntimeConfig.URI;
-console.log("API_URI", API_URI);
 export const trpc = createTRPCNext<AppRouter>({
   config() {
     return {
