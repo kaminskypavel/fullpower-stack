@@ -8,18 +8,32 @@ import { createContext } from "./trpc/context";
 const app: Express = express();
 app.use(cors());
 
-app.get("/", (req, res) => {
+app.get("/", (_req, res) => {
   res.send("Hello World 👋");
 });
 
 app.use(
   "/trpc",
-  (res, req, next) => {
+  (_res, _req, next) => {
     next();
   },
   trpcExpress.createExpressMiddleware({
     router: appRouter,
     createContext,
+    onError({ error }) {
+      console.log("error", error);
+      // console.log("error.code", error.code);
+      if (error.code === "INTERNAL_SERVER_ERROR") {
+        // send to bug reporting
+        console.error("Something went wrong", error);
+      }
+    },
+    /**
+     * Enable query batching
+     */
+    batching: {
+      enabled: false,
+    },
   })
 );
 
