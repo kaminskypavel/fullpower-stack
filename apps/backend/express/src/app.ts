@@ -21,8 +21,6 @@ app.use(
     router: appRouter,
     createContext,
     onError({ error }) {
-      console.log("error", error);
-      // console.log("error.code", error.code);
       if (error.code === "INTERNAL_SERVER_ERROR") {
         // send to bug reporting
         console.error("Something went wrong", error);

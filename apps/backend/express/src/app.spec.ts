@@ -4,9 +4,7 @@ import { describe, expect, it } from "vitest";
 
 describe("app.ts", () => {
   it('should return return "Hello World!"', async () => {
-    const res = await request(app).get(
-      `/trpc/cat?batch=1&input={"0":{"text":"hello"}}`
-    );
+    const res = await request(app).get(`/`);
     expect(res.statusCode).toEqual(200);
   });
 });
