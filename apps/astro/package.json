@@ -1,5 +1,5 @@
 {
-  "name": "@fullpower/astro",
+  "name": "@fullpower-stack/astro",
   "type": "module",
   "version": "0.0.1",
   "private": true,
@@ -11,6 +11,6 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^1.6.5"
+    "astro": "^1.8.0"
   }
 }
