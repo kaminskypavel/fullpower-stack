@@ -46,7 +46,8 @@ jobs:
         run: pnpm prisma:push
 
       - name: Express backend
-        run: pnpm dev:express
-
-      - name: E2E Tests
-        run: pnpm test:ci
+        run: |
+          pnpm dev:express &
+          sleep 5 &&
+          curl http://localhost:4000 -I &&
+          pnpm test:ci
