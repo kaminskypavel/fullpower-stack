@@ -5,8 +5,11 @@ import type { AppRouter } from "@fullpower-stack/express-backend";
 import { inferRouterInputs, inferRouterOutputs } from "@trpc/server";
 import superjson from "superjson";
 import getConfig from "next/config";
-const { serverRuntimeConfig, publicRuntimeConfig } = getConfig();
-const API_URI = serverRuntimeConfig.URI || publicRuntimeConfig.URI;
+const config = getConfig();
+let url = "";
+if (config?.serverRuntimeConfig || config?.publicRuntimeConfig) {
+  url = config?.serverRuntimeConfig?.URI || config?.publicRuntimeConfig?.URI;
+}
 export const trpc = createTRPCNext<AppRouter>({
   config() {
     return {
@@ -17,7 +20,7 @@ export const trpc = createTRPCNext<AppRouter>({
            * If you want to use SSR, you need to use the server's full URL
            * @link https://trpc.io/docs/ssr
            **/
-          url: API_URI,
+          url,
         }),
       ],
       /**
