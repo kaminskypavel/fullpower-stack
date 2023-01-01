@@ -10,7 +10,7 @@
   ],
   "pipeline": {
     "build": {
-      "dependsOn": ["^build", "prisma:generate"],
+      "dependsOn": ["^build", "prisma:generate-sqlite"],
       "outputs": ["dist/**", ".next/**"]
     },
     "test": {
