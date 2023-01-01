@@ -13,6 +13,7 @@
     "dev": "turbo run dev --parallel --no-cache --filter=!{**/standalone/**}",
     "dev:vite": "turbo run dev --parallel --no-cache --filter=@fullpower-stack/vite --filter=@fullpower-stack/express-backend",
     "dev:nextjs": "turbo run dev --parallel --no-cache --filter=@fullpower-stack/nextjs --filter=@fullpower-stack/express-backend",
+    "dev:express": "turbo run dev --no-cache --filter=@fullpower-stack/express-backend",
     "test": "turbo run test --filter=!{**/standalone/**}",
     "test:ci": "turbo run test:ci --filter=!{**/standalone/**}",
     "prisma:push": "turbo run prisma:push --filter=!{**/standalone/**}",

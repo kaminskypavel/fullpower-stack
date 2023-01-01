@@ -45,5 +45,8 @@ jobs:
       - name: Migrate database
         run: pnpm prisma:push
 
+      - name: Express backend
+        run: pnpm start:express
+
       - name: E2E Tests
         run: pnpm test:ci
