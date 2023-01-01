@@ -7,7 +7,7 @@
     "dev": "run-s prisma:migrate-sqlite prisma:generate-sqlite db-seed && tsnd --rs src/index.ts",
     "lint": "eslint .",
     "prisma:generate": "prisma generate",
-    "prisma:push": "prisma db push --skip-generate",
+    "prisma:push": "prisma db push --skip-generate --preview-feature",
     "prisma:studio": "prisma studio",
     "prisma:migrate-sqlite": "prisma migrate dev --name init --schema=./prisma/_sqlite/schema.prisma",
     "prisma:migrate-prod": "prisma migrate deploy",

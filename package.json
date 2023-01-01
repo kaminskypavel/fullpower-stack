@@ -15,7 +15,7 @@
     "dev:nextjs": "turbo run dev --parallel --no-cache --filter=@fullpower-stack/nextjs --filter=@fullpower-stack/express-backend",
     "test": "turbo run test --filter=!{**/standalone/**}",
     "test:ci": "turbo run test:ci --filter=!{**/standalone/**}",
-    "prisma:push": "turbo run prisma:push --preview-feature --filter=!{**/standalone/**}",
+    "prisma:push": "turbo run prisma:push --filter=!{**/standalone/**}",
     "test:watch": "turbo run test:watch",
     "lint": "turbo run lint -- --fix --cache --filter=!{**/standalone/**}",
     "format": "prettier --write \"**/*.{ts,tsx,md}\" --cache",
