@@ -37,7 +37,7 @@ jobs:
           cache: "pnpm"
 
       - name: Install dependencies
-        run: pnpm install && pnpm install:playwright
+        run: pnpm install && pnpm install:playwright && pnpm install -g turbo
 
       - name: Unit Tests
         run: pnpm test
