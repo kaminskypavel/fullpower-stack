@@ -17,7 +17,7 @@
     "build": "run-s prisma:migrate-sqlite prisma:generate-sqlite && tsup src/index.ts --format cjs --dts",
     "test": "vitest run",
     "test:watch": "vitest",
-    "postinstall": "prisma generate"
+    "postinstall": "prisma generate --schema=./prisma/_sqlite/schema.prisma"
   },
   "prisma": {
     "seed": "tsnd prisma/seed.ts"
