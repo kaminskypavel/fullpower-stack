@@ -4,6 +4,7 @@
   "main": "./src/server.ts",
   "types": "./src/server.ts",
   "scripts": {
+    "clean": "pnpm rimraf dist",
     "dev": "tsnd --rs --deps --transpile-only src/server.ts",
     "lint": "eslint .",
     "build": "tsc",

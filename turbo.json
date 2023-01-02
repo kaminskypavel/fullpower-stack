@@ -10,8 +10,14 @@
     "PLAYWRIGHT_HEADLESS"
   ],
   "pipeline": {
+    "clean": {
+      "dependsOn": [
+        "^clean"
+      ]
+    },
     "build": {
       "dependsOn": [
+        "clean",
         "^build",
         "prisma:generate"
       ],
