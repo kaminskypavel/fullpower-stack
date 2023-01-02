@@ -62,13 +62,14 @@ RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
 USER nextjs
 
-COPY --from=installer /app/apps/nextjs/next.config.js .
-COPY --from=installer /app/apps/nextjs/package.json .
-
 # Automatically leverage output traces to reduce image size
 # https://nextjs.org/docs/advanced-features/output-file-tracing
 COPY --from=installer --chown=nextjs:nodejs /app/apps/nextjs/.next/standalone ./
 COPY --from=installer --chown=nextjs:nodejs /app/apps/nextjs/.next/static ./apps/nextjs/.next/static
+
+COPY --from=installer /app/apps/nextjs/public ./apps/nextjs/public
+COPY --from=installer /app/apps/nextjs/next.config.js ./apps/nextjs/next.config.js
+COPY --from=installer /app/apps/nextjs/package.json ./apps/nextjs/package.json
 
 EXPOSE 3000
 ENV PORT 3000
