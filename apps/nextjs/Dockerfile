@@ -34,6 +34,7 @@ COPY --from=builder /app/out/pnpm-lock.yaml ./pnpm-lock.yaml
 
 # https://playwright.dev/docs/browsers
 ENV PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD 1
+ENV STANDALONE_BUILD true
 
 # Build the project
 COPY --from=builder /app/out/full/ .
@@ -44,6 +45,7 @@ RUN pnpm turbo run build --filter=@fullpower-stack/nextjs
 # Run the app
 FROM node:18.6.0-slim AS runner
 ENV NODE_ENV production
+ENV STANDALONE_BUILD true
 
 # Install pnpm
 ENV PNPM_HOME="/root/.local/share/pnpm"
