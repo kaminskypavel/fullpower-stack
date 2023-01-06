@@ -1,7 +1,7 @@
 module.exports = {
   "*.{js,jsx,ts,tsx}": [
     "prettier --write --ignore-unknown --cache",
-    "eslint --fix --cache",
+    "eslint --quiet --fix --cache",
     // "vitest related"
   ],
 };
