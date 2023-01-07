@@ -77,7 +77,6 @@ watch the demo app in action on [CodeSandBox](https://codesandbox.io/p/github/ka
         </a>
     </td>
 
-    
 </tr>
 <tr style="padding-top:10px;">
     <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
@@ -97,7 +96,6 @@ watch the demo app in action on [CodeSandBox](https://codesandbox.io/p/github/ka
         </a>
     </td>
 
-    
 </tr>
 <tr style="padding-top:10px;">
     <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
@@ -117,7 +115,6 @@ watch the demo app in action on [CodeSandBox](https://codesandbox.io/p/github/ka
         </a>
     </td>
 
-    
 </tr>
 <tr style="padding-top:10px;">
     <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
@@ -137,7 +134,6 @@ watch the demo app in action on [CodeSandBox](https://codesandbox.io/p/github/ka
         </a>
     </td>
 
-    
 </tr>
 <tr style="padding-top:10px;">
     <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
@@ -157,7 +153,6 @@ watch the demo app in action on [CodeSandBox](https://codesandbox.io/p/github/ka
         </a>
     </td>
 
-    
 </tr>
 <tr style="padding-top:10px;">
     <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
@@ -177,7 +172,6 @@ watch the demo app in action on [CodeSandBox](https://codesandbox.io/p/github/ka
         </a>
     </td>
 
-    
 </tr>
 <tr style="padding-top:10px;">
     <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
@@ -197,7 +191,6 @@ watch the demo app in action on [CodeSandBox](https://codesandbox.io/p/github/ka
         </a>
     </td>
 
-    
 </tr>
 <tr style="padding-top:10px;">
     <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
@@ -217,7 +210,6 @@ watch the demo app in action on [CodeSandBox](https://codesandbox.io/p/github/ka
         </a>
     </td>
 
-    
 </tr>
 <tr style="padding-top:10px;">
     <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
@@ -235,7 +227,6 @@ watch the demo app in action on [CodeSandBox](https://codesandbox.io/p/github/ka
         </a>
     </td>
 
-    
 </tr>
 <tr style="padding-top:10px;">
     <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
@@ -255,9 +246,10 @@ watch the demo app in action on [CodeSandBox](https://codesandbox.io/p/github/ka
         </a>
     </td>
 
-    
 </tr>
 </table>
+
+# Install
 
 ```
 pnpx degit https://github.com/kaminskypavel/fullpower-stack my-app
@@ -268,6 +260,20 @@ install dependeciens (we use pnpm)
 ```
 pnpm install
 ```
+
+# Docker
+
+```
+pnpm docker:up
+```
+
+this will start all docker containers
+
+- Backend-Server -  <http://localhost:4000>
+- Vite - <http://localhost:3000>
+- Nextjs - <http://localhost:3001>
+- Astro - <http://localhost:3002>
+- Remix.run - <http://localhost:3003>
 
 ### Contributors
 

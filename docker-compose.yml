@@ -36,6 +36,19 @@ services:
       - app_network
     depends_on:
       - express-backend
+  remix:
+    container_name: fullpower-stack-remix
+    build:
+      context: .
+      dockerfile: ./apps/remix/Dockerfile
+    restart: always
+    ports:
+      - 3003:3003
+    networks:
+      - app_network
+    depends_on:
+      - express-backend
+
 
 # Define a network, which allows containers to communicate
 # with each other, by using their container name as a hostname

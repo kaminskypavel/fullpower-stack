@@ -41,6 +41,11 @@
       ],
       "cache": false
     },
+    "start": {
+      "dependsOn": [
+        "^build"
+      ]
+    },
     "prisma:generate": {
       "cache": false
     },
