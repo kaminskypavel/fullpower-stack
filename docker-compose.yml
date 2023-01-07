@@ -48,6 +48,18 @@ services:
       - app_network
     depends_on:
       - express-backend
+  astro:
+    container_name: fullpower-stack-astro
+    build:
+      context: .
+      dockerfile: ./apps/astro/Dockerfile
+    restart: always
+    ports:
+      - 3002:3002
+    networks:
+      - app_network
+    depends_on:
+      - express-backend
 
 
 # Define a network, which allows containers to communicate
