@@ -6,9 +6,9 @@
     "clean": "pnpm rimraf .cache build",
     "build": "npm run build:css && remix build",
     "build:css": "tailwindcss -m -i ./styles/app.css -o app/styles/app.css",
-    "dev": "concurrently \"npm run dev:css\" \"remix dev\"",
+    "dev": "cross-env PORT=3003 concurrently \"npm run dev:css\" \"remix dev\"",
     "dev:css": "tailwindcss -w -i ./styles/app.css -o app/styles/app.css",
-    "start": "remix-serve build",
+    "start": "cross-env PORT=3003 remix-serve build",
     "test": "vitest run",
     "test:watch": "vitest",
     "lint": "eslint *.ts*"
