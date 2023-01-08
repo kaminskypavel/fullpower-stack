@@ -77,6 +77,7 @@ watch the demo app in action on [CodeSandBox](https://codesandbox.io/p/github/ka
         </a>
     </td>
 
+    
 </tr>
 <tr style="padding-top:10px;">
     <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
@@ -96,6 +97,7 @@ watch the demo app in action on [CodeSandBox](https://codesandbox.io/p/github/ka
         </a>
     </td>
 
+    
 </tr>
 <tr style="padding-top:10px;">
     <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
@@ -115,6 +117,7 @@ watch the demo app in action on [CodeSandBox](https://codesandbox.io/p/github/ka
         </a>
     </td>
 
+    
 </tr>
 <tr style="padding-top:10px;">
     <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
@@ -134,6 +137,7 @@ watch the demo app in action on [CodeSandBox](https://codesandbox.io/p/github/ka
         </a>
     </td>
 
+    
 </tr>
 <tr style="padding-top:10px;">
     <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
@@ -153,6 +157,7 @@ watch the demo app in action on [CodeSandBox](https://codesandbox.io/p/github/ka
         </a>
     </td>
 
+    
 </tr>
 <tr style="padding-top:10px;">
     <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
@@ -172,6 +177,7 @@ watch the demo app in action on [CodeSandBox](https://codesandbox.io/p/github/ka
         </a>
     </td>
 
+    
 </tr>
 <tr style="padding-top:10px;">
     <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
@@ -191,6 +197,7 @@ watch the demo app in action on [CodeSandBox](https://codesandbox.io/p/github/ka
         </a>
     </td>
 
+    
 </tr>
 <tr style="padding-top:10px;">
     <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
@@ -206,10 +213,11 @@ watch the demo app in action on [CodeSandBox](https://codesandbox.io/p/github/ka
     </td>
     <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/husky">
-            <img src="https://img.shields.io/badge/8.0.1-brightgreen" alt="husky"/>
+            <img src="https://img.shields.io/badge/8.0.3-brightgreen" alt="husky"/>
         </a>
     </td>
 
+    
 </tr>
 <tr style="padding-top:10px;">
     <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
@@ -223,10 +231,11 @@ watch the demo app in action on [CodeSandBox](https://codesandbox.io/p/github/ka
     </td>
     <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
         <a aria-label="NPM Version" href="https://www.npmjs.com/package/lint-staged">
-            <img src="https://img.shields.io/badge/13.0.3-brightgreen" alt="lint-staged"/>
+            <img src="https://img.shields.io/badge/13.1.0-brightgreen" alt="lint-staged"/>
         </a>
     </td>
 
+    
 </tr>
 <tr style="padding-top:10px;">
     <td align="center" style="text-align:center;white-space: nowrap; width: 75.0px; height: 75.0px">
@@ -246,6 +255,7 @@ watch the demo app in action on [CodeSandBox](https://codesandbox.io/p/github/ka
         </a>
     </td>
 
+    
 </tr>
 </table>
 
