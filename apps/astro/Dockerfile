@@ -1,4 +1,4 @@
-FROM node:18.6.0-slim AS builder
+FROM node:lts-bullseye-slim AS builder
 #https://turbo.build/repo/docs/handbook/deploying-with-docker
 
 # Install pnpm
@@ -15,7 +15,7 @@ COPY . .
 RUN turbo prune --scope=@fullpower-stack/astro --docker
 
 # Add lockfile and package.json's of isolated subworkspace
-FROM node:18.6.0-slim AS installer
+FROM node:lts-bullseye-slim AS installer
 WORKDIR /app
 
 # Install pnpm

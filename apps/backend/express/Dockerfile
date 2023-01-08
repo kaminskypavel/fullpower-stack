@@ -1,4 +1,4 @@
-FROM node:18.6.0-slim AS builder
+FROM node:lts-bullseye-slim AS builder
 #https://turbo.build/repo/docs/handbook/deploying-with-docker
 #https://github.com/vercel/turbo/tree/main/examples/with-docker
 
@@ -16,7 +16,7 @@ COPY . .
 RUN turbo prune --scope=@fullpower-stack/express-backend --docker
 
 # Add lockfile and package.json's of isolated subworkspace
-FROM node:18.6.0-slim AS installer
+FROM node:lts-bullseye-slim AS installer
 WORKDIR /app
 
 # Install pnpm
@@ -44,7 +44,7 @@ RUN pnpm install
 # RUN pnpm turbo run build --filter=@fullpower-stack/express-backend
 
 # Run the app
-FROM node:18.6.0-slim AS runner
+FROM node:lts-bullseye-slim AS runner
 ENV NODE_ENV production
 
 # Install pnpm
