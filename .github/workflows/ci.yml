@@ -43,4 +43,22 @@ jobs:
         run: pnpm test
 
       - name: Build
-        run: pnpm build
+        run: pnpm docker:build
+
+      - name: Run
+        run: pnpm docker:up
+
+      - name: Wait for server to be ready
+        uses: ifaxity/wait-on-action
+        with:
+          resource: http://localhost:3000
+
+      - name: Run e2e tests
+        run: pnpm docker:e2e
+
+      - uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 30

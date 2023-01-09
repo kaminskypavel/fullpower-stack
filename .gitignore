@@ -51,3 +51,4 @@ packages/database/prisma/dev.db
 **/test-report/**/*
 **/playwright-report/**/*
 **/playwright/.cache/**/*
+/screenshots/**/*
