@@ -48,13 +48,16 @@ jobs:
       - name: Run
         run: pnpm docker:up
 
+      - name: 🌐 Install Playwright Browsers
+        run: pnpm playwright:install
+
       - name: Wait for server to be ready
         uses: iFaxity/wait-on-action@v1
         with:
           resource: http://localhost:3000
 
       - name: Run e2e tests
-        run: pnpm docker:e2e
+        run: pnpm test:e2e
 
       - uses: actions/upload-artifact@v3
         if: always()

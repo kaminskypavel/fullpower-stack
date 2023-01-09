@@ -24,9 +24,10 @@
     "docker:up": "docker-compose up -d",
     "docker:down": "docker-compose down",
     "docker:artillery": "pnpm artillery run ./e2e/artillery-vite.yml",
-    "docker:e2e": "playwright test",
-    "docker:e2e:smoke": "pnpm docker:e2e -g @smoke",
-    "docker:e2e:visual": "pnpm docker:e2e -g @visual"
+    "test:e2e": "playwright test",
+    "test:e2e:smoke": "pnpm test:e2e -g @smoke",
+    "test:e2e:visual": "pnpm test:e2e -g @visual",
+    "playwright:install": "playwright install --with-deps"
   },
   "devDependencies": {
     "@faker-js/faker": "^7.6.0",
