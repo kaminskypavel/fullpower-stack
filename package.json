@@ -23,7 +23,11 @@
     "docker:build": "cross-env COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 docker-compose -f docker-compose.yml build --parallel",
     "docker:up": "docker-compose up -d",
     "docker:down": "docker-compose down",
-    "docker:artillery": "pnpm artillery run ./e2e/artillery-vite.yml"
+    "docker:artillery": "pnpm artillery run ./e2e/artillery-vite.yml",
+    "test:e2e": "playwright test",
+    "test:e2e:smoke": "pnpm test:e2e -g @smoke",
+    "test:e2e:visual": "pnpm test:e2e -g @visual",
+    "playwright:install": "playwright install --with-deps"
   },
   "devDependencies": {
     "@faker-js/faker": "^7.6.0",
